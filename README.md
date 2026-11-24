@@ -1,6 +1,6 @@
 # Modelos de organização funcional do encéfalo na NPHC
 
-Mapa 3D interativo do encéfalo que reúne as zonas corticais de Grigori Poliakov, as unidades funcionais e os fatores de Aleksandr Luria e os gradientes de Elkhonon Goldberg.
+Mapa 3D interativo do encéfalo que reúne as zonas corticais de Grigori Poliakov, as unidades funcionais, fatores neuropsicológicos e sistemas funcionais complexos de Aleksandr Luria e os gradientes de Elkhonon Goldberg.
 
 **Acesso online:**: https://gugsphc.github.io/mapa-nphc
 
