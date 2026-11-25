@@ -3410,9 +3410,19 @@ F.addEventListener('submit', async ev => {
 const V = { versao: '1.0.2', data: '25/11/2026', site: 'https://gugsphc.github.io/mapa-nphc/' };
 document.querySelectorAll('.vNum').forEach(e => e.textContent = V.versao);
 document.querySelectorAll('.vData').forEach(e => e.textContent = V.data);
-if (location.protocol.startsWith('http') && location.href.startsWith(V.site)) return;
 const maior = (a, b) => { const x = String(a).split('.').map(Number), y = String(b).split('.').map(Number);
   for (let i = 0; i < Math.max(x.length, y.length); i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d > 0; } return false; };
+/* no site: se o navegador abriu uma cópia guardada de versão anterior, recarrega uma vez a versão nova */
+if (location.protocol.startsWith('http') && location.href.startsWith(V.site)) {
+  fetch(V.site + 'versao.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(n => {
+    if (!n || !maior(n.versao, V.versao)) return;
+    let feito = null; try { feito = sessionStorage.getItem('nphc-recarga'); } catch (e) {}
+    if (feito === n.versao) return;
+    try { sessionStorage.setItem('nphc-recarga', n.versao); } catch (e) {}
+    location.replace(V.site + '?v=' + encodeURIComponent(n.versao) + location.hash);
+  }).catch(() => {});
+  return;
+}
 fetch(V.site + 'versao.json?t=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(n => {
   if (!n || !maior(n.versao, V.versao)) return;
   let fechado = null; try { fechado = localStorage.getItem('nphc-aviso'); } catch (e) {}
