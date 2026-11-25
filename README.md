@@ -11,5 +11,6 @@ Revisão técnica: Prof. Dr. Hansel Soto Hernández.
 
 ## Versões
 
+- **1.0.2 · 25/11/2026**: fatores mnésticos renomeados como memória (retenção ou armazenamento); novo fator de memória tátil-espacial (campos 5 e 7), também na memorização direta, na escrita e na práxis; fator analisador-coordenador (cerebelo) como proposta; espaço para o usuário propor um fator; variações dos sistemas conforme a tarefa; gnose tátil na construção; estruturas profundas numa seção própria; nota sobre os fatores como formação do adulto (Luria, 2010); seção sobre a linguagem na construção e na reorganização dos sistemas; notas da aba Fatores num botão; seção de Khomskaya em largura total; canal de sugestões (sugestões do Prof. Dr. Hansel Soto Hernández).
 - **1.0.1 · 24/11/2026**: ajuste de redação nos pontos em aberto sobre os fatores (sugestão do Prof. Dr. Hansel Soto Hernández).
 - **1.0 · 24/11/2026**: primeira versão pública.

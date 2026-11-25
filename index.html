@@ -100,7 +100,7 @@ p{margin:0 0 12px}.lede{max-width:78ch;color:var(--mute);font-size:17px}
 .fh{font-size:17px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);font-weight:600;margin:26px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
 .refs{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr);gap:14px 20px;margin:0}
 .refs dt{font-weight:700}.refs dd{margin:0;font-size:15.5px}.refs .uso{display:block;color:var(--mute);font-size:14px;margin-top:3px}
-details.more{margin:10px 0}details.more>summary{cursor:pointer;color:var(--pru);font-size:15px;list-style:none}
+details.notas{margin:4px 0 14px}details.notas>summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 5px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink);font-size:13.5px;transition:border-color .15s}details.notas>summary::-webkit-details-marker{display:none}details.notas>summary:hover{border-color:var(--pru)}details.notas>summary .ni{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--pru);color:var(--bg);font:italic 600 12px/1 Georgia,serif}details.notas>summary .nc{color:var(--mute);font-size:12px}details.notas>summary::after{content:"▾";color:var(--mute);font-size:11px;transition:transform .15s}details.notas[open]>summary::after{transform:rotate(180deg)}details.notas>.nb{margin-top:10px;padding:2px 0 2px 13px;border-left:3px solid var(--pru)}details.notas>.nb p.note{margin:0 0 8px}details.notas>.nb p.note:last-child{margin-bottom:0}details.more{margin:10px 0}details.more>summary{cursor:pointer;color:var(--pru);font-size:15px;list-style:none}
 details.more>summary::before{content:"▸ ";color:var(--mute)}details.more[open]>summary::before{content:"▾ "}details.more>summary::-webkit-details-marker{display:none}
 .glist{margin-top:10px}.glist p{font-size:15px}.glab{display:block;font-weight:600;font-size:14px;color:var(--mute);margin-bottom:2px}
 @media(max-width:600px){.refs{grid-template-columns:1fr;gap:2px 0}.refs dd{margin-bottom:12px}}
@@ -200,7 +200,7 @@ dl.f{margin:0}dl.f dt{font-weight:600;font-size:14px;margin-top:12px;color:var(-
 .card dl.f dd{font-size:14.5px}
 .fig{position:relative;min-height:300px}
 .fig>svg{position:absolute;inset:0;width:100%;height:100%}
-.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
+.sw.prop{width:18px;height:18px;border-radius:4px;border:2px dashed #d6336c;background:repeating-linear-gradient(45deg,rgba(214,51,108,.28) 0 4px,transparent 4px 8px)}form.sug.prop{gap:10px;margin:10px 0}fieldset.pfonte{border:1px solid var(--line);border-radius:10px;padding:8px 12px 12px;margin:0;display:flex;flex-direction:column;gap:10px}fieldset.pfonte legend{font-size:14px;color:var(--ink);padding:0 6px}.sugrow.pf{grid-template-columns:1fr 92px}form.sug .plab{display:block;font-size:14px;color:var(--mute);margin-bottom:5px}#prMsg{font-size:14px;margin:0}#prMsg.ok{color:light-dark(#18794e,#4cc38a)}#prMsg.err{color:var(--car)}form.sug{display:flex;flex-direction:column;gap:12px}.sugrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}form.sug label{display:flex;flex-direction:column;gap:5px;font-size:14px;color:var(--mute)}form.sug label small{font-size:12px}form.sug input,form.sug textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;resize:vertical}form.sug input:focus,form.sug textarea:focus{outline:2px solid var(--pru);outline-offset:-1px;border-color:var(--pru)}form.sug .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}.sugact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.sugbtn{font:inherit;font-size:15px;cursor:pointer;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:9px 20px}.sugbtn:disabled{opacity:.55;cursor:wait}#sugMsg{font-size:14px;color:var(--mute)}#sugMsg.ok{color:light-dark(#18794e,#4cc38a)}#sugMsg.err{color:var(--car)}@media(max-width:600px){.sugrow{grid-template-columns:1fr}}.chips.vars .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chips.dim .chip{opacity:.6;text-decoration:line-through}.lingrede{list-style:none;padding:0;margin:8px 0 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:8px 28px}.lingrede li{font-size:15px;line-height:1.5}.lingrede li .chip{vertical-align:baseline}.lingrede li small{display:block;color:var(--mute);font-size:13.5px;margin-top:2px}.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px 28px;margin-top:8px}.dgrid .dg h3{font-size:16px;margin:14px 0 6px}.just{column-count:2;column-gap:44px}.just p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;margin-top:0;break-inside:avoid-column}@media(max-width:900px){.just{column-count:1}}.ktab{width:100%}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
 th{font-weight:600;color:var(--mute);font-size:14px}
@@ -220,7 +220,7 @@ pre,.scroll{overflow-x:auto}
 <h1>Modelos de organização funcional do encéfalo na Neuropsicologia Histórico-Cultural (NPHC)</h1>
 <p class="lede">Mapa 3D interativo do encéfalo que reúne as zonas corticais de Grigori Poliakov, as unidades funcionais e os fatores de Aleksandr Luria e os gradientes de Elkhonon Goldberg. Gire o modelo e clique em qualquer estrutura.</p>
 <p class="cred">Síntese conceitual, desenho e elaboração: <b>Gustavo Figueredo Pio</b>, psicólogo (CRP 11/25112) · Revisão técnica: <b>Prof. Dr. Hansel Soto Hernández</b></p>
-<p class="ver">Versão <span class="vNum"></span> · <span class="vData"></span> · endereço permanente: <a class="vSite" href="https://gugsphc.github.io/mapa-nphc/">gugsphc.github.io/mapa-nphc</a> · <a href="#versoes">novidades</a></p>
+<p class="ver">Versão <span class="vNum"></span> · <span class="vData"></span> · endereço permanente: <a class="vSite" href="https://gugsphc.github.io/mapa-nphc/">gugsphc.github.io/mapa-nphc</a> · <a href="#versoes">novidades</a> · <a href="#sugestoes">enviar sugestão</a></p>
 </div></header>
 
 <section class="stage">
@@ -283,7 +283,13 @@ pre,.scroll{overflow-x:auto}
 <div class="cards" id="zcards"></div>
 </div></section>
 
-<section class="band" style="background:var(--panel)"><div class="wrap two">
+<section class="band" id="profundas" style="background:var(--panel)"><div class="wrap">
+<h2>Estruturas profundas</h2>
+<p class="lede">Abaixo do córtex: tronco, cerebelo, diencéfalo, núcleos da base, sistema límbico e ventrículos. Clique numa estrutura para abri-la no modelo, com sua ficha. Com o córtex opaco, só o tronco e o cerebelo ficam à vista; as outras aparecem com <b>Vidro</b> ou <b>Oculto</b>.</p>
+<div class="dgrid" id="deepIdx"><p class="note">Carregando o modelo…</p></div>
+</div></section>
+
+<section class="band"><div class="wrap two">
 <div>
 <h2>A lei do alongamento das cadeias de relés</h2>
 <p>Para Poliakov, a regularidade que organiza todo o mapa é <b>o alongamento sucessivo das cadeias de relés neuronais</b>, tanto nas conexões de projeção quanto nas de associação, na passagem dos campos primários aos secundários e destes às zonas de sobreposição (P71, p. 157, 164).</p>
@@ -300,6 +306,7 @@ pre,.scroll{overflow-x:auto}
 <div>
 <p>Os <b>fatores</b> são processos fisiológicos locais que se desenvolvem em determinadas estruturas cerebrais formadoras de síndromes, a unidade mínima estrutural e funcional do encéfalo que determina o caráter da síndrome neuropsicológica. Por fator, Luria compreendia “a função propriamente dita” (<i>modus operandi</i>) de uma estrutura encefálica, o princípio ou modo de seu funcionamento. Cada área do sistema funcional que está na base de uma função psicológica (linguagem, percepção, movimento etc.) responde por determinado grupo de fatores. As funções psicológicas resultam da atividade conjunta de várias zonas, e cada uma fornece um fator essencial ao sistema como um todo; a lesão local que elimina um fator perturba secundariamente o sistema inteiro, cada vez de um modo próprio, conforme o elo atingido (Luria, 1966, p. xvii).</p>
 <p>Por isso um sintoma só se localiza depois de qualificado: é preciso identificar o fator, ou defeito primário, e suas consequências sistêmicas secundárias. Observando as consequências secundárias e as funções preservadas, deduz-se “o fator em que se baseiam”; a análise sindrômica é uma forma concreta, não estatística, de análise fatorial (Luria, 1966, p. 49–51; HCF, p. 82–84). Assim, a quebra do ouvido fonemático desorganiza ao mesmo tempo a compreensão, a repetição e a escrita, e poupa a percepção visual e o cálculo escrito. Nenhum fator isolado é responsável por uma função psicológica superior.</p>
+<p><b>Os fatores do mapa são os do adulto.</b> Resultam de um longo processo de desenvolvimento e aprendizagem e são uma formação tardia da ontogênese. Em cada etapa do desenvolvimento, a atividade consciente se realiza por sistemas funcionais diferentes: primeiro predominam as impressões emocionais diretas, depois a percepção complexa e a manipulação de objetos e, por fim, os códigos abstratos da linguagem. Essas mudanças não resultam da simples maturação dos neurônios, mas da comunicação com os adultos e da linguagem (Luria, 2010, p. 196–198). Por isso, como apontou Vigotski, a lesão de uma zona secundária na criança perturba todo o desenvolvimento das formas complexas que dependem dela, enquanto no adulto o mesmo defeito é compensado por sistemas já formados (Luria, 2010, p. 207). Os fatores na infância, pela dificuldade de sistematizar uma organização ainda em mudança, foram menos estudados.</p>
 <p class="note">Pontos em aberto: os continuadores de Luria às vezes tratam a 1ª unidade inteira como um fator, sem dizer se ela comporta vários; e não chamam de fatores as zonas de projeção, embora o conceito permita incluí-las. Algumas nomenclaturas, como mobilidade/inércia e espontaneidade, são das mais vagas da literatura. A lista de fatores não está fechada e pede pesquisa.</p>
 <p>Goldberg (1990) propõe o <b>gradiente cognitivo</b> como unidade da organização horizontal do córtex, assim como o nível é a unidade da organização vertical (hierárquica). As duas abordagens não se excluem: cada uma capta um aspecto da organização (p. 230, 263). A premissa é o <b>isomorfismo entre as métricas espacial e funcional</b>: duas regiões são funcionalmente próximas se, e somente se, são espacialmente próximas (p. 231).</p>
 <p>Um gradiente é definido por dois polos primários. A estrutura invariante é 1 → 2 → 3 → 2 → 1, com o terciário no centro geométrico (p. 231–232). No córtex posterior há três gradientes, que formam um triângulo. No anterior, o gradiente é “parcial” (1 → 2 → 3), porque o frontal é um só lobo (p. 253–254). É uma versão contínua das zonas de sobreposição de Poliakov, que nascem do encontro das zonas nucleares em expansão (P71, p. 146). Goldberg ancora a continuidade entre pré-motor e pré-frontal justamente em Kononova e Poliakov (p. 256).</p>
@@ -330,6 +337,7 @@ pre,.scroll{overflow-x:auto}
 <p class="note">Os papéis e os erros de cada elo seguem o HCF (Partes II e III). Distribuir os sistemas pelos fatores e dividi-los em etapas é uma sistematização deste mapa, a partir do texto. Luria descreve os elos como componentes que interagem (p. 78–79): as etapas indicam a organização lógica do processo, não uma cronometria. A ativação aparece como fundo de todos os sistemas, e a programação, regulação e controle, em todos eles. A memória aparece em três sistemas, seguindo as distinções do HCF: voluntária direta, mediada (Vigotski, Leontiev) e involuntária (Smirnov, Zinchenko) (p. 381–383, 469–470).</p>
 </div>
 </div>
+<p class="note" style="margin-top:14px"><b>Conforme a tarefa.</b> A matriz mostra cada sistema na sua tarefa de referência (o ditado, na escrita; o cálculo mental, no cálculo). Os fatores pesam de outro modo quando a tarefa muda: a cópia dispensa a análise sonora; o cálculo no papel traz a leitura e a escrita dos algarismos e alivia a retenção; o objeto explorado pelo tato troca a gnose visual pela tátil. Na ficha de cada sistema, “Conforme a tarefa” mostra essas variações no modelo, com a fonte de cada uma.</p>
 <div class="scroll" style="margin-top:14px"><table id="stab"></table></div>
 <h3 style="margin-top:30px">Como os sistemas se articulam (localização sistêmica)</h3>
 <div class="two">
@@ -338,6 +346,20 @@ pre,.scroll{overflow-x:auto}
 <div class="chips" id="redeleg"></div></div>
 <div class="fig" id="rede" style="min-height:520px"><svg role="img" aria-label="Rede de articulações entre sistemas funcionais" style="width:100%;height:520px"></svg></div>
 </div>
+</div></section>
+
+<section class="band" id="linguagem" style="background:var(--panel)"><div class="wrap">
+<h2>A linguagem na construção e na reorganização dos sistemas</h2>
+<div class="just">
+<p><b>Sistemas formados ao longo da vida.</b> Para Vigotski e Luria, a consciência é semântica e sistêmica: não se aloja em <i>loci</i> anatômicos, mas em sistemas funcionais que se estabelecem ao longo da vida de cada pessoa. Esses sistemas atravessam as mais diversas estruturas anatômicas e, por serem formados funcionalmente, são dinâmicos e dependem do momento e da história de vida do indivíduo (Apresentação da coletânea, in Vigotskii, Luria e Leontiev, 2010, p. 18). O cérebro humano não progride criando órgãos morfológicos novos, mas formando novos sistemas funcionais, os “órgãos funcionais” de Leontiev (Luria, 2010, p. 200).</p>
+<p><b>Sistemas diferentes em cada etapa.</b> Daí a conclusão de Vigotski: em cada estágio do desenvolvimento, a consciência difere na estrutura semântica e opera por sistemas psicológicos diferentes. Nos primeiros estágios, o papel principal cabe às impressões emocionais diretas; depois, à percepção complexa e à manipulação de objetos; nos estágios finais, a um sistema de códigos abstratos, apoiado na função generalizadora da linguagem (Luria, 2010, p. 197–198).</p>
+<p><b>Como a linguagem reorganiza os sistemas.</b> A comunicação com os adultos forma a fala da criança, e a fala reorganiza toda a estrutura de seus processos psicológicos. Ao nomear e classificar os objetos pelo sistema verbal, o “segundo sistema de sinais” de Pavlov, a criança passa a recodificar a informação que recebe. Surgem a percepção mediada pela fala, a memória lógica e intencional (Leontiev), as formas novas de atenção voluntária (Vigotski) e a regulação das próprias ações pela linguagem (Luria). A linguagem começa como comunicação entre o adulto e a criança e se transforma, aos poucos, numa forma de organização da atividade psicológica (Luria, 2010, p. 197). Por isso Vigotski tomava as palavras como unidades da consciência (p. 198).</p>
+<p><b>Consequência para a localização.</b> Se a consciência é “semântica e localizada em sistemas funcionais” e os processos psicológicos variam em estrutura, não faz sentido procurar no cérebro um órgão da consciência. A tarefa passa a ser identificar o sistema de mecanismos cerebrais e a contribuição de cada componente para a atividade consciente (Luria, 2010, p. 198–199). É o que o mapa tenta mostrar com os fatores e os sistemas, com uma ressalva: o que ele desenha é o sistema já formado do adulto.</p>
+</div>
+<h3 style="margin-top:22px">Onde a linguagem aparece nos sistemas do mapa</h3>
+<p class="note">Articulações em que a fala e a compreensão entram como componente, como regulador ou como base de formação de outros sistemas. Clique num sistema para abri-lo no modelo.</p>
+<ul class="lingrede" id="lingRede"></ul>
+<p class="note">Também nas tarefas: a escrita espontânea parte de um plano formulado em fala interna, e a práxis sob instrução verbal complexa depende de compreender e reter a instrução (veja “Conforme a tarefa” nas fichas da escrita e da práxis).</p>
 </div></section>
 
 <section class="band" id="hemisferios"><div class="wrap">
@@ -356,19 +378,15 @@ pre,.scroll{overflow-x:auto}
 
 <section class="band" id="khomskaya" style="background:var(--panel)"><div class="wrap">
 <h2>O que Khomskaya acrescenta, e o que ainda é preliminar</h2>
-<div class="two">
-<div>
+<div class="just">
 <p>O manual de E. D. Khomskaya (<i>Neuropsicologia</i>, 3ª ed., 2003) é a sistematização da escola de Luria feita por sua colaboradora mais próxima. Ele traz para o mapa três coisas que faltavam.</p>
 <p><b>Uma tipologia dos fatores</b> em sete grupos, que cobre o encéfalo inteiro e não só o córtex convexo (p. 268–273): modalmente específicos, modalmente inespecíficos, terciários, hemisféricos, de comunicação inter-hemisférica, subcorticais profundos e cerebrais gerais. Com ela entraram no mapa dois fatores inespecíficos que estavam diluídos em outros (mobilidade/inércia e espontaneidade), os fatores hemisféricos e o corpo caloso.</p>
 <p><b>Os níveis do sistema não específico</b>, isto é, da 1ª unidade (p. 45–46, 291–296): tronco, diencéfalo, límbico e córtex ínfero-medial frontal e temporal. Cada nível tem sua síndrome. Os níveis baixos sustentam a ativação tônica, e os altos, a fásica e seletiva, que no frontal ínfero-medial passa pela fala.</p>
 <p><b>Síndromes subcorticais concretas</b>: tálamo VL, com três fatores ao mesmo tempo; caudado, com diferenças laterais; cíngulo; corpo caloso por porção (p. 294–302). Estão nas fichas, no campo “Em Khomskaya (2003)”.</p>
 </div>
-<div>
-<h3>Os sete grupos e onde estão no mapa</h3>
-<div class="scroll"><table><tbody id="ktipos"></tbody></table></div>
+<h3 style="margin-top:26px">Os sete grupos e onde estão no mapa</h3>
+<div class="scroll"><table class="ktab"><tbody id="ktipos"></tbody></table></div>
 <p class="note" style="margin-top:10px">Para Khomskaya, todos esses fatores têm relativa autonomia: em regra, a perturbação de um não se repercute nos outros (p. 273).</p>
-</div>
-</div>
 <h3 style="margin-top:26px">Mapa do conhecimento preliminar</h3>
 <p class="lede" style="font-size:16px">São os pontos que a própria tradição luriana declara em aberto, com a página em que Khomskaya ou Luria o dizem. No modelo, as fichas dessas estruturas trazem o aviso “Conhecimento preliminar”.</p>
 <div class="cards" id="kprelim"></div>
@@ -402,15 +420,17 @@ pre,.scroll{overflow-x:auto}
 <dt>Luria, 1966</dt><dd>LURIA, A. R. <i>Human Brain and Psychological Processes</i>. Trad. B. Haigh. Nova York: Harper &amp; Row, 1966.<span class="uso">Fator, sistema funcional e análise sindrômica como análise fatorial (prefácio, p. xvii; p. 49–51).</span></dd>
 <dt>Luria, 1975–1979</dt><dd>LURIA, A. R. <i>Curso de psicologia geral</i>, v. 1: <i>Introdução evolucionista à psicologia</i>. Trad. Paulo Bezerra. 2. ed. Rio de Janeiro: Civilização Brasileira, 1991. Original de 1975.<span class="uso">Três unidades, campos terciários pré-frontais e princípio da lateralização (p. 108–114).</span></dd>
 <dt>Goldberg</dt><dd>GOLDBERG, E. Higher cortical functions in humans: the gradiental approach. In: GOLDBERG, E. (org.). <i>Contemporary Neuropsychology and the Legacy of Luria</i>. Hillsdale: Erlbaum, 1990. Cap. 12, p. 229–270.<span class="uso">Gradientes, nós, funções inferidas e síndromes (Figs. 1–4). A posição 3D de cada nó é o centro da porção correspondente das áreas de Brodmann.</span></dd>
+<dt>Luria, 2010</dt><dd>LURIA, A. R. O cérebro humano e a atividade consciente. In: VIGOTSKII, L. S.; LURIA, A. R.; LEONTIEV, A. N. <i>Linguagem, desenvolvimento e aprendizagem</i>. Trad. Maria da Pena Villalobos. 11. ed. São Paulo: Ícone, 2010. p. 191–228.<span class="uso">Na mesma coletânea, a apresentação dos organizadores (José Cipolla-Neto, Luiz Silveira Menna-Barreto, Maria Thereza Fraga Rocco e Marta Kohl de Oliveira, p. 15–19) resume a concepção da consciência em sistemas funcionais dinâmicos (p. 18). Fatores e sistemas como formação do adulto: a atividade consciente muda de sistemas funcionais em cada etapa do desenvolvimento (p. 196–198); “órgãos funcionais” (p. 200); lesão na criança e no adulto (p. 207); memória visual e espacial nas lesões occípito-parietais (p. 216).</span></dd>
 <dt>Khomskaya</dt><dd>KHOMSKAYA, E. D. <i>Нейропсихология</i> [Neuropsicologia]. 3. ed. São Petersburgo: Piter, 2003. As páginas citadas são as da tradução portuguesa usada.<span class="uso">Tipologia dos fatores em sete grupos e ampliações (cap. 20, p. 268–273); atenção (cap. 15); síndromes subcorticais e inter-hemisféricas.</span></dd>
 </dl>
 <h3 class="fh">Autores</h3>
 <p>Grigori Izrailevitch Poliakov, Aleksandr Romanovitch Luria, Lev Semionovitch Vigotski, Ivan Petrovitch Pavlov, Piotr Kuzmitch Anokhin, Nikolai Aleksandrovitch Bernstein, Evguénia Dmítrievna Khomskaya, Elkhonon Goldberg e Korbinian Brodmann.</p>
 <details class="more"><summary>Outros autores mencionados nas fichas</summary>
 <div class="glist">
-<p><span class="glab">Psicologia e neuropsicologia</span>Aleksei Nikolaievitch Leontiev, Piotr Iakovlevitch Galperin, Anatoli Aleksandrovitch Smirnov, Piotr Ivanovitch Zinchenko, Liubov Semionovna Tsvetkova, Erika Guerassimovna Simernitskaya, N. K. Kiyashchenko, Svetlana Borisovna Buklina, Tamar Gagoshidze, Natalia Nikolaievna Traugott, Lev Iakovlevitch Balonov, Vadim Lvovitch Deglin, Kaufman, Karl Kleist, Henry Hécaen, Hans-Lukas Teuber, Roger Wolcott Sperry, Michael Posner, Steven Petersen, Mortimer Mishkin, Roman Ossipovitch Jakobson.</p>
+<p><span class="glab">Psicologia e neuropsicologia</span>Aleksei Nikolaievitch Leontiev, Piotr Iakovlevitch Galperin, Anatoli Aleksandrovitch Smirnov, Piotr Ivanovitch Zinchenko, Liubov Semionovna Tsvetkova, Erika Guerassimovna Simernitskaya, N. K. Kiyashchenko, Svetlana Borisovna Buklina, Tamar Gagoshidze, Natalia Nikolaievna Traugott, Lev Iakovlevitch Balonov, Vadim Lvovitch Deglin, Kaufman, Karl Kleist, Henry Hécaen, Hans-Lukas Teuber, Roger Wolcott Sperry, Michael Posner, Steven Petersen, Mortimer Mishkin, Roman Ossipovitch Jakobson, Luis Quintanar Rojas, Yulia Solovieva.</p>
 <p><span class="glab">Neurofisiologia</span>Natalia Petrovna Bekhtereva, Olga Sergueievna Vinogradova, Giuseppe Moruzzi, Horace Winchell Magoun, Wilder Graves Penfield, Herbert Henri Jasper, Charles Scott Sherrington, Otfrid Foerster, Karl Harry Pribram, Mikhail Mikhailovitch Khananashvili.</p>
 <p><span class="glab">Neuroanatomia e citoarquitetura</span>Ivan Nikolaievitch Filimonov, Samuil Mikhailovitch Blinkov, Evguénia Petrovna Kononova, N. S. Preobrazhenskaya, Ekaterina Grigorievna Shkolnik-Yarros, Popova, Galina Petrovna Zhukova, Tatiana Aleksandrovna Leontovich, Paul Emil Flechsig, Oskar Vogt, Malcolm Batten Carpenter.</p>
+<p><span class="glab">Neurociência atual (fora das fontes da NPHC)</span>Catherine L. Reed, Roberta L. Klatzky e Eric Halgren (What vs. where in touch: an fMRI study, <i>NeuroImage</i>, 25, 2005); Andrea E. Cavanna e Michael R. Trimble (The precuneus: a review of its functional anatomy and behavioural correlates, <i>Brain</i>, 129, 2006).</p>
 <p class="note">Não entram na lista os nomes que só aparecem em epônimos de estruturas, síndromes e provas (Betz, Broca, Wernicke, Heschl, Meynert, Papez, Korsakov, Gerstmann, Kohs e outros).</p>
 </div></details>
 <h3 class="fh">Créditos</h3>
@@ -420,11 +440,30 @@ pre,.scroll{overflow-x:auto}
 </details>
 </div></section>
 
+<section class="band" id="sugestoes" style="background:var(--panel)"><div class="wrap">
+<h2>Canal de sugestões</h2>
+<div class="two">
+<div>
+<p>Encontrou um erro, tem uma sugestão, uma dúvida ou uma referência que deveria estar aqui? Escreva neste espaço. A mensagem vai direto para Gustavo Figueredo Pio e para o Prof. Dr. Hansel Soto Hernández.</p>
+<p class="note">Se quiser resposta, deixe seu e-mail. A versão do mapa que você está usando segue junto com a mensagem. No arquivo baixado para uso sem internet, o envio abre o seu programa de e-mail com a mensagem pronta.</p>
+</div>
+<form id="sugForm" class="sug" novalidate>
+<div class="sugrow"><label><span>Nome <small>(opcional)</small></span><input name="nome" autocomplete="name" maxlength="120"></label>
+<label><span>E-mail para resposta <small>(opcional)</small></span><input name="email" type="email" autocomplete="email" maxlength="160"></label></div>
+<label><span>Mensagem</span><textarea name="mensagem" rows="6" maxlength="5000" required placeholder="Sua sugestão, correção ou dúvida"></textarea></label>
+<input name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="sugact"><button type="submit" class="sugbtn">Enviar sugestão</button><span id="sugMsg" role="status" aria-live="polite"></span></div>
+</form>
+</div>
+</div></section>
+
 <section class="band" id="versoes"><div class="wrap">
 <h2>Versões e atualizações</h2>
 <p>A versão mais recente do mapa fica sempre no mesmo endereço: <a href="https://gugsphc.github.io/mapa-nphc/">gugsphc.github.io/mapa-nphc</a>. Lá também se baixa o arquivo para usar sem internet. Quando o arquivo baixado é aberto com o computador conectado, ele confere esse endereço e, se houver versão mais nova, mostra um aviso no alto da página com o link para baixá-la. Sem conexão, o mapa funciona normalmente e o aviso simplesmente não aparece.</p>
 <p>Esta é a versão <b class="vNum"></b>, de <span class="vData"></span>.</p>
 <dl class="chg">
+<dt>1.0.2 · 25/11/2026</dt>
+<dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. Nos sistemas, entre as estruturas da 1ª unidade, só o hipocampo fica nomeado. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões.</dd>
 <dt>1.0.1 · 24/11/2026</dt>
 <dd>Ajuste de redação sugerido pelo Prof. Dr. Hansel Soto Hernández nos pontos em aberto sobre os fatores: a 1ª unidade tratada como fator único e as zonas de projeção fora da lista são atribuídas aos continuadores de Luria.</dd>
 <dt>1.0 · 24/11/2026</dt>
@@ -1696,11 +1735,11 @@ const AR = {
    k: 'Distúrbios gustativos e orofaciais.' },
  5: { n: 'Lóbulo parietal superior (anterior)', r: 'Região parietal superior', t: ['LP'],
    c: 'Terciário segundo Poliakov (1971 inclui os campos 5 e 7). Grandes piramidais herdados do vizinho pós-central, combinados ao desenvolvimento das camadas associativas superiores.',
-   f: 'Limita-se com a representação pós-central dos membros inferiores e do tronco. É o lugar da integração dos movimentos do corpo inteiro com a recepção visual e da formação do esquema corporal (HCF, p. 50).',
+   f: 'Limita-se com a representação pós-central dos membros inferiores e do tronco. É o lugar da integração dos movimentos do corpo inteiro com a recepção visual e da formação do esquema corporal (HCF, p. 50). No mapa de fatores, entra com o 7 na memória (retenção) tátil-espacial, proposta da revisão técnica.',
    k: 'Distúrbios da postura, da localização da direção do movimento e da posição das partes do corpo (P71, p. 148).' },
  7: { n: 'Lóbulo parietal superior e pré-cúneo', r: 'Região parietal superior', t: ['LP', 'Pulv'],
    c: 'Terciário: estrutura neuronal fina, com predomínio de II–III₁₋₂.',
-   f: 'Sobreposição dos analisadores cutâneo-cinestésico e visual: esquema corporal e relações espaciais das partes do corpo (P71, p. 148).',
+   f: 'Sobreposição dos analisadores cutâneo-cinestésico e visual: esquema corporal e relações espaciais das partes do corpo (P71, p. 148). O pré-cúneo, face medial do 7, aparece na literatura atual, fora das fontes da NPHC, ligado às imagens visuoespaciais e à evocação de memórias (Cavanna e Trimble, 2006). No mapa de fatores, o 7 entra com o 5 na memória (retenção) tátil-espacial, proposta da revisão técnica.',
    k: 'Distúrbios do esquema corporal e da orientação do movimento no espaço sob controle visual.' },
  40: { n: 'Giro supramarginal', r: 'Região parietal inferior (anterior)', t: ['Pulv', 'LP'],
    c: 'Terciário. Na Fig. 20 do HCF, é o exemplo da estrutura neuronal mais fina da série posterior.',
@@ -1910,7 +1949,7 @@ const FAT = {
     sub: 'Campos secundários occipitais 18 e 19 (O₂).',
     sind: 'Agnosia visual de objetos (O₂L). Em lesões occipitoparietais bilaterais, simultanagnosia: estreitamento do campo de percepção simultânea (HCF II.3C, p. 157).',
     sist: 'Reconhecimento de objetos e imagens, desenho de memória, leitura (alexia óptica literal).' },
-  om: { def: "Ligação estável entre a imagem visual de um objeto e a palavra que o designa, nos dois sentidos: evocar o nome a partir da imagem e a imagem a partir do nome. Fica na transição entre os analisadores visual e auditivo.", exame: "Nomear objetos e desenhos; desenhar de memória um objeto nomeado (“desenhe um elefante”); reter séries de figuras; ver se a primeira sílaba dada como pista ajuda a achar o nome (HCF III.6B; III.9D).", g: 1, nome: 'Memória visual e visual-verbal (fator óptico-mnéstico)', ru: 'оптико-мнестический фактор', cor: '#3f8ccf', u: 2,
+  om: { def: "Ligação estável entre a imagem visual de um objeto e a palavra que o designa, nos dois sentidos: evocar o nome a partir da imagem e a imagem a partir do nome. Fica na transição entre os analisadores visual e auditivo. Como no fator acústico-mnéstico, o que se localiza é a retenção do traço visual, não a memória como sistema; a escola mexicana o chama de retenção visual.", exame: "Nomear objetos e desenhos; desenhar de memória um objeto nomeado (“desenhe um elefante”); reter séries de figuras; ver se a primeira sílaba dada como pista ajuda a achar o nome (HCF III.6B; III.9D).", g: 1, nome: 'Memória (retenção ou armazenamento) visual e visual-verbal (fator óptico-mnéstico)', ru: 'оптико-мнестический фактор', cor: '#3f8ccf', u: 2,
     areas: [37, 20], deep: ['th_Pulv'], nodes: ['OT3'],
     sub: 'Córtex occipitotemporal associativo (OT₃), na transição entre os analisadores visual e auditivo.',
     sind: 'Dificuldade de evocar o nome dos objetos e de evocar suas imagens visuais. Goldberg: o OT₃L (temporal médio posterior, junto à junção temporo-occipital) dá afasia anômica e “extinção do significado da palavra”, a incapacidade de desenhar de memória um objeto que o paciente nomeia. A afasia de Wernicke fica na junção T₂/OT₃ (Goldberg, p. 250–251).',
@@ -1920,21 +1959,31 @@ const FAT = {
     sub: 'Campos secundários auditivos do hemisfério esquerdo: 22 (terço posterior) e 42 (T₂L).',
     sind: 'Afasia sensorial (acústico-gnóstica): perda da diferenciação de fonemas próximos e alienação do sentido das palavras (HCF II.2D, p. 117). Goldberg: T₂L dá agnosia acústica e agnosia auditiva associativa semântica. À direita, a lesão temporal perturba a audição não verbal e musical (agnosia auditiva, amusia), os ritmos e a prosódia da fala (Khomskaya, p. 281–282).',
     sist: 'Compreensão oral, repetição, escrita sob ditado, nomeação. É um exemplo clássico de um fator comprometendo vários sistemas ao mesmo tempo.' },
-  am: { def: "Retenção dos traços audioverbais: manter na memória imediata uma série de palavras ouvidas, na ordem certa, apesar da interferência entre elas. A percepção fonêmica fica intacta; o que falha é a estabilidade do traço.", exame: "Repetir séries de 3–4 palavras ou dígitos, logo e após pausa ou interferência; reter dois grupos de palavras; repetir frases longas; mostrar objetos numa ordem ditada (HCF III.7B–D; III.8C).", g: 1, nome: 'Memória audioverbal (fator acústico-mnéstico)', ru: 'акустико-мнестический фактор', cor: '#4fae9f', u: 2,
+  am: { def: "Retenção dos traços audioverbais: manter na memória imediata uma série de palavras ouvidas, na ordem certa, apesar da interferência entre elas. A percepção fonêmica fica intacta; o que falha é a estabilidade do traço. O que se localiza aqui é a retenção, não a memória, que é um sistema funcional: por isso a escola mexicana (Luis Quintanar Rojas, Yulia Solovieva) chama o fator de retenção audioverbal.", exame: "Repetir séries de 3–4 palavras ou dígitos, logo e após pausa ou interferência; reter dois grupos de palavras; repetir frases longas; mostrar objetos numa ordem ditada (HCF III.7B–D; III.8C).", g: 1, nome: 'Memória (retenção ou armazenamento) audioverbal (fator acústico-mnéstico)', ru: 'акустико-мнестический фактор', cor: '#4fae9f', u: 2,
     areas: [21], deep: [], nodes: ['OT3'],
     sub: 'Giro temporal médio (21), na sobreposição auditivo-visual e ligado ao límbico.',
     sind: 'Afasia acústico-mnéstica: retenção de séries audioverbais reduzida, com a audição fonêmica preservada (HCF II.2E, p. 128). Khomskaya descreve dois mecanismos: inibição retro e proativa dos traços e “equalização da intensidade dos traços”, que baixa a probabilidade de evocar a palavra certa (p. 281).',
     sist: 'Compreensão de enunciados longos, memória verbal imediata, nomeação.' },
   cin: { def: "Aferentação cinestésica, isto é, de retorno, dos movimentos: a informação sobre a posição dos músculos e articulações que permite escolher os impulsos motores certos. Organiza a base de cada postura, tanto da mão quanto do aparelho articulatório.", exame: "Reproduzir posturas dos dedos, com e sem controle visual, e transferi-las de uma mão para a outra; praxias orais (lábios, língua); articular sons próximos (b–m–p); reconhecer objetos pelo tato (HCF III.3B–C; III.5).", g: 1, nome: 'Cinestésico (gnose tátil, somestesia)', ru: 'кинестетический фактор', cor: '#d08a10', u: 2,
-    areas: [1, 2, 43, 5], deep: ['th_VPL', 'th_VPM'], nodes: ['P2'],
-    sub: 'Campos secundários pós-centrais (1, 2) e opérculo (43). Em Goldberg, P₂ = 5 e 7.',
+    areas: [1, 2, 43], deep: ['th_VPL', 'th_VPM'], nodes: ['P2'],
+    sub: 'Campos secundários pós-centrais (1, 2) e opérculo (43). Em Goldberg, P₂ = 5 e 7; no mapa, 5 e 7 ficam com a memória (retenção) tátil-espacial.',
     sind: 'Apraxia aferente (cinestésica), com perda da seleção dos impulsos motores. Afasia motora aferente (procura dos articulemas). Agnosia tátil (HCF II.3D, p. 168; II.4C–D, p. 202–207). Goldberg: P₂L dá agnosia tátil.',
     sist: 'Práxis manual e oral, articulação, escrita (substituições de sons articulatoriamente próximos), estereognosia.' },
   esp: { def: "Reunir elementos que chegam em sucessão numa estrutura captada de uma vez, simultânea: é a “síntese simultânea” de Luria. Em sentido literal, as relações espaciais (direita/esquerda, acima/abaixo); em sentido quase-espacial, as relações lógico-gramaticais (“o irmão do pai”), as do número (o valor de posição) e as do relógio.", exame: "Orientação no mapa e no relógio; desenhar a planta do quarto; cubos de Kohs; compreender construções lógico-gramaticais (“o círculo sob a cruz”, “o irmão do pai” × “o pai do irmão”); compreender a estrutura do número e fazer contas com transporte (HCF III.6C–D; III.8E; III.11B).", g: 3, nome: 'Síntese simultânea quase-espacial', ru: 'пространственный / квазипространственный фактор', cor: '#6b3fa0', u: 2,
-    areas: [39, 40, 7], deep: ['th_Pulv', 'th_LP'], nodes: ['PT3', 'OP3'],
-    sub: 'Zonas de sobreposição parietal inferior e temporo-parieto-occipital (39, 40) e parietal superior (7). Khomskaya chama esse fator, ligado à área TPO, de fator “da organização simultânea dos processos psíquicos” (p. 270).',
+    areas: [39, 40], deep: ['th_Pulv'], nodes: ['PT3', 'OP3'],
+    sub: 'Zonas de sobreposição parietal inferior e temporo-parieto-occipital (39, 40). O parietal superior (7), vizinho, fica no mapa com a memória (retenção) tátil-espacial. Khomskaya chama esse fator, ligado à área TPO, de fator “da organização simultânea dos processos psíquicos” (p. 270).',
     sind: 'Apractognosia espacial e construtiva, afasia semântica (relações lógico-gramaticais), acalculia (HCF II.3E–G, p. 171–186). Goldberg: PT₃L dá afasia semântica e acalculia de tipo espacial; OP₃L, apraxia ideatória e apractagnosia espacial. Luria situa a afasia semântica na região parieto-occipital, sem separar angular e supramarginal. A atribuição de Goldberg ao supramarginal é uma previsão do modelo gradiental, não um achado clínico (Goldberg, p. 243–244).',
     sist: 'Orientação espacial, desenho e construção, cálculo, compreensão de construções lógico-gramaticais, relógio e mapas.' },
+  tat: { pre: "Fator proposto na revisão técnica de Hansel Soto Hernández, por paralelo com as memórias audioverbal e visual. Luria não o lista entre os fatores, e Khomskaya descreve as perturbações da memória tátil e espacial sem nomear campos. A atribuição a 5 e 7 apoia-se também na literatura neurocientífica atual, fora das fontes da NPHC: o lóbulo parietal superior participa da exploração e da localização táteis (Reed, Klatzky e Halgren, 2005), e o pré-cúneo, face medial do 7, das imagens visuoespaciais e da evocação de memórias (Cavanna e Trimble, 2006). Lida assim, a memória tátil corresponde ao lado secundário de 5 e 7, e a espacial ao lado terciário, o que ajuda a entender por que Khomskaya ora os põe entre os secundários, ora entre os terciários. Em outro texto, Luria relata que as lesões occípito-parietais mudam a memória visual e espacial, ligada aos distúrbios da análise visual e espacial, e deixam intacta a audioverbal (Luria, 2010, p. 216). Ponto em aberto.", def: "Retenção dos traços táteis e espaciais: conservar a forma de um objeto explorado pelo tato e a posição das coisas no espaço, para reconhecê-los ou reproduzi-los depois. Como nos fatores acústico-mnéstico e óptico-mnéstico, a gnose da modalidade pode ficar intacta; o que falha é a estabilidade do traço. Khomskaya inclui as memórias tátil e espacial entre as perturbações modalmente específicas da memória, que surgem com lesão dos sistemas analisadores e podem ocorrer com a gnose preservada; as espaciais, sobretudo por lesão parieto-occipital direita (p. 185).", exame: "Explorar um objeto pelo tato, sem vê-lo, e reconhecê-lo depois entre outros, logo e após pausa ou interferência; reproduzir de memória a posição de objetos ou um trajeto; comparar com a mesma tarefa à vista e de ouvido. Luria pede que o exame da impressão direta dos traços verifique se o defeito se limita a uma esfera (visual, auditiva, tátil), sinal de lesão na extremidade cortical de um analisador (HCF III.7B, p. 470).", g: 1, nome: 'Memória (retenção ou armazenamento) tátil-espacial', ru: 'тактильная и пространственная память', cor: '#efc75a', u: 2,
+    areas: [5, 7], deep: ['th_LP'], nodes: ['P2'],
+    sub: 'Lóbulo parietal superior (5, 7), com o pré-cúneo na face medial do 7; tálamo lateral posterior.',
+    sind: 'Perda dos traços táteis ou espaciais com a gnose preservada (Khomskaya, p. 185). Luria liga a astereognosia às divisões secundárias do analisador cutâneo-cinestésico e cita trabalhos que a explicam por uma perturbação geral da síntese espacial (Teuber, Semmes) (HCF II.3D, p. 168–169). Goldberg: P₂L dá agnosia tátil (astereognosia pura).',
+    sist: 'Reconhecimento de objetos pelo tato, memorização de material tátil, memória de lugares e trajetos, esquema corporal.' },
+  cer: { pre: "Proposta da revisão técnica de Hansel Soto Hernández. Nem o HCF nem Khomskaya descrevem uma síndrome neuropsicológica cerebelar, e Luria não inclui o cerebelo explicitamente nas três unidades. A designação vem de Poliakov, para quem o cerebelo é a formação mais desenvolvida do mecanismo analisador-coordenador. Para que a definição não fique circular (o fator definido pela própria estrutura), ele só se firma se a análise do erro mostrar um defeito qualitativo próprio, comum a vários sistemas. A lista de fatores continua aberta.", def: "Contribuição do cerebelo lida como fator: a coordenação e a verificação do movimento em curso. Em Poliakov, o mecanismo analisador-coordenador responde pelo auto-controle (equilíbrio, tônus, coordenação estática e locomotora, ajuste dos próprios analisadores) e funciona como “supervisor” do mecanismo de coordenação; o cerebelo é sua formação mais desenvolvida, com córtex uniforme, sem campos (P71, p. 23, 47–54, 152–153). No homem, as conexões frontocerebelares se desenvolvem com a postura ereta, e o denteado projeta, pelo VL, ao campo motor e pré-motor, como elo da retroaferência que verifica o movimento (HCF, p. 54–55).", exame: "As provas de coordenação (dedo-nariz, diadococinesia, marcha, equilíbrio) pertencem ao exame neurológico. Falta descrever, nos sistemas (práxis, escrita, fala), um erro qualitativo que seja próprio do cerebelo e o distinga dos fatores cinestésico e cinético.", g: 6, nome: 'Analisador-coordenador (cerebelo)', ru: 'мозжечок', cor: '#a98457', u: 0,
+    areas: [], deep: ['cerebelo', 'vermis', 'denteado'], nodes: [],
+    sub: 'Hemisférios cerebelares, vermis e núcleo denteado. Sem campos corticais.',
+    sind: 'Ataxia, dismetria, tremor de intenção e hipotonia, do exame neurológico. Síndrome neuropsicológica não descrita nas fontes da NPHC (Khomskaya, p. 299).',
+    sist: 'Ainda sem elos nos sistemas do mapa. Candidato natural à práxis e à escrita, pela verificação do movimento.' },
   kin: { def: "Organização temporal dos movimentos: encadear os atos isolados numa sequência fluida, a “melodia cinética”, desligando cada elo a tempo de passar ao seguinte. Para Khomskaya, é o fator modalmente específico do analisador motor (p. 283).", exame: "Trocar de posição em série (punho–borda–palma); alternância recíproca das mãos; desenhar uma sequência de figuras alternadas; reproduzir ritmos; escrever uma palavra ou uma série de letras (HCF III.3D; III.4C).", g: 1, nome: 'Melodia cinética (fator cinético)', ru: 'кинетический фактор', cor: '#c2410c', u: 3,
     areas: [6, 8, 44], deep: ['caudado', 'putamen'], nodes: ['PM2', 'PM2V', 'A44'],
     sub: 'Campos pré-motores (6, 8) e opérculo frontal (44), com seus circuitos subcorticais. Para Khomskaya, é o fator modalmente específico do analisador motor: a organização temporal dos atos (p. 283).',
@@ -1999,7 +2048,7 @@ const GN = {
     pol: 'Coincide com o secundário auditivo. O terço posterior do 22 é o setor auditivo-verbal da Fig. 46 de Poliakov.', sind: 'T₂L: agnosia acústica (o componente fonológico da afasia de Wernicke) e agnosia auditiva semântico-associativa, que Goldberg vê como duas faces de uma mesma falha de categorização auditiva.', fat: ['fon'] },
   P2: { lab: 'P₂', lvl: 2, areas: [5, 7], filt: 'dors', nome: 'Área somatossensorial secundária', ga: '5 e 7, lóbulo parietal superior', gp: 'p. 235–236',
     fn: 'Identificação categorial de percepções táteis e proprioceptivas. O argumento vem da astereognosia pura bilateral por lesão unilateral, sem déficit elementar e sem afasia.',
-    pol: 'Ponto mais delicado do esquema. Luria (HCF, p. 168–171) liga a agnosia tátil às “divisões secundárias” do analisador cutâneo-cinestésico sem nomear campos; é Goldberg quem as identifica com 5 e 7. Poliakov, no próprio HCF (p. 50) e em 1971 (p. 146), põe 5 e 7 na zona de sobreposição parietal superior, isto é, nos terciários. Khomskaya mostra que a escola luriana não fechou a questão: no mesmo manual, põe parte do 5 na zona nuclear somatossensorial e o 7 na região parietal superior terciária (p. 47–48), e depois lista 5 e 7 entre os secundários (p. 276).', sind: 'P₂L: agnosia tátil (astereognosia pura).', fat: ['cin'] },
+    pol: 'Ponto mais delicado do esquema. Luria (HCF, p. 168–171) liga a agnosia tátil às “divisões secundárias” do analisador cutâneo-cinestésico sem nomear campos; é Goldberg quem as identifica com 5 e 7. Poliakov, no próprio HCF (p. 50) e em 1971 (p. 146), põe 5 e 7 na zona de sobreposição parietal superior, isto é, nos terciários. Khomskaya mostra que a escola luriana não fechou a questão: no mesmo manual, põe parte do 5 na zona nuclear somatossensorial e o 7 na região parietal superior terciária (p. 47–48), e depois lista 5 e 7 entre os secundários (p. 276).', sind: 'P₂L: agnosia tátil (astereognosia pura).', fat: ['cin', 'tat'] },
   OT3: { lab: 'OT₃', lvl: 3, areas: [21, 37], filt: 'post', nome: 'Associativo temporo-occipital', ga: 'parte posterior do giro temporal médio, junto à junção temporo-occipital', gp: 'p. 250–251',
     fn: 'Integração auditivo-visual no contexto linguístico: os aspectos das representações linguísticas que denotam o mundo visualmente representado (substantivos concretos e figuráveis).',
     pol: 'Corresponde à sub-região TPO (37) e à porção posterior do temporal médio (21) de Poliakov, ambas zonas de sobreposição. Na leitura luriana, une os fatores acústico-mnéstico (21) e óptico-mnéstico (37).', sind: 'OT₃L: afasia anômica, um déficit lexical mais puramente semântico, e “extinção do significado da palavra”, a incapacidade de evocar a imagem visual a partir do nome. A afasia de Wernicke corresponde à junção T₂/OT₃.', fat: ['om', 'am'] },
@@ -2051,8 +2100,8 @@ const GRD = {
   rmp: { nome: 'Motor-pré-frontal inferior (direito)', base: 'motor-pré-frontal inferior', esq: 'elaboração direita não descrita', cor: '#c2410c', pg: 'p. 261', seq: ['M1V', 'PM2V', 'PF3'], parcial: true, onlyR: true,
     d: 'Goldberg presume um padrão complementar de elaborações no hemisfério direito anterior, mas não o descreve (p. 261).' }
 };
-const CURTO = { ativ: 'Ativação', mem: 'Memória inespecífica', vis: 'Gnose visual', om: 'Óptico-mnéstico', fon: 'Ouvido fonemático',
-  am: 'Acústico-mnéstico', cin: 'Cinestésico', esp: 'Simultâneo / espacial', kin: 'Cinético', prog: 'Programação e controle',
+const CURTO = { cer: 'Cerebelo', ativ: 'Ativação', mem: 'Memória inespecífica', vis: 'Gnose visual', om: 'Óptico-mnéstico', fon: 'Ouvido fonemático',
+  am: 'Acústico-mnéstico', cin: 'Cinestésico', tat: 'Tátil-espacial', esp: 'Simultâneo / espacial', kin: 'Cinético', prog: 'Programação e controle',
   inerc: 'Mobilidade/inércia', espont: 'Espontaneidade', hemi: 'Inter-hemisférica', comm: 'Inter-hemisférico', geral: 'Gerais' };
 for (const f in CURTO) FAT[f].curto = CURTO[f];
 
@@ -2062,16 +2111,19 @@ for (const f in CURTO) FAT[f].curto = CURTO[f];
 const SYS = {
   escrita: { hemE: "Componentes principais (codificadores), representados pelas consoantes. Lesões temporais e pós-centrais esquerdas produzem trocas, confluências e inversões de ordem de consoantes.", hemD: "Componentes de fundo, representados pelas vogais. Na rara agrafia por lesão temporoparietal direita, as vogais são omitidas ou trocadas (num caso, 35 de 67 erradas) e as consoantes ficam quase intactas (Simernitskaya; HCF, p. 380).", nome: 'Escrita', ru: 'письмо', ref: 'HCF, p. 78–81; III.10C, p. 537–543',
     def: 'Escrever sob ditado exige quatro passos: analisar acusticamente a composição sonora (com participação estreita da articulação), recodificar cada fonema num grafema com suas propriedades topológicas, recodificar o grafema numa série cinestésica de movimentos e organizá-la numa “melodia” cinética. Com a automatização, o peso de cada elo muda (HCF, p. 78–79).',
-    etapas: [{ f: ['prog'], n: 'Tarefa e intenção (na escrita espontânea, o plano do texto)' }, { f: ['fon', 'cin'], rel: 'sim', n: 'Análise da composição sonora, com apoio articulatório' }, { f: ['esp', 'om'], rel: 'sim', n: 'Recodificação de cada fonema num grafema' }, { f: ['kin'], n: 'Melodia cinética do traçado' }],
+    etapas: [{ f: ['prog'], n: 'Tarefa e intenção (na escrita espontânea, o plano do texto)' }, { f: ['fon', 'cin'], rel: 'sim', n: 'Análise da composição sonora, com apoio articulatório' }, { f: ['esp', 'om'], rel: 'sim', n: 'Recodificação de cada fonema num grafema' }, { f: ['tat', 'kin'], rel: 'sim', n: 'Recodificação do grafema numa série cinestésica de movimentos, organizada em melodia cinética' }],
     ciclo: { para: 0, n: 'O escrito é confrontado com a intenção. Sem esse controle, a frase inicial se repete (p. 543).' },
-    tempo: 'As etapas são sucessivas: Luria as descreve como passos do processo (p. 78–79). Dentro das etapas 2 e 3, os elos trabalham juntos: a articulação sustenta a análise sonora, e a imagem da letra e sua topologia formam um só ato. Na escrita de palavras muito familiares, as etapas intermediárias se encurtam até uma melodia cinética única (p. 79).',
+    tempo: 'As etapas são sucessivas: Luria as descreve como passos do processo (p. 78–79). Dentro das etapas 2, 3 e 4, os elos trabalham juntos: a articulação sustenta a análise sonora; a imagem da letra e sua topologia formam um só ato; e o esquema tátil-cinestésico do traçado se realiza na melodia cinética. Na escrita de palavras muito familiares, as etapas intermediárias se encurtam até uma melodia cinética única (p. 79).',
     fundo: [{ f: 'ativ', n: 'tônus' }],
+    tarefa: "Ditado", tarefaD: "Escrever palavras e frases ditadas. É a forma que exige todos os passos descritos por Luria: analisar a composição sonora, recodificar cada fonema num grafema, recodificar o grafema numa série de movimentos e organizar essa série numa melodia cinética.",
+    variantes: [{"n": "Cópia", "ref": "HCF III.10C, p. 538–539", "d": "Copiar um texto, de preferência passando do impresso para o cursivo. O ponto de partida é o modelo visto, e não o som: a análise fonêmica perde peso, e a cópia fica preservada nas lesões temporais que desorganizam o ditado. Se o paciente desenha as letras em vez de transcrevê-las, a recodificação falhou.", "etapas": [{"f": ["prog"], "n": "Tarefa e intenção"}, {"f": ["vis", "esp"], "rel": "sim", "n": "Percepção do modelo escrito e da disposição de seus elementos"}, {"f": ["om"], "n": "Recodificação do impresso no cursivo (imagem da letra)"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Série cinestésica do traçado e melodia cinética"}], "ciclo": {"para": 1, "n": "O escrito é confrontado com o modelo, letra a letra."}, "menos": ["fon", "cin"], "mais": [{"f": "vis", "papel": "Percepção do modelo escrito, com os traços distintivos de cada letra.", "q": "Letras do modelo mal identificadas; reprodução de detalhes inessenciais do impresso com o mesmo cuidado que os essenciais (p. 538)."}]}, {"n": "Escrita automatizada (o próprio nome, a assinatura)", "ref": "HCF, p. 79; III.10C, p. 539–541", "d": "Escrever algo muito automatizado. As etapas intermediárias se encurtam até uma melodia cinética única, e a análise sonora deixa de ser necessária: por isso a assinatura se conserva quando o ditado já está desorganizado.", "etapas": [{"f": ["prog"], "n": "Intenção"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Melodia cinética única do traçado"}], "ciclo": null, "menos": ["fon", "cin", "esp", "om"], "mais": []}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da escrita.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'fon', papel: 'Análise da composição sonora da palavra ditada.', q: 'Omissões, substituições de sons acusticamente próximos e transposições, sobretudo no ditado e na escrita espontânea. A cópia e assinaturas automatizadas ficam preservadas (p. 539–541).' },
       { f: 'cin', papel: 'Articulação como apoio da análise sonora.', q: 'Substituições articulatoriamente próximas (d/n/l, m/b). A escrita piora se a articulação externa é proibida e melhora com controle visual da boca no espelho (p. 541–542).' },
       { f: 'esp', papel: 'Recodificação do fonema no grafema, com sua topologia e a disposição espacial de seus elementos.', q: 'Elementos da letra mal dispostos e letras em espelho, também na cópia. A análise fonêmica fica intacta (p. 542).' },
       { f: 'om', papel: 'Ligação óptico-acústica entre o som e a imagem da letra.', q: 'Agrafia óptica (Kaufman): o paciente sabe o som, mas não encontra o grafema. É forma rara (p. 542).' },
+      { f: 'tat', papel: 'Recodificação do grafema numa série cinestésica de movimentos da mão (HCF, p. 78): o esquema tátil-cinestésico e espacial do traçado de cada letra, retido e evocado sem apoio da visão.', q: 'Proposta, ainda sem caso descrito por Luria na escrita: o traçado se desorganiza quando falta o controle visual, como nos movimentos diferenciados da mão em lesões do campo 5 (HCF II.4C, p. 204). Letras com elementos mal dispostos ou em espelho também na cópia apontam antes para a síntese espacial (p. 542).' },
       { f: 'kin', papel: 'Melodia cinética: ordem e fluidez dos movimentos.', q: 'Letras isoladas sim, palavras não: a ordem se perde, com perseverações e inércia na passagem de um elemento a outro (p. 81, 542).' },
       { f: 'prog', papel: 'Plano e intenção do texto.', q: 'Defeito não específico. A frase inicial se repete (“quero lhe dizer que quero lhe dizer…”). A inércia e a fadiga produzem “escrita inicial” e micrografia (p. 543).' } ] },
   leitura: { hemE: "Leitura propriamente dita: percepção de letras, sílabas e palavras como códigos de linguagem (vantagem do campo visual direito).", hemD: "Percepção não verbal e sentido afetivo. Com só o hemisfério direito disponível, a paciente não lê “norte”, mas diz “algo frio”; não lê o nome da filha, mas diz “algo próximo de mim” (Simernitskaya; HCF, p. 381).", nome: 'Leitura', ru: 'чтение', ref: 'HCF III.10D, p. 543–552',
@@ -2079,6 +2131,8 @@ const SYS = {
     etapas: [{ f: ['vis', 'esp'], rel: 'sim', n: 'Percepção dos grafemas e da estrutura visual da palavra' }, { f: ['fon', 'cin'], rel: 'sim', n: 'Recodificação em estrutura fonética (com articulação, na leitura em voz alta)' }, { f: ['kin'], n: 'Síntese sucessiva dos elementos lidos' }, { f: ['prog'], n: 'Compreensão controlada: confronto do sentido com o texto' }],
     tempo: 'Caminho inverso da escrita (p. 543–544). No leitor fluente, palavras familiares são reconhecidas de relance, saltando a etapa 2: é por isso que um paciente pode reconhecer “Moscou” sem conseguir lê-la em voz alta (p. 548).',
     fundo: [{ f: 'ativ', n: 'tônus' }],
+    tarefa: "Leitura em voz alta de palavras e frases", tarefaD: "Ler em voz alta letras, sílabas, palavras e frases. É o caminho inverso da escrita: perceber os grafemas, recodificá-los em estrutura fonética com apoio da articulação, sintetizar em sucessão os elementos lidos e controlar o sentido do que foi lido.",
+    variantes: [{"n": "Leitura de relance de palavras familiares", "ref": "HCF III.10D, p. 548", "d": "Palavras muito familiares (nomes próprios, títulos de jornal) são reconhecidas como um todo, sem recodificação em fonemas. Por isso um paciente pode reconhecer “Moscou” sem conseguir lê-la em voz alta nem analisar sua composição.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção global da palavra"}, {"f": ["om"], "n": "Ligação direta entre a imagem da palavra e seu sentido"}, {"f": ["prog"], "n": "Confronto com o contexto"}], "menos": ["fon", "cin", "kin"], "mais": [{"f": "om", "papel": "Ligação direta entre a imagem visual da palavra e seu sentido, sem passar pelos sons.", "q": "As palavras familiares deixam de ser reconhecidas de relance, e a leitura fica toda analítica, letra a letra."}]}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da leitura.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'vis', papel: 'Percepção integrada dos grafemas e de seus traços distintivos.', q: 'Alexia óptica literal: as letras perdem o sentido ou são identificadas de modo instável (lesões occipitais).' },
@@ -2092,6 +2146,8 @@ const SYS = {
     etapas: [{ f: ['prog'], n: 'Intenção e esquema linear do enunciado (fala interna)' }, { f: ['am', 'om'], rel: 'sim', n: 'Seleção das palavras: evocação lexical e ligação palavra–imagem' }, { f: ['cin', 'kin', 'fon'], rel: 'sim', n: 'Realização: articulemas, transições e controle acústico' }],
     tempo: 'Do plano ao som, em sucessão. Na etapa final, a aferentação cinestésica de cada articulema, a melodia cinética que liga um ao outro e o controle auditivo operam juntos, palavra a palavra.',
     fundo: [{ f: 'ativ', n: 'tônus' }],
+    tarefa: "Fala narrativa (enunciado próprio)", tarefaD: "Construir um enunciado próprio: contar uma história, descrever uma cena, falar sobre um tema. Do plano interno ao som, exige a intenção e o esquema linear do enunciado, a escolha das palavras e a realização articulatória.",
+    variantes: [{"n": "Séries automatizadas (contar, dias da semana, meses)", "ref": "HCF III.9, p. 521–524", "d": "Fala fluente que não é predicativa. Não depende do plano do enunciado nem da escolha das palavras, mas da melodia cinética: falha nas lesões anteriores. Nas lesões temporais (afasia acústico-mnéstica), contar até 10 costuma sair, mas os dias da semana e os meses perdem nomes ou se contaminam.", "etapas": [{"f": ["cin", "kin"], "rel": "sim", "n": "Reprodução fluente da série"}], "ciclo": null, "menos": ["prog", "om", "fon", "am"], "mais": []}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da fala.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'prog', papel: 'Plano do enunciado e seu esquema linear.', q: 'Afasia dinâmica: a fala narrativa empobrece com a articulação e a nomeação preservadas (II.4G, p. 237).' },
@@ -2105,6 +2161,8 @@ const SYS = {
     etapas: [{ f: ['fon'], n: 'Discriminação fonêmica e reconhecimento da palavra' }, { f: ['am'], n: 'Retenção da série sucessiva de palavras' }, { f: ['esp'], n: 'Conversão da série num esquema simultâneo de relações' }, { f: ['prog'], n: 'Busca ativa do sentido (frases complexas e textos)' }],
     fundo: [{ f: 'ativ', n: 'tônus da escuta' }],
     tempo: 'A fala chega como série sucessiva. Compreender uma construção lógico-gramatical exige convertê-la num esquema simultâneo, quase-espacial. Por isso a afasia acústico-mnéstica (perde a série) e a semântica (não faz a conversão) quebram o mesmo sistema em pontos vizinhos.',
+    tarefa: "Construções lógico-gramaticais e textos", tarefaD: "Compreender frases com relações lógico-gramaticais (“o irmão do pai”, “o círculo sob o quadrado”, comparações, construções invertidas) e textos. A série sucessiva das palavras precisa ser retida e convertida num esquema simultâneo, e o sentido do todo, buscado ativamente.",
+    variantes: [{"n": "Palavras isoladas e ordens simples", "ref": "HCF III.8, p. 489, 496–498", "d": "Mostrar o objeto nomeado ou cumprir uma ordem curta. É a forma mais elementar da compreensão, que resiste até a lesões corticais grosseiras: depende da discriminação dos sons e da retenção da palavra, sem a conversão das relações num esquema simultâneo.", "etapas": [{"f": ["fon"], "n": "Discriminação fonêmica e reconhecimento da palavra"}, {"f": ["am"], "n": "Retenção da palavra ou da ordem"}], "menos": ["esp", "prog"], "mais": []}],
     links: [
       { f: 'fon', papel: 'Discriminação de fonemas e reconhecimento da palavra.', q: 'Alienação do sentido das palavras: “ouve, mas não entende” (II.2D).' },
       { f: 'am', papel: 'Retenção de enunciados longos.', q: 'Perda de partes de frases longas e de séries de instruções (II.2E).' },
@@ -2115,6 +2173,8 @@ const SYS = {
     def: 'Discriminar o que se ouviu, reter a série e articulá-la em sequência.',
     etapas: [{ f: ['fon'], n: 'Discriminação do modelo ouvido' }, { f: ['am'], n: 'Retenção da série' }, { f: ['cin', 'kin'], rel: 'sim', n: 'Articulação: cada articulema e a passagem ao seguinte' }],
     fundo: [{ f: 'ativ', n: 'tônus' }, { f: 'prog', n: 'seletividade da resposta' }],
+    tarefa: "Séries de palavras", tarefaD: "Repetir séries de três ou quatro palavras, logo depois de ouvi-las. Além de discriminar o modelo e articulá-lo, é preciso reter a série na ordem certa.",
+    variantes: [{"n": "Sons e palavras isoladas", "ref": "HCF III.9C, p. 509–513", "d": "Repetir um som, uma sílaba ou uma palavra. Não há série para reter: o peso cai na discriminação do modelo e no achado dos articulemas. Na afasia motora aferente, a dificuldade aparece já aqui.", "etapas": [{"f": ["fon"], "n": "Discriminação do modelo ouvido"}, {"f": ["cin", "kin"], "rel": "sim", "n": "Articulação"}], "menos": ["am"], "mais": []}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da repetição.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'fon', papel: 'Discriminação do modelo ouvido.', q: 'Repete sons opostos como iguais e produz parafasias literais.' },
@@ -2126,6 +2186,8 @@ const SYS = {
     def: 'Reconhecer o objeto, evocar sua imagem, encontrar a palavra entre as alternativas e realizá-la sonoramente.',
     etapas: [{ f: ['vis'], n: 'Reconhecimento do objeto' }, { f: ['om'], n: 'Ligação entre imagem e palavra' }, { f: ['am'], n: 'Escolha da palavra entre alternativas' }, { f: ['fon'], n: 'Forma sonora da palavra' }],
     fundo: [{ f: 'ativ', n: 'tônus' }, { f: 'prog', n: 'inibição de respostas irrelevantes' }],
+    tarefa: "Objeto mostrado à vista", tarefaD: "Nomear objetos ou figuras mostrados. O objeto é reconhecido à vista, a imagem visual evoca a palavra, que é escolhida entre alternativas e realizada sonoramente.",
+    variantes: [{"n": "Objeto explorado pelo tato, de olhos fechados", "ref": "HCF II.3D, p. 168–171", "d": "O objeto é posto na mão sem ser visto. A percepção tátil é sucessiva e prolongada: a palpação reúne os traços um a um, o que permite examinar suas etapas. Na agnosia tátil, o paciente não reconhece pelo tato o que nomeia à vista.", "etapas": [{"f": ["cin", "tat"], "rel": "sim", "n": "Palpação e síntese tátil do objeto, com a imagem tátil retida"}, {"f": ["am"], "n": "Escolha da palavra entre alternativas"}, {"f": ["fon"], "n": "Forma sonora da palavra"}], "menos": ["vis", "om"], "mais": [{"f": "cin", "papel": "Palpação: análise e síntese sucessivas dos traços táteis do objeto.", "q": "Agnosia tátil: não reconhece pelo tato o objeto que nomeia à vista (II.3D, p. 168–171)."}, {"f": "tat", "papel": "Imagem tátil do objeto, retida durante a palpação e confrontada com a experiência.", "q": "Proposta: perde a forma já palpada antes de reconhecê-la, com a gnose tátil elementar preservada. A ligação entre a imagem tátil e a palavra não tem fator próprio nas fontes."}]}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da nomeação.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'vis', papel: 'Reconhecimento do objeto.', q: 'Não nomeia porque não reconhece (agnosia), e descreve as partes.' },
@@ -2138,6 +2200,8 @@ const SYS = {
     etapas: [{ f: ['esp'], n: 'Estrutura categorial do número e direção da operação' }, { f: ['prog', 'am'], rel: 'sim', n: 'Execução por etapas: programa e retenção dos resultados intermediários' }],
     fundo: [{ f: 'ativ', n: 'tônus' }],
     tempo: 'Sem a estrutura do número (etapa 1), não há operação. Na execução, o programa encadeia as operações enquanto os resultados intermediários ficam retidos: o cálculo mental depende disso, o escrito alivia a retenção.',
+    tarefa: "Cálculo mental", tarefaD: "Fazer de cabeça operações ditadas, como somas e subtrações que passam da dezena ou a contagem regressiva de 7 em 7 a partir de 100. Sem o papel, os resultados intermediários precisam ser retidos enquanto o programa encadeia as operações.",
+    variantes: [{"n": "Cálculo escrito (lápis e papel)", "ref": "HCF III.11, p. 554–557", "d": "Ler e escrever os números e operar em colunas. Entram a leitura dos algarismos e a escrita, e a disposição espacial dos algarismos ganha peso. O papel guarda os resultados intermediários, que no cálculo mental precisam ser retidos: por isso o cálculo escrito resiste quando o mental se perde.", "etapas": [{"f": ["vis", "om"], "rel": "sim", "n": "Leitura dos algarismos e do número escrito"}, {"f": ["esp"], "n": "Estrutura posicional do número e disposição em colunas"}, {"f": ["prog"], "n": "Programa da operação e verificação"}, {"f": ["cin", "kin"], "rel": "sim", "n": "Escrita dos algarismos e do resultado"}], "menos": ["am"], "mais": [{"f": "vis", "papel": "Reconhecimento visual dos algarismos.", "q": "Não reconhece algarismos isolados à vista, embora entenda o nome do número (p. 555)."}, {"f": "om", "papel": "Ligação entre o algarismo escrito e o nome do número.", "q": "Lê um número por outro, ou não acha o algarismo que corresponde ao número ditado (p. 554–555)."}, {"f": "cin", "papel": "Aferentação cinestésica da mão que escreve.", "q": "Algarismos mal traçados, com a mão “procurando” a posição (apraxia aferente, II.4C)."}, {"f": "kin", "papel": "Melodia cinética da escrita dos algarismos.", "q": "Perseverações de algarismos e de traços."}]}],
     links: [
       { f: 'esp', papel: 'Estrutura categorial e posicional do número, direção das operações.', q: 'Acalculia primária: troca de ordens de grandeza, confusão entre 17 e 71, perda do sentido do “emprestar” (parieto-occipital).' },
       { f: 'am', papel: 'Retenção das etapas intermediárias no cálculo mental.', q: 'O cálculo mental se perde, enquanto o escrito é preservado.' },
@@ -2145,11 +2209,14 @@ const SYS = {
       { f: 'ativ', papel: 'Tônus.', q: 'Na contagem regressiva (100 − 7), dá uma etapa só ou uma resposta ecolálica (II.6, p. 370).' } ] },
   praxis: { hemE: "Apraxias ideatória e ideomotora bilaterais, por lesão parietal esquerda (Goldberg, p. 239). Regulação verbal do ato.", hemD: "Orientação direta no próprio corpo e no espaço imediato. As lesões direitas produzem distúrbio do esquema corporal e anosognosia da hemiparesia esquerda (síndrome de Anton) (HCF, p. 376–377).", nome: 'Movimento voluntário (práxis)', ru: 'произвольное движение', ref: 'HCF II.3E, II.4C–E, II.5D; III.3, p. 414–435',
     def: 'Uma intenção formulada (muitas vezes verbalmente) se organiza num programa motor, realizado sob aferentação cinestésica e espacial e numa sequência cinética fluida.',
-    etapas: [{ f: ['prog'], n: 'Intenção (muitas vezes verbal) e programa motor' }, { f: ['esp', 'cin', 'kin'], rel: 'sim', n: 'Execução: coordenadas espaciais, aferentação cinestésica e melodia cinética' }],
+    etapas: [{ f: ['prog'], n: 'Intenção (muitas vezes verbal) e programa motor' }, { f: ['esp', 'cin', 'tat', 'kin'], rel: 'sim', n: 'Execução: coordenadas espaciais, aferentação cinestésica, esquema tátil-espacial do movimento e melodia cinética' }],
     ciclo: { para: 0, n: 'A aferentação de retorno compara o efeito com o programa, como no sistema funcional de Anokhin (HCF, p. 22).' },
     fundo: [{ f: 'ativ', n: 'tônus' }],
+    tarefa: "Gestos e posições a partir de instrução", tarefaD: "Fazer, sob instrução, posições e gestos da mão e séries de movimentos alternados. A intenção, muitas vezes verbal, organiza um programa motor, realizado sob aferentação cinestésica e espacial, numa sequência cinética fluida.",
+    variantes: [{"n": "Imitação de posições mostradas", "ref": "HCF III.3, p. 417–420", "d": "Reproduzir a posição da mão mostrada pelo examinador, sentado à frente. É preciso transpor a pose, sem espelhá-la. A dificuldade de transposição indica o componente óptico-espacial do ato; a tendência a espelhar pode ser ecopraxia, sinal de baixa atividade.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção da posição mostrada e sua transposição espacial"}, {"f": ["cin", "tat", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 0, "n": "A posição alcançada é comparada com o modelo."}, "fundo": [{"f": "ativ", "n": "tônus"}, {"f": "prog", "n": "evitar a ecopraxia e o espelho"}], "menos": [], "mais": [{"f": "vis", "papel": "Percepção da posição mostrada.", "q": "Não distingue as posições dos dedos no modelo."}]}, {"n": "Posições sem controle visual (mão atrás de um anteparo)", "ref": "HCF III.3, p. 416–417; II.4C, p. 204", "d": "Reproduzir com uma mão, de olhos fechados, a posição dada à outra, ou uma posição dos dedos com a mão escondida. Sem a visão, o ato depende só da análise cinestésica: é a prova que revela o defeito da base cinestésica do movimento.", "etapas": [{"f": ["prog"], "n": "Instrução"}, {"f": ["cin", "tat"], "rel": "sim", "n": "Análise cinestésica e esquema tátil-espacial da posição, sem a visão"}, {"f": ["kin"], "n": "Execução"}], "ciclo": null, "menos": ["esp"], "mais": []}, {"n": "Ação com objeto imaginário", "ref": "HCF III.3, p. 425", "d": "Mostrar como se mexe o chá, se enfia a linha na agulha ou se corta com a tesoura, sem os objetos. Sem o apoio do objeto, o programa tem de ser formado só a partir da instrução.", "etapas": [{"f": ["prog"], "n": "Programa a partir da instrução, sem o objeto"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução do gesto"}], "menos": ["tat"], "mais": []}, {"n": "Ação por instrução verbal complexa", "ref": "HCF III.3, p. 429–435", "d": "Cumprir uma série de movimentos dada verbalmente (por exemplo, responder a um sinal com um gesto e a outro com outro). Nas lesões temporais, a instrução complexa não é retida; nas frontais, é retida, mas não regula a ação, que escorrega para estereótipos.", "etapas": [{"f": ["fon", "am"], "rel": "sim", "n": "Compreensão e retenção da instrução"}, {"f": ["prog"], "n": "Programa motor regulado pela instrução"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 1, "n": "Cada resposta é confrontada com a instrução."}, "menos": ["tat"], "mais": [{"f": "fon", "papel": "Compreensão da instrução ouvida.", "q": "Desentende as palavras da instrução e troca os sinais."}, {"f": "am", "papel": "Retenção da instrução complexa.", "q": "Perde partes da instrução: incapacidade de reter uma instrução verbal complexa (lesões temporais, p. 435)."}]}],
     links: [
       { f: 'cin', papel: 'Aferentação cinestésica: endereçar o impulso aos músculos certos.', q: 'Apraxia aferente: “mão-pá”, procura da posição dos dedos, apraxia oral (II.4C, p. 202).' },
+      { f: 'tat', papel: 'Esquema tátil-cinestésico e espacial da postura e do movimento, retido para executar sem controle visual.', q: 'Movimentos diferenciados impossíveis sem o apoio da visão, em lesões parietais situadas atrás das pós-centrais, campo 5 (Foerster; HCF II.4C, p. 204). Leitura proposta, ligada ao fator novo.' },
       { f: 'kin', papel: 'Organização serial: a melodia cinética.', q: 'Apraxia cinética: perseverações e passagem fragmentada entre movimentos (II.4E, p. 215).' },
       { f: 'esp', papel: 'Coordenadas espaciais do movimento.', q: 'Apraxia espacial e construtiva: confusão de direção e de lado (II.3E, p. 171).' },
       { f: 'prog', papel: 'Subordinação do movimento ao programa, inclusive verbal.', q: 'Ecopraxia e substituição do programa por estereótipos. A instrução verbal não regula a ação (II.5D, p. 285).' },
@@ -2184,13 +2251,14 @@ const SYS = {
     hemE: "Memória voluntária e ativa, ligada à fala. Com lesão parietotemporal esquerda, cai cerca de 40% (4 de 10 palavras). O defeito aparece sobretudo na evocação tardia (HCF, p. 382–384; Khomskaya, p. 61).",
     hemD: "Com lesão direita, a voluntária cai só 20–25% (4–5 palavras). O direito sustenta o componente de fundo, a impressão direta: ver Memorização involuntária (HCF, p. 382–383).",
     def: 'Tarefa consciente de memorizar e depois reproduzir uma série (por exemplo, 10 palavras), sem meios auxiliares, repetida a cada ensaio até aprender. Luria separa duas formas de memória: a de orientação no tempo e no lugar, ligada ao estado de consciência (amnésias, Korsakov), e a atividade mnéstica de memorizar e evocar. Esta se divide em direta e mediada (lógica) (HCF, p. 469–470). Pelo critério de Smirnov e Zinchenko, a direta e a mediada são voluntárias; a involuntária é outro sistema (p. 381–382).',
-    etapas: [{ f: ['prog'], n: 'Intenção de memorizar e estratégia' }, { f: ['am', 'om'], rel: 'alt', n: 'Impressão modal da série (auditiva ou visual, conforme a apresentação)' }, { f: ['mem'], n: 'Retenção e proteção contra a interferência' }, { f: ['prog'], n: 'Evocação ativa e controle das intrusões' }],
+    etapas: [{ f: ['prog'], n: 'Intenção de memorizar e estratégia' }, { f: ['am', 'om', 'tat'], rel: 'alt', n: 'Impressão modal da série (auditiva, visual ou tátil, conforme a apresentação)' }, { f: ['mem'], n: 'Retenção e proteção contra a interferência' }, { f: ['prog'], n: 'Evocação ativa e controle das intrusões' }],
     fundo: [{ f: 'ativ', n: 'tônus' }],
-    tempo: 'Na etapa 2, o elo depende da modalidade: série ouvida, traço audioverbal; série vista, traço visual. Por isso a lesão temporal esquerda prejudica a série ouvida e poupa a vista (p. 131, 473). A sequência se repete a cada ensaio e forma a curva de aprendizagem.',
+    tempo: 'Na etapa 2, o elo depende da modalidade: série ouvida, traço audioverbal; série vista, traço visual; objetos explorados pelo tato, traço tátil. Por isso a lesão temporal esquerda prejudica a série ouvida e poupa a vista (p. 131, 473). A sequência se repete a cada ensaio e forma a curva de aprendizagem.',
     links: [
       { f: 'prog', papel: 'Intenção de memorizar, estratégia ao longo dos ensaios, evocação ativa e controle do que se reproduz.', q: 'Curva de aprendizagem em platô: repete sempre as mesmas 3–4 palavras, sem o esforço de lembrar; intrusões e perseverações. O reconhecimento fica mais preservado que a reprodução ativa (II.5F, p. 340–342).' },
       { f: 'am', papel: 'Traços audioverbais da série ouvida.', q: 'Volume reduzido e inibição dos traços por interferência homogênea, só na modalidade auditivo-verbal (II.2E, p. 131; III.7B, p. 473).' },
       { f: 'om', papel: 'Traços visuais, quando a série é apresentada à vista.', q: 'Memória visual específica prejudicada; a série ouvida fica preservada.' },
+      { f: 'tat', papel: 'Traços táteis, quando os objetos são explorados pelo tato, sem vê-los.', q: 'Defeito restrito à esfera tátil, sinal de lesão na extremidade cortical do analisador cutâneo-cinestésico (HCF, p. 470); as séries ouvida e vista ficam preservadas (proposta; ver o fator).' },
       { f: 'mem', papel: 'Estabilidade dos traços frente à interferência, em qualquer modalidade.', q: 'Esquecimento por interferência em qualquer modalidade, com consciência do defeito (II.6, p. 367–369; III.7D, p. 478–483).' },
       { f: 'ativ', papel: 'Tônus que sustenta a impressão.', q: 'Rendimento flutuante e fadiga (II.6).' } ] },
   memoria_med: { nome: 'Memorização mediada (lógica)', ru: 'опосредованное (логическое) запоминание', ref: 'HCF III.7E, p. 483–485; II.5F, p. 344–345',
@@ -2231,12 +2299,14 @@ const SYS = {
       { f: 'ativ', papel: 'Tônus.', q: 'Executa só uma etapa da operação (II.6).' } ] },
   construcao: { hemE: "Para Luria, a apractagnosia construtiva pode vir de lesão de qualquer lado, mas é mais grave com lesão occipitoparietal esquerda (relatado por Goldberg, p. 240).", hemD: "Orientação espacial direta. O paciente ignora o lado esquerdo do objeto ao desenhar (HCF, p. 377).", nome: 'Atividade construtiva (desenho, cubos de Kohs)', ru: 'конструктивная деятельность', ref: 'HCF II.3E; p. 348–349; III.6D, p. 464',
     def: 'Recodificar os “elementos de impressão” do modelo em “elementos de construção” e montá-los no espaço, comparando com o original (p. 348–349).',
-    etapas: [{ f: ['vis', 'esp'], rel: 'sim', n: 'Análise do modelo' }, { f: ['prog'], n: 'Recodificação dos elementos de impressão em elementos de construção, e plano' }, { f: ['kin'], n: 'Montagem serial' }, { f: ['prog'], n: 'Comparação com o modelo' }],
+    etapas: [{ f: ['vis', 'esp'], rel: 'sim', n: 'Análise do modelo' }, { f: ['prog'], n: 'Recodificação dos elementos de impressão em elementos de construção, e plano' }, { f: ['cin', 'kin'], rel: 'sim', n: 'Montagem serial, manipulando os blocos' }, { f: ['prog'], n: 'Comparação com o modelo' }],
     fundo: [{ f: 'ativ', n: 'tônus' }],
+    tarefa: "Construção com blocos a partir de um modelo (cubos de Kohs)", tarefaD: "Montar com blocos coloridos uma figura igual a um modelo desenhado (teste de Kohs). É preciso analisar o modelo, recodificar seus elementos de impressão em elementos de construção, montar os blocos manipulando-os e comparar o resultado com o modelo.",
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da construção.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'esp', papel: 'Análise espacial do material.', q: 'Tenta a fase preliminar e percebe os erros, mas falha nas relações espaciais (parieto-occipital, p. 349).' },
       { f: 'vis', papel: 'Percepção da forma do modelo.', q: 'Erros de forma e de reconhecimento do modelo.' },
+      { f: 'cin', papel: 'Aferentação cinestésica e tátil da mão ao manipular os blocos: a posição dos dedos e a forma e a orientação da peça, sentidas pelo tato.', q: 'Manipulação desajeitada, com a mão “procurando” a posição certa (apraxia aferente, HCF II.4C, p. 202); a análise do modelo fica preservada. Elo sugerido na revisão técnica.' },
       { f: 'kin', papel: 'Execução serial.', q: 'Perseveração de traços no desenho e repetição de elementos.' },
       { f: 'prog', papel: 'Análise preliminar e comparação com o modelo.', q: 'Começa a montar a partir de um fragmento, sem examinar o modelo e sem compará-lo com o resultado (Tsvetkova, p. 349).' } ] }
 };
@@ -2287,7 +2357,7 @@ AR[23].pre = "As síndromes límbicas estão “mal estudadas na neuropsicologia
 AR[24].pre = "As síndromes límbicas estão “mal estudadas na neuropsicologia” do ponto de vista da análise sindrômica (Khomskaya, p. 294).";
 AR[31].pre = "As síndromes límbicas estão “mal estudadas na neuropsicologia” do ponto de vista da análise sindrômica (Khomskaya, p. 294).";
 AR[32].pre = "As síndromes límbicas estão “mal estudadas na neuropsicologia” do ponto de vista da análise sindrômica (Khomskaya, p. 294).";
-const PRELIM = [{"t": "Classificação dos fatores", "txt": "Há noções gerais sobre os fatores, mas não conhecimentos concretos e exatos sobre seus tipos e sua natureza, e a classificação ainda não foi elaborada.", "ref": "Khomskaya, p. 269", "go": ["f", "ativ"], "onde": "Toda a camada de fatores do mapa"}, {"t": "Base fisiológica dos fatores", "txt": "Dos três níveis de descrição de um fator (morfológico, fisiológico, psicológico), o fisiológico é o menos estudado. Luria o chamava de tarefa de uma “fisiologia psicologicamente orientada”.", "ref": "Khomskaya, p. 268", "go": ["f", "inerc"], "onde": "Os fatores inespecíficos, como mobilidade/inércia, são justamente os que têm natureza neurodinâmica"}, {"t": "Hemisfério direito", "txt": "As síndromes do hemisfério direito só começaram a ser estudadas sistematicamente há pouco. Os métodos lurianos visam os níveis arbitrários, conscientes e mediados pela fala, e precisam de técnicas novas para os níveis automatizados. A natureza dos fatores das síndromes direitas ainda está por esclarecer.", "ref": "Khomskaya, p. 61; HCF, p. 384", "go": ["f", "hemi"], "onde": "A seção “Os dois hemisférios” de cada sistema funcional"}, {"t": "Estratégias hemisféricas", "txt": "Não há classificação única aceita das dicotomias hemisféricas. Tempo/espaço, análise/síntese e conhecido/desconhecido ainda não têm confirmação neuropsicológica exata.", "ref": "Khomskaya, p. 270–271", "go": ["f", "hemi"], "onde": "Fatores hemisféricos"}, {"t": "Comunicação inter-hemisférica", "txt": "O estudo sistemático desses fatores “só agora começa”. Ainda não foi feita análise neuropsicológica detalhada do “cérebro dividido”.", "ref": "Khomskaya, p. 272, 297", "go": ["d", "cc_post"], "onde": "Corpo caloso e comissura anterior"}, {"t": "Síndromes subcorticais", "txt": "A sindromologia das estruturas profundas é “trabalho para o futuro”. A literatura estrangeira descreve funções isoladas, não síndromes. Em comparação com as corticais, essas síndromes são mais difusas, multifatoriais e de recuperação diferente.", "ref": "Khomskaya, p. 272, 302", "go": ["d", "caudado"], "onde": "Núcleos da base, tálamo (VL)"}, {"t": "Sistema límbico", "txt": "As síndromes límbicas são bem descritas na neurologia e na psiquiatria, mas mal estudadas na neuropsicologia; das demais formações límbicas, além de hipocampo e cíngulo, sabe-se menos ainda.", "ref": "Khomskaya, p. 294", "go": ["d", "hipocampo"], "onde": "Hipocampo, amígdala, cíngulo (23, 24, 31, 32)"}, {"t": "Níveis do sistema não específico", "txt": "Distinguir qualitativamente as síndromes de cada nível (tronco, diencéfalo, límbico, córtex ínfero-medial) depende de métodos melhores para memória, emoção, consciência e atenção.", "ref": "Khomskaya, p. 296", "go": ["d", "reticular"], "onde": "Formação reticular, hipotálamo, regiões mediobasais"}, {"t": "Córtex inferior e medial", "txt": "As síndromes do córtex inferior e medial estão bem menos estudadas que as do convexo. As temporais ínfero-mediais, “ainda muito pouco”. Restam “muitos buracos negros” nas síndromes corticais.", "ref": "Khomskaya, p. 276, 282, 289", "go": ["b", 11], "onde": "Áreas 11, 47, 38, 28, 35, 36"}, {"t": "Lobos frontais", "txt": "O “mistério das funções dos lobos frontais” (Teuber) ainda não foi decifrado: a variabilidade da síndrome pré-frontal convexa não se explica só pelo tamanho da lesão.", "ref": "Khomskaya, p. 285", "go": ["b", 9], "onde": "Campos 9, 10, 46"}, {"t": "Esfera emotivo-pessoal", "txt": "Estamos longe de compreender toda a estrutura psicológica das reações e estados emocionais. Os correlatos psicofisiológicos dos transtornos emocionais nas lesões locais ainda são casos isolados.", "ref": "Khomskaya, p. 244", "go": ["f", "hemi"], "onde": "Diferenças emocionais entre os hemisférios (ver fatores hemisféricos)"}, {"t": "Cerebelo", "txt": "Nem o HCF nem Khomskaya descrevem uma síndrome neuropsicológica cerebelar. O mapa usa a leitura de Poliakov (mecanismo analisador-coordenador).", "ref": "HCF; Khomskaya, p. 299", "go": ["d", "cerebelo"], "onde": "Cerebelo, vermis, denteado"}];
+const PRELIM = [{"t": "Classificação dos fatores", "txt": "Há noções gerais sobre os fatores, mas não conhecimentos concretos e exatos sobre seus tipos e sua natureza, e a classificação ainda não foi elaborada.", "ref": "Khomskaya, p. 269", "go": ["f", "ativ"], "onde": "Toda a camada de fatores do mapa"}, {"t": "Base fisiológica dos fatores", "txt": "Dos três níveis de descrição de um fator (morfológico, fisiológico, psicológico), o fisiológico é o menos estudado. Luria o chamava de tarefa de uma “fisiologia psicologicamente orientada”.", "ref": "Khomskaya, p. 268", "go": ["f", "inerc"], "onde": "Os fatores inespecíficos, como mobilidade/inércia, são justamente os que têm natureza neurodinâmica"}, {"t": "Hemisfério direito", "txt": "As síndromes do hemisfério direito só começaram a ser estudadas sistematicamente há pouco. Os métodos lurianos visam os níveis arbitrários, conscientes e mediados pela fala, e precisam de técnicas novas para os níveis automatizados. A natureza dos fatores das síndromes direitas ainda está por esclarecer.", "ref": "Khomskaya, p. 61; HCF, p. 384", "go": ["f", "hemi"], "onde": "A seção “Os dois hemisférios” de cada sistema funcional"}, {"t": "Estratégias hemisféricas", "txt": "Não há classificação única aceita das dicotomias hemisféricas. Tempo/espaço, análise/síntese e conhecido/desconhecido ainda não têm confirmação neuropsicológica exata.", "ref": "Khomskaya, p. 270–271", "go": ["f", "hemi"], "onde": "Fatores hemisféricos"}, {"t": "Comunicação inter-hemisférica", "txt": "O estudo sistemático desses fatores “só agora começa”. Ainda não foi feita análise neuropsicológica detalhada do “cérebro dividido”.", "ref": "Khomskaya, p. 272, 297", "go": ["d", "cc_post"], "onde": "Corpo caloso e comissura anterior"}, {"t": "Síndromes subcorticais", "txt": "A sindromologia das estruturas profundas é “trabalho para o futuro”. A literatura estrangeira descreve funções isoladas, não síndromes. Em comparação com as corticais, essas síndromes são mais difusas, multifatoriais e de recuperação diferente.", "ref": "Khomskaya, p. 272, 302", "go": ["d", "caudado"], "onde": "Núcleos da base, tálamo (VL)"}, {"t": "Sistema límbico", "txt": "As síndromes límbicas são bem descritas na neurologia e na psiquiatria, mas mal estudadas na neuropsicologia; das demais formações límbicas, além de hipocampo e cíngulo, sabe-se menos ainda.", "ref": "Khomskaya, p. 294", "go": ["d", "hipocampo"], "onde": "Hipocampo, amígdala, cíngulo (23, 24, 31, 32)"}, {"t": "Níveis do sistema não específico", "txt": "Distinguir qualitativamente as síndromes de cada nível (tronco, diencéfalo, límbico, córtex ínfero-medial) depende de métodos melhores para memória, emoção, consciência e atenção.", "ref": "Khomskaya, p. 296", "go": ["d", "reticular"], "onde": "Formação reticular, hipotálamo, regiões mediobasais"}, {"t": "Córtex inferior e medial", "txt": "As síndromes do córtex inferior e medial estão bem menos estudadas que as do convexo. As temporais ínfero-mediais, “ainda muito pouco”. Restam “muitos buracos negros” nas síndromes corticais.", "ref": "Khomskaya, p. 276, 282, 289", "go": ["b", 11], "onde": "Áreas 11, 47, 38, 28, 35, 36"}, {"t": "Lobos frontais", "txt": "O “mistério das funções dos lobos frontais” (Teuber) ainda não foi decifrado: a variabilidade da síndrome pré-frontal convexa não se explica só pelo tamanho da lesão.", "ref": "Khomskaya, p. 285", "go": ["b", 9], "onde": "Campos 9, 10, 46"}, {"t": "Esfera emotivo-pessoal", "txt": "Estamos longe de compreender toda a estrutura psicológica das reações e estados emocionais. Os correlatos psicofisiológicos dos transtornos emocionais nas lesões locais ainda são casos isolados.", "ref": "Khomskaya, p. 244", "go": ["f", "hemi"], "onde": "Diferenças emocionais entre os hemisférios (ver fatores hemisféricos)"}, {"t": "Memória tátil-espacial", "txt": "Luria fala de defeitos de impressão dos traços limitados à esfera tátil, e Khomskaya, de perturbações da memória tátil e espacial com a gnose preservada, mas nenhum dos dois nomeia o fator nem os campos. A atribuição a 5 e 7 é proposta da revisão técnica, com apoio na literatura atual.", "ref": "HCF, p. 470; Khomskaya, p. 185", "go": ["f", "tat"], "onde": "Campos 5 e 7, pré-cúneo"}, {"t": "Cerebelo", "txt": "Nem o HCF nem Khomskaya descrevem uma síndrome neuropsicológica cerebelar. O mapa usa a leitura de Poliakov (mecanismo analisador-coordenador) e traz, como proposta da revisão técnica, um fator analisador-coordenador, que só se firma se a análise do erro mostrar um defeito próprio nos sistemas.", "ref": "HCF; Khomskaya, p. 299", "go": ["f", "cer"], "onde": "Cerebelo, vermis, denteado"}];
 /* Articulações entre sistemas. t: usa (a usa b como componente), inv (processos inversos), reg (a regula b), gen (a se forma a partir de b), forma (a é forma particular de b), sel (a organiza a seletividade de b), fundo (a se apoia em b como fundo). */
 const RTIP = {
   usa: ['usa como componente', 'entra como componente em', '#3b6ea8'],
@@ -2346,11 +2416,14 @@ const FSEC = [
     { t: '1ª unidade · tônus e vigília', fs: ['ativ'] },
     { t: '2ª unidade · recepção, análise e armazenamento', fs: ['fon', 'am', 'vis', 'om', 'cin', 'esp'] },
     { t: '3ª unidade · programação, regulação e controle', fs: ['kin', 'prog'] }] },
-  { t: 'Ampliações de Khomskaya (2003), em discussão', d: 'Fatores que Khomskaya acrescenta à lista de Luria. São as nomenclaturas mais amplas e menos circunscritas da literatura; ficam aqui como articulação com o modelo dela, sem o mesmo estatuto dos nove clássicos.', subs: [
+  { t: 'Ampliações de Khomskaya (2003), em discussão', d: 'Fatores que Khomskaya acrescenta à lista de Luria, ou que seu modelo permite incluir. Em geral são as nomenclaturas mais amplas e menos circunscritas da literatura; ficam aqui como articulação com o modelo dela, sem o mesmo estatuto dos nove clássicos.', subs: [
+    { t: 'Modalmente específicos (grupo 1)', fs: ['tat'], nota: 'Proposta da revisão técnica, por paralelo com as memórias audioverbal e visual. Tem cor própria porque é circunscrito, mas fica fora dos nove clássicos.' },
     { t: 'Modalmente inespecíficos (grupo 2)', fs: ['mem', 'inerc', 'espont'] },
     { t: 'Entre os hemisférios (grupos 4 e 5)', fs: ['hemi', 'comm'] },
-    { t: 'Estruturas profundas e condições gerais (grupos 6 e 7)', fs: ['geral'], nota: 'O grupo 6 não tem cor própria: em Luria, as lesões profundas (HCF II.6) aparecem pela ativação e pela memória; as síndromes descritas por Khomskaya estão nas fichas do caudado, do VL, do hipocampo e do cíngulo.' }] }];
-const KNOTA = { mem: 'em Luria, função da 1ª unidade (ativação)', inerc: 'menção vaga em Luria', espont: 'proposta de Khomskaya; menção vaga em Luria', hemi: 'em Luria, localização inter-hemisférica, não fator', comm: 'em Luria, síndromes de comissurotomia (HCF, p. 381)', geral: 'condições gerais, não localizáveis' };
+    { t: 'Estruturas profundas e condições gerais (grupos 6 e 7)', fs: ['geral'], nota: 'O grupo 6 não tem cor própria: em Luria, as lesões profundas (HCF II.6) aparecem pela ativação e pela memória; as síndromes descritas por Khomskaya estão nas fichas do caudado, do VL, do hipocampo e do cíngulo.' }] },
+  { t: 'Propostas em aberto', letra: 'P', d: 'A lista de fatores não está fechada (Khomskaya, p. 269). Aqui entram propostas ainda sem apoio direto nas fontes da NPHC, e o espaço para o usuário propor o seu.', subs: [
+    { t: 'Revisão técnica', fs: ['cer'], nota: 'Proposta a partir do mecanismo analisador-coordenador de Poliakov. Ainda não entra nos sistemas.' }] }];
+const KNOTA = { cer: 'sem síndrome em Luria e Khomskaya; leitura de Poliakov', tat: 'memórias tátil e espacial em Khomskaya (p. 185); proposta da revisão técnica', mem: 'em Luria, função da 1ª unidade (ativação)', inerc: 'menção vaga em Luria', espont: 'proposta de Khomskaya; menção vaga em Luria', hemi: 'em Luria, localização inter-hemisférica, não fator', comm: 'em Luria, síndromes de comissurotomia (HCF, p. 381)', geral: 'condições gerais, não localizáveis' };
 const FSUB = FSEC.flatMap(x => x.subs);
 const FORD = FSEC.flatMap(s => s.subs.flatMap(x => x.fs));
 const FS = {}; for (const s in SYS) for (const l of SYS[s].links) (FS[l.f] = FS[l.f] || []).push(s);
@@ -2376,7 +2449,11 @@ const MORD = ['coord', 'acoord', 'auto', 'sub', 'neo'];
 const FRONT = new Set([4, 6, 8, 9, 10, 11, 24, 25, 32, 33, 44, 45, 46, 47]);
 const ANTN = new Set(['M1', 'M1V', 'PM2', 'PM2V', 'PF3', 'A44', 'A45']);
 const OFFZ = 26;
-const st = { hemiPaint: false, sys: null, div: 'all', grad: false, gsel: new Set(), mode: 'zonas', hemi: 'B', medSide: null, latSide: 'L', lastView: 'lat', labsPrev: null, infl: 0, cortex: 'op', labs: false, sel: new Set(), lit: new Set(), hov: null, groups: new Set(Object.keys(GR)) };
+const PCOR = '#d6336c', PSET = new Set(FSEC.filter(s => s.letra === 'P').flatMap(s => s.subs.flatMap(x => x.fs)));
+const PROP = (() => { let o = null; try { o = JSON.parse(localStorage.getItem('nphc-proposta')); } catch (e) {} o = o && typeof o === 'object' ? o : {}; return { nome: String(o.nome || ''), desc: String(o.desc || ''), autor: String(o.autor || ''), ano: String(o.ano || ''), obra: String(o.obra || ''), pag: String(o.pag || ''), outras: String(o.outras || ''), areas: Array.isArray(o.areas) ? o.areas.filter(Number.isFinite) : [], deep: Array.isArray(o.deep) ? o.deep.filter(k => typeof k === 'string') : [] }; })();
+const propSalvar = () => { try { localStorage.setItem('nphc-proposta', JSON.stringify(PROP)); } catch (e) {} };
+const propResumo = () => [PROP.areas.length ? (PROP.areas.length > 1 ? 'campos ' : 'campo ') + PROP.areas.slice().sort((a, b) => a - b).join(', ') : '', PROP.deep.map(k => META(k) ? (META(k).nuc || META(k).n) : k).join(', ')].filter(Boolean).join('; ');
+const st = { prop: false, hemiPaint: false, sys: null, div: 'all', grad: false, gsel: new Set(), mode: 'zonas', hemi: 'B', medSide: null, latSide: 'L', lastView: 'lat', labsPrev: null, infl: 0, cortex: 'op', labs: false, sel: new Set(), lit: new Set(), hov: null, groups: new Set(Object.keys(GR)) };
 
 /* ---------- metadados das estruturas profundas ---------- */
 const META = base => {
@@ -2395,6 +2472,7 @@ const W = [1, 1, 1], GREY = hex('#c9c5bd'), MW = hex('#d8d3ca'), NEUT = hex('#b9
 const brodCol = b => { const h = (b * 0.618034) % 1, s = .55, l = .55; const f = n => { const k = (n + h * 12) % 12; return l - s * Math.min(l, 1 - l) * Math.max(-1, Math.min(k - 3, 9 - k, 1)); }; return [f(0), f(8), f(4)]; };
 function areaColor(b, strong) {
   const A = AR[b]; if (!b) return MW; if (!A) return GREY;
+  if (st.prop && PROP.areas.includes(b)) return hex(PCOR);
   if (st.mode === 'zonas') return hex(ZN[A.z].cor);
   if (st.mode === 'anal') return mix(hex(AN[A.a].cor), W, A.z === 'S' && !strong ? .58 : 0);
   if (st.mode === 'luria') return strong ? hex(UN[A.u].cor) : mix(hex(UN[A.u].cor), W, { P: 0, S: .3, T: .52, M: .1 }[A.zl || A.z]);
@@ -2406,6 +2484,7 @@ function deepColor(m) {
   if (!m.mech && m.u == null) return hex(m.cor);           // ventrículos
   if (st.mode === 'mec') return hex(MEC[m.mech].cor);
   if (st.mode === 'luria') return m.u ? hex(UN[m.u].cor) : NEUT;
+  if (st.prop && PROP.deep.includes(m.key)) return hex(PCOR);
   if (st.mode === 'fat' || st.mode === 'sys') return FD[m.key] ? hex(FAT[FD[m.key]].cor) : NEUT;
   return hex(m.cor);
 }
@@ -2474,7 +2553,7 @@ function build(D) {
     deep.push({ key, base, side, m, mesh, el, c: new THREE.Vector3(...tx(t.c.map(x => x * 50), 0, 50)) });
   }
   $('#load').remove();
-  buildGrad(); applyVis(); recolor(); setView('lat', true); showMode(); resize(); loop();
+  buildGrad(); applyVis(); recolor(); setView('lat', true); showMode(); resize(); loop(); fillDeepIdx();
 }
 
 /* ---------- gradientes de Goldberg ---------- */
@@ -2569,11 +2648,32 @@ function factorPoint(Hh, f) {
   if (st.div === 'sep') out.z += FRONT.has(Hh.L[v]) ? -OFFZ : OFFZ;
   return out;
 }
+/* variantes conforme a tarefa: troca etapas, fundo e ciclo e acrescenta ou tira elos */
+function sysAt(s) {
+  const S = SYS[s], i = st.var && st.var.s === s ? st.var.i : -1, V = S && S.variantes && S.variantes[i];
+  if (!V) return S;
+  const menos = new Set(V.menos || []);
+  return Object.assign({}, S, { etapas: V.etapas || S.etapas, fundo: V.fundo || S.fundo, ciclo: 'ciclo' in V ? V.ciclo : (V.etapas ? null : S.ciclo),
+    tempo: V.tempo || null, links: S.links.filter(l => !menos.has(l.f)).concat(V.mais || []), _var: V });
+}
+function sysVarHtml(s) {
+  const S = SYS[s]; if (!S.tarefa) return '';
+  const i = st.var && st.var.s === s ? st.var.i : -1, V = S.variantes && S.variantes[i];
+  const b = (k, txt) => `<button class="chip" data-var="${k}" aria-pressed="${k === i}">${esc(txt)}</button>`;
+  let h = `<h3 style="margin-top:14px">Conforme a tarefa</h3><div class="chips vars">${b(-1, S.tarefa)}${(S.variantes || []).map((v, k) => b(k, v.n)).join('')}</div>`;
+  if (V) {
+    const base = new Set(S.links.map(l => l.f)), now = new Set(sysAt(s).links.map(l => l.f));
+    const ent = [...now].filter(f => !base.has(f)), sai = [...base].filter(f => !now.has(f));
+    const fc = l => l.map(f => `<button class="chip" data-f="${f}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)}</button>`).join('');
+    h += `<p>${esc(V.d)} <span class="note">(${esc(V.ref)})</span></p>` + (ent.length ? `<p class="note" style="margin:4px 0 2px">Entram nesta tarefa:</p><div class="chips">${fc(ent)}</div>` : '') + (sai.length ? `<p class="note" style="margin:6px 0 2px">Saem ou perdem o peso:</p><div class="chips dim">${fc(sai)}</div>` : '');
+  } else h += (S.tarefaD ? `<p>${esc(S.tarefaD)} <span class="note">(${esc(S.ref)})</span></p>` : '') + `<p class="note">${S.variantes && S.variantes.length ? 'Esta é a tarefa de referência. Escolha outra para ver que elos entram e saem.' : 'Tarefa de referência. As variações desta tarefa ainda não foram sistematizadas.'}</p>`;
+  return h;
+}
 function drawSys() {
   while (SYSG.children.length) { const c = SYSG.children.pop(); c.geometry.dispose(); }
   syslabs.forEach(l => l.el.remove()); syslabs.length = 0;
   if (!st.sys) return;
-  const S = SYS[st.sys], both = st.hemi === 'B';
+  const S = sysAt(st.sys), both = st.hemi === 'B';
   const sides = both ? ['left', 'right'] : [st.hemi === 'R' ? 'right' : 'left'];
   const sx0 = sides.length === 1 ? (sides[0] === 'left' ? -1 : 1) : 0;
   const hub = both ? new THREE.Vector3(0, 60, -112) : new THREE.Vector3(sx0 * 55, 56, -112);
@@ -2729,7 +2829,7 @@ function placeLabels() {
   for (const l of syslabs) put(l.el, l.p, w, h);
   const shown = new Set();
   for (const D of deep) {
-    const show = D.on && D.mesh.visible && !shown.has(D.base) && (st.cortex !== 'op' || ['tronco', 'cerebelo'].includes(D.m.grp));
+    const show = D.on && D.mesh.visible && !shown.has(D.base) && !st.sys && (st.cortex !== 'op' || ['tronco', 'cerebelo'].includes(D.m.grp));
     if (!show) { D.el.style.display = 'none'; continue; }
     shown.add(D.base); put(D.el, D.c, w, h);
   }
@@ -2821,7 +2921,7 @@ cv.addEventListener('pointermove', ev => {
     const p = pick(ev), r = view.getBoundingClientRect();
     let txt = '', hv = null;
     if (p && p.grd) { txt = `<b>Gradiente ${p.gl.map(g => esc(GRD[g].nome.toLowerCase())).join(' / ')}</b><br>${p.gl.map(g => esc(GRD[g].esq)).join(' / ')} · clique para percorrer`; }
-    else if (p && p.sysf) { const L = SYS[st.sys].links.find(l => l.f === p.sysf); txt = `<b>${esc(FAT[p.sysf].nome)}</b><br>${esc(L.papel)}`; }
+    else if (p && p.sysf) { const L = sysAt(st.sys).links.find(l => l.f === p.sysf); txt = `<b>${esc(FAT[p.sysf].nome)}</b><br>${esc(L.papel)}`; }
     else if (p && p.gn) { const g = GN[p.gn]; hv = null; txt = `<b>${esc(g.lab)}${NOSIDE.has(p.gn) ? '' : p.side}</b> · ${esc(g.nome)}<br>Goldberg, nível ${g.lvl === 2.5 ? '2–3' : g.lvl}`; }
     else if (p && p.deep) { const m = META(p.deep); hv = 'd' + p.deep; txt = `<b>${esc(m.n)}</b><br>${esc(GR[m.grp])}${m.u ? ' · ' + esc(UN[m.u].nome) : ''}`; }
     else if (p && p.b && AR[p.b]) { hv = 'a' + p.b; const A = AR[p.b];
@@ -2840,6 +2940,7 @@ cv.addEventListener('pointerdown', ev => { down = [ev.clientX, ev.clientY]; });
 cv.addEventListener('pointerup', ev => {
   if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 5) return; down = null;
   const p = pick(ev);
+  if (st.prop) { if (p && p.deep) propToggle('deep', p.deep); else if (p && p.b && AR[p.b]) propToggle('areas', p.b); return; }
   if (p && p.grd) showGrad(p.grd, p.side); else if (p && p.sysf) showFactor(p.sysf); else if (p && p.gn) showNode(p.gn, p.side); else if (p && p.deep) showDeep(p.deep); else if (p && p.b && AR[p.b]) showArea(p.b); else showMode();
 });
 
@@ -2853,7 +2954,7 @@ const bchips = list => `<div class="chips">${list.filter(b => AR[b]).map(b => `<
 const dchips = list => `<div class="chips">${list.map(k => { const m = META(k); return `<button class="chip" data-d="${k}"><i style="background:${esc(m.cor)}"></i>${esc(m.nuc || m.n)}</button>`; }).join('')}</div>`;
 const deepBases = () => [...new Set(deep.map(D => D.base))];
 function clearSys() { if (st.sys) { st.sys = null; drawSys(); } }
-function setSel(areas, lit, gs, grd) { st.grd = grd || null; st.hemiPaint = false; st.sel = new Set(areas); st.lit = new Set(lit || []); st.gsel = new Set(gs || []); recolor(); if (gnodes.length) applyGrad(); }
+function setSel(areas, lit, gs, grd) { st.prop = false; st.grd = grd || null; st.hemiPaint = false; st.sel = new Set(areas); st.lit = new Set(lit || []); st.gsel = new Set(gs || []); recolor(); if (gnodes.length) applyGrad(); }
 const back = '<button class="back" data-back>← legenda</button>';
 const ensureVisible = base => { const g = META(base).grp; if (!st.groups.has(g)) { st.groups.add(g); syncGroups(); applyVis(); } };
 
@@ -2876,12 +2977,13 @@ function showMode() {
     h = '<h3>Sistemas funcionais complexos</h3><p class="note">Uma função psicológica superior é um sistema funcional: a tarefa e o efeito são constantes, os meios e elos são variáveis (Anokhin; Bernstein) (HCF, p. 22). Qualquer elo lesado perturba o sistema, cada um de modo diferente (HCF, p. 78). Em função do conteúdo da tarefa, mudam o peso e o grau de contribuição dos elos do sistema funcional, ou fatores (por exemplo, escrita à cópia, ao ditado ou espontânea; leitura em voz alta ou para si). Com a automatização (decorrente da aprendizagem), o peso de cada elo muda (localização dinâmica). A ativação aparece como fundo em todos os sistemas, assim como a programação, regulação e controle. Clique num sistema: o mapa triangula os fatores envolvidos, com raios do sistema a cada fator. Setas pretas: etapas sucessivas. Nó branco: elos simultâneos na mesma etapa (traço contínuo) ou alternativos (tracejado). Seta vermelha: retorno de controle. Fatores “de fundo” atuam durante todo o curso.</p>';
     items = Object.keys(SYS).map(s => `<button class="lg" data-s="${s}"><span class="sw" style="background:conic-gradient(${SYS[s].links.map((l, i, A) => `${FAT[l.f].cor} ${i / A.length * 100}% ${(i + 1) / A.length * 100}%`).join(',')})"></span><span>${esc(SYS[s].nome)}<small>${esc(stageTxt(SYS[s]))}${SYS[s].fundo ? ' · fundo: ' + SYS[s].fundo.map(x => esc(FAT[x.f].curto)).join(', ') : ''}</small></span></button>`);
   } else if (st.mode === 'fat') {
-    h = '<h3>Fatores neuropsicológicos</h3><p class="note"><b>Fator.</b> Os fatores são processos fisiológicos locais que se desenvolvem em determinadas estruturas cerebrais formadoras de síndromes, a unidade mínima estrutural e funcional do encéfalo que determina o caráter da síndrome neuropsicológica. Por fator, Luria compreendia “a função propriamente dita” (<i>modus operandi</i>) de uma ou outra estrutura encefálica, o princípio ou modo de seu funcionamento. Cada área do sistema funcional que está na base de uma função psicológica (linguagem, percepção, movimentos etc.) responde por determinado grupo de fatores; quebrado um fator, vários sistemas se desorganizam de uma vez, cada um a seu modo (HCF, p. 82–84; Luria, 1966, p. xvii, 49–51).</p><p class="note">Ordem: primeiro os nove fatores clássicos de Luria, por unidade funcional; depois as ampliações de Khomskaya (2003, p. 268–273), em discussão. Cada fator traz o grupo correspondente na tipologia de Khomskaya; o ponto colorido indica a unidade de Luria. </p><p class="note"> Clique num fator para acender suas áreas, seus nós e linhas no esquema de Goldberg e suas estruturas profundas. As linhas seguem a Fig. 2–3 de Goldberg (1990): contínuas à esquerda, tracejadas à direita.</p>';
-    const fbtn = (f, ext) => { const F = FAT[f]; const sub = ext ? `Khomskaya, grupo ${F.g} · ${esc(KNOTA[f] || '')}` : `<span style="color:${UCOR(F.u)}">●</span> ${esc(uname(F.u))} · Khomskaya, grupo ${F.g}`;
+    h = '<h3>Fatores neuropsicológicos</h3><p class="note"><b>Fator.</b> Os fatores são processos fisiológicos locais que se desenvolvem em determinadas estruturas cerebrais formadoras de síndromes, a unidade mínima estrutural e funcional do encéfalo que determina o caráter da síndrome neuropsicológica. Por fator, Luria compreendia “a função propriamente dita” (<i>modus operandi</i>) de uma ou outra estrutura encefálica, o princípio ou modo de seu funcionamento. Cada área do sistema funcional que está na base de uma função psicológica (linguagem, percepção, movimentos etc.) responde por determinado grupo de fatores; quebrado um fator, vários sistemas se desorganizam de uma vez, cada um a seu modo (HCF, p. 82–84; Luria, 1966, p. xvii, 49–51).</p><details class="notas"' + (st.notas ? ' open' : '') + '><summary title="Mostrar ou ocultar as notas"><span class="ni">i</span>Notas importantes<span class="nc">3</span></summary><div class="nb"><p class="note"><b>Fatores do adulto.</b> Os fatores, como aparecem nestes esquemas, são os do adulto: resultam de um longo processo de desenvolvimento e aprendizagem e são uma formação tardia da ontogênese. Em cada etapa do desenvolvimento, a atividade consciente se realiza por sistemas funcionais diferentes, que não resultam da simples maturação dos neurônios, mas da comunicação com os adultos e da linguagem (Luria, 2010, p. 196–198). Por isso uma lesão de zona secundária na criança perturba todo o desenvolvimento das formas complexas que dependem dela, enquanto no adulto o mesmo defeito é compensado por sistemas já formados (Vigotski, citado em Luria, 2010, p. 207). Os fatores na infância, pela dificuldade de sistematizar uma organização ainda em mudança, foram menos estudados.</p><p class="note"><b>Memória (retenção ou armazenamento).</b> Nos fatores mnésticos modais, o que se localiza é a retenção ou o armazenamento do traço de uma modalidade, não a memória. A memória é uma função psicológica superior, um sistema funcional que recruta vários elos, inclusive frontais (ver os sistemas de memorização). Por isso a escola mexicana de Luis Quintanar Rojas e Yulia Solovieva traduz esses fatores como retenção audioverbal e retenção visual.</p><p class="note"><b>Ordem da legenda.</b> Primeiro os nove fatores clássicos de Luria, por unidade funcional; depois as ampliações de Khomskaya (2003, p. 268–273), em discussão. Cada fator traz o grupo correspondente na tipologia de Khomskaya; o ponto colorido indica a unidade de Luria. </p></div></details><p class="note"> Clique num fator para acender suas áreas, seus nós e linhas no esquema de Goldberg e suas estruturas profundas. As linhas seguem a Fig. 2–3 de Goldberg (1990): contínuas à esquerda, tracejadas à direita.</p>';
+    const fbtn = (f, ext) => { const F = FAT[f]; const sub = PSET.has(f) ? esc(KNOTA[f] || '') : ext ? `Khomskaya, grupo ${F.g} · ${esc(KNOTA[f] || '')}` : `<span style="color:${UCOR(F.u)}">●</span> ${esc(uname(F.u))} · Khomskaya, grupo ${F.g}`;
       return `<button class="lg" data-f="${f}" title="${esc(F.def)}"><span class="sw" style="background:${F.cor}${ext ? ';opacity:.75' : ''}"></span><span>${esc(F.nome)}<small>${sub}</small></span></button>`; };
     items = [`<button class="lg" data-elem="1"><span class="sw" style="background:${ELEM.cor}"></span><span>${esc(ELEM.nome)}<small>17, 41, 3, 4 · déficits elementares; como fator, ponto em aberto</small></span></button>`]
-      .concat(FSEC.flatMap((sec, si) => [`<div class="fg"><span class="fgn">${si ? 'K' : 'L'}</span><div><b>${esc(sec.t)}</b><small>${esc(sec.d)}</small></div></div>`]
-        .concat(sec.subs.flatMap(x => [`<p class="fsub">${esc(x.t)}</p>`].concat(x.fs.map(f => fbtn(f, si > 0)), x.nota ? [`<p class="note" style="margin:2px 0 6px 34px">${esc(x.nota)}</p>`] : [])))),
+      .concat(FSEC.flatMap((sec, si) => [`<div class="fg"><span class="fgn">${sec.letra || (si ? 'K' : 'L')}</span><div><b>${esc(sec.t)}</b><small>${esc(sec.d)}</small></div></div>`]
+        .concat(sec.subs.flatMap(x => [`<p class="fsub">${esc(x.t)}</p>`].concat(x.fs.map(f => fbtn(f, si > 0)), x.nota ? [`<p class="note" style="margin:2px 0 6px 34px">${esc(x.nota)}</p>`] : [])),
+          sec.letra === 'P' ? [`<p class="fsub">Sua proposta</p>`, `<button class="lg" data-prop="1" title="Escolher campos e estruturas no modelo e propor um fator"><span class="sw prop"></span><span>${PROP.nome ? esc(PROP.nome) : 'Propor um fator'}<small>${PROP.areas.length + PROP.deep.length ? esc(propResumo()) : 'escolha os campos e as estruturas no modelo e envie a proposta'}</small></span></button>`] : [])),
       [`<div class="fg" id="lg-grd"><span class="fgn" style="background:none;color:var(--ink)">◇</span><div><b>Gradientes de Goldberg</b><small>Clique num gradiente, ou numa linha do modelo, para percorrê-lo de polo a polo.</small></div></div>`],
       
       Object.keys(GRD).filter(g => !GRD[g].onlyR).map(g => `<button class="lg" data-grd="${g}"><span class="sw" style="background:${GRD[g].cor}"></span><span>${esc(GRD[g].nome)}<small>${esc(GRD[g].esq)} · ${GRD[g].seq.map(n => GN[n].lab).join(' → ')}</small></span></button>`));
@@ -2889,7 +2991,6 @@ function showMode() {
     h = '<h3>Anatomia</h3><p class="note">Áreas de Brodmann em cores arbitrárias; estruturas profundas em cores anatômicas. Os números marcam o centro de cada área.</p>';
   }
   info.innerHTML = h + `<div class="legend">${items.join('')}</div>` +
-    `<h3 style="margin-top:8px">Estruturas profundas</h3>${Object.keys(GR).map(g => `<p class="note" style="margin:10px 0 2px">${esc(GR[g])}</p>${dchips(deepBases().filter(b => META(b).grp === g))}`).join('')}` +
     `<p class="note" style="margin-top:14px">Arraste para girar, use a roda ou a pinça para aproximar. <b>Inflar</b> abre os sulcos do córtex. Com um só hemisfério, as estruturas medianas aparecem em corte sagital.</p>`;
 }
 function showZone(z) {
@@ -2925,7 +3026,7 @@ function showFactor(f) {
   F.deep.forEach(ensureVisible);
   setSel(F.areas, F.deep, F.nodes);
   if (f === 'hemi') { st.hemiPaint = true; if (st.hemi !== 'B') { st.hemi = 'B'; syncSeg('#hemi', 'B'); applyVis(); applyGrad(); } setView('sup'); recolor(); }
-  info.innerHTML = back + `<h3 style="color:${F.cor}">${esc(F.nome)}</h3><p class="ru">${esc(F.ru)}</p><p class="note">Grupo ${F.g} de Khomskaya: ${esc(FGRP[F.g][0])}</p><div class="chips">${F.u ? uchip(F.u) : ''}</div>
+  info.innerHTML = back + `<h3 style="color:${F.cor}">${esc(F.nome)}</h3><p class="ru">${esc(F.ru)}</p><p class="note">${PSET.has(f) ? `Proposta em aberto, fora da tipologia de Khomskaya; nela, ficaria no grupo ${F.g} (${esc(FGRP[F.g][0].toLowerCase())})` : `Grupo ${F.g} de Khomskaya: ${esc(FGRP[F.g][0])}`}</p>${F.pre ? `<p class="pre"><b>Conhecimento preliminar.</b> ${esc(F.pre)}</p>` : ''}<div class="chips">${F.u ? uchip(F.u) : ''}</div>
   <p><b>O que é.</b> ${esc(F.def)}</p>
   ${f === 'hemi' ? '<p class="note">No modelo: azul, hemisfério esquerdo; rosa, direito.</p>' : ''}
   ${bchips(F.areas)}${F.nodes.length ? `<div class="chips">${F.nodes.map(n => `<button class="chip" data-gn="${n}"><i style="background:${lvlCol(GN[n].lvl)}"></i>${esc(GN[n].lab)}</button>`).join('')}</div>` : ''}${F.deep.length ? dchips(F.deep) : ''}
@@ -2936,7 +3037,8 @@ function showFactor(f) {
   ${F.deep.length && st.cortex === 'op' ? '<p class="note">Use <b>Córtex: Vidro</b> para ver as estruturas profundas.</p>' : ''}`;
 }
 function showSystem(s) {
-  const S0 = SYS[s], ord = f => { const i = (S0.etapas || []).findIndex(e => e.f.includes(f)); return i < 0 ? 99 : i; };
+  if (st.var && st.var.s !== s) st.var = null;
+  const S0 = sysAt(s), ord = f => { const i = (S0.etapas || []).findIndex(e => e.f.includes(f)); return i < 0 ? 99 : i; };
   const S = Object.assign({}, S0, { links: S0.links.slice().sort((x, y) => ord(x.f) - ord(y.f)) }); if (st.mode !== 'sys' && st.mode !== 'fat') { st.mode = 'sys'; syncSeg('#mode', 'sys'); }
   const fs = S.links.map(l => l.f);
   const areas = [...new Set(fs.flatMap(f => FAT[f].areas))], dp = [...new Set(fs.flatMap(f => FAT[f].deep))], nodes = [...new Set(fs.flatMap(f => FAT[f].nodes))];
@@ -2946,6 +3048,7 @@ function showSystem(s) {
   const hb = v => `<button class="chip" data-hemi="${v}" aria-pressed="${st.hemi === v}" style="${st.hemi === v ? 'background:var(--ink);color:var(--bg)' : ''}">${{ L: 'Esquerdo', R: 'Direito', B: 'Ambos' }[v]}</button>`;
   info.innerHTML = back + `<h3>${esc(S.nome)}</h3><p class="ru">${esc(S.ru)} · ${esc(S.ref)}</p><p>${esc(S.def)}</p>
   ${S.pre ? `<p class="pre"><b>Conhecimento preliminar.</b> ${esc(S.pre)}</p>` : ''}
+  ${sysVarHtml(s)}
   <h3 style="margin-top:14px">Organização no tempo</h3>
   <ol class="etapas">${(S.etapas || []).map(e => `<li><b>${esc(e.n)}</b><div class="chips">${e.f.map(f => `<button class="chip" data-f="${f}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)}</button>`).join(e.rel === 'alt' ? '<span class="rel">ou</span>' : '<span class="rel">+</span>')}</div>${e.f.length > 1 ? `<span class="note">${e.rel === 'alt' ? 'alternativos, conforme a modalidade' : 'simultâneos'}</span>` : ''}</li>`).join('')}</ol>
   ${S.ciclo ? `<p class="note"><b style="color:#b3122e">↺ Retorno à etapa ${S.ciclo.para + 1}.</b> ${esc(S.ciclo.n)}</p>` : ''}
@@ -3047,18 +3150,75 @@ function showDeep(base) {
   ${m.areas && m.areas.length ? `<dt>Campos corticais ligados</dt><dd>${bchips(m.areas)}</dd>` : ''}</dl>
   <button class="chip" data-focus="${base}" style="margin-top:10px">Aproximar</button>`;
 }
+info.addEventListener('toggle', e => { if (e.target.matches && e.target.matches('details.notas')) st.notas = e.target.open; }, true);
+info.addEventListener('input', e => { if (!st.prop) return; const campo = { prNome: 'nome', prDesc: 'desc', prAutor: 'autor', prAno: 'ano', prObra: 'obra', prPag: 'pag', prOutras: 'outras' }[e.target.id]; if (!campo) return; PROP[campo] = e.target.value; propSalvar(); });
 info.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return; const d = t.dataset;
+  if (d.prop) { showProposal(); return; }
+  if (d.var != null && st.sys) { const k = +d.var; st.var = k < 0 ? null : { s: st.sys, i: k }; const sc = info.scrollTop; showSystem(st.sys); info.scrollTop = sc; return; }
+  if (d.prx) { propToggle(d.prx === 'a' ? 'areas' : 'deep', d.prx === 'a' ? +d.k : d.k); return; }
+  if ('prLimpar' in d) { for (const k of ['nome', 'desc', 'autor', 'ano', 'obra', 'pag', 'outras']) PROP[k] = ''; PROP.areas = []; PROP.deep = []; propSalvar(); showProposal(); return; }
+  if ('prEnviar' in d) { propEnviar(); return; }
+  if (st.prop) propSair();
   if ('back' in d) showMode(); else if (d.z) showZone(d.z); else if (d.a) showAnal(d.a); else if (d.u) showUnit(d.u);
   else if (d.hemi) { st.hemi = d.hemi; syncSeg('#hemi', st.hemi); applyVis(); applyGrad(); if (st.hemi !== 'B') setView('lat'); if (st.sys) showSystem(st.sys); }
   else if (d.grd) showGrad(d.grd, d.side); else if (d.s) showSystem(d.s); else if (d.m) showMec(d.m); else if (d.f) showFactor(d.f); else if (d.gn) showNode(d.gn, d.side || (st.hemi === 'R' ? 'R' : 'L')); else if (d.elem) showElem(); else if (d.b) showArea(+d.b); else if (d.d) showDeep(d.d);
   else if (d.focus) { if (st.cortex === 'op') { st.cortex = 'glass'; syncSeg('#cortex', 'glass'); applyVis(); } focusDeep(d.focus); }
 });
 
+/* ---------- proposta de fator pelo usuário ---------- */
+function propToggle(tipo, k) {
+  const L = PROP[tipo], i = L.indexOf(k); if (i < 0) L.push(k); else L.splice(i, 1);
+  if (tipo === 'deep' && i < 0) ensureVisible(k);
+  propSalvar(); showProposal();
+}
+function propSair() { st.prop = false; setSel([], [], []); }
+function propEnviar() {
+  const msg = $('#prMsg');
+  if (!PROP.nome.trim() || !(PROP.areas.length + PROP.deep.length)) { msg.textContent = 'Dê um nome ao fator e escolha ao menos um campo ou estrutura.'; msg.className = 'err'; return; }
+  const falta = [['autor', 'o autor'], ['ano', 'o ano'], ['obra', 'a obra']].filter(([k]) => !PROP[k].trim()).map(x => x[1]);
+  if (falta.length) { msg.textContent = 'Indique a fonte que embasa a proposta: falta ' + falta.join(', ').replace(/, ([^,]*)$/, ' e $1') + '.'; msg.className = 'err'; const id = { autor: 'prAutor', ano: 'prAno', obra: 'prObra' }[['autor', 'ano', 'obra'].find(k => !PROP[k].trim())]; $('#' + id).focus(); return; }
+  if (!/^\d{4}[a-z]?$/.test(PROP.ano.trim())) { msg.textContent = 'O ano deve ter quatro dígitos (por exemplo, 1973).'; msg.className = 'err'; $('#prAno').focus(); return; }
+  const f = $('#sugForm'); if (!f) return;
+  const fonte = `${PROP.autor.trim()} (${PROP.ano.trim()}). ${PROP.obra.trim()}${PROP.pag.trim() ? ', ' + PROP.pag.trim() : ''}.`;
+  f.mensagem.value = `Proposta de fator: ${PROP.nome.trim()}\nSubstrato: ${propResumo()}\nFonte principal: ${fonte}${PROP.outras.trim() ? '\nOutras fontes: ' + PROP.outras.trim() : ''}\n\n${(PROP.desc || '').trim() || '(sem descrição)'}`;
+  $('#sugestoes').scrollIntoView({ behavior: 'smooth' }); setTimeout(() => f.mensagem.focus({ preventScroll: true }), 600);
+  msg.textContent = 'A proposta foi para o canal de sugestões, logo abaixo. Confira e clique em Enviar sugestão.'; msg.className = 'ok';
+}
+function showProposal() {
+  if (st.sys) clearSys();
+  if (st.mode !== 'fat') { st.mode = 'fat'; syncSeg('#mode', 'fat'); }
+  setSel(PROP.areas, PROP.deep, []); st.prop = true; recolor();
+  const chip = (t, k, txt) => `<button class="chip" data-prx="${t}" data-k="${k}" title="Tirar da proposta"><i style="background:${PCOR}"></i>${esc(txt)} ×</button>`;
+  const lista = PROP.areas.slice().sort((a, b) => a - b).map(b => chip('a', b, 'Campo ' + b)).concat(PROP.deep.map(k => chip('d', k, META(k) ? (META(k).nuc || META(k).n) : k)));
+  info.innerHTML = back + `<h3><span class="sw prop" style="display:inline-block;vertical-align:-3px;margin-right:8px"></span>Propor um fator</h3>
+  <p class="note">A lista de fatores não está fechada: a classificação ainda não foi elaborada (Khomskaya, p. 269). Monte aqui a sua proposta. <b>Clique no modelo</b> nos campos de Brodmann e nas estruturas profundas que formariam o substrato do fator; clique de novo para tirar. Use <b>Números</b> para ver os campos e <b>Vidro</b> ou <b>Oculto</b> para alcançar as estruturas profundas. Toda proposta precisa indicar a fonte que a embasa.</p>
+  <form class="sug prop" onsubmit="return false">
+  <label><span>Nome do fator</span><input id="prNome" maxlength="120" value="${esc(PROP.nome)}" placeholder="Por exemplo: retenção cinestésica"></label>
+  <div><span class="plab">Substrato escolhido</span><div class="chips">${lista.join('') || '<span class="note">Nenhum campo ou estrutura ainda. Clique no modelo.</span>'}</div></div>
+  <label><span>O que é e por que seria um fator</span><textarea id="prDesc" rows="5" maxlength="4000" placeholder="Que operação realiza; que erro qualitativo aparece quando cai; em quais sistemas entra">${esc(PROP.desc)}</textarea></label>
+  <fieldset class="pfonte"><legend>Fonte que embasa a proposta</legend>
+  <div class="sugrow pf"><label><span>Autor(es)</span><input id="prAutor" maxlength="200" value="${esc(PROP.autor)}" placeholder="Sobrenome, Nome"></label><label class="ano"><span>Ano</span><input id="prAno" maxlength="5" inputmode="numeric" value="${esc(PROP.ano)}" placeholder="1973"></label></div>
+  <label><span>Obra</span><input id="prObra" maxlength="300" value="${esc(PROP.obra)}" placeholder="Título do livro ou do artigo, com revista ou editora"></label>
+  <label><span>Páginas ou capítulo <small>(opcional)</small></span><input id="prPag" maxlength="80" value="${esc(PROP.pag)}" placeholder="p. 185"></label>
+  <label><span>Outras fontes <small>(opcional)</small></span><textarea id="prOutras" rows="2" maxlength="1500" placeholder="Uma por linha: autor, ano, obra, páginas">${esc(PROP.outras)}</textarea></label>
+  </fieldset>
+  <div class="sugact"><button type="button" class="sugbtn" data-pr-enviar>Enviar proposta</button><button type="button" class="chip" data-pr-limpar>Limpar</button></div>
+  <p id="prMsg" role="status" aria-live="polite"></p>
+  </form>
+  <p class="note">A proposta fica guardada neste navegador até você limpar. Ao enviar, ela vai pelo canal de sugestões para os autores do mapa.</p>`;
+}
+
+/* índice das estruturas profundas, na página */
+function fillDeepIdx() {
+  $('#deepIdx').innerHTML = Object.keys(GR).map(g => { const l = deepBases().filter(b => META(b).grp === g); return l.length ? `<div class="dg"><h3>${esc(GR[g])}</h3>${dchips(l)}</div>` : ''; }).join('');
+}
+$('#deepIdx').addEventListener('click', e => { const b = e.target.closest('[data-d]'); if (!b) return; if (st.prop) propSair(); showDeep(b.dataset.d); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+
 /* ---------- controles ---------- */
 function syncSeg(sel, v) { for (const b of document.querySelectorAll(sel + ' button')) b.setAttribute('aria-pressed', b.dataset.v === v); }
 function syncGroups() { for (const c of document.querySelectorAll('#groups input')) c.checked = st.groups.has(c.value); }
-$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st.mode = b.dataset.v; syncSeg('#mode', st.mode);
+$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (st.prop) propSair(); st.mode = b.dataset.v; syncSeg('#mode', st.mode);
   if (st.mode === 'brod') { if (st.labsPrev === null) st.labsPrev = st.labs; st.labs = true; if (st.grad) toggleGrad(false); } else if (st.labsPrev !== null) { st.labs = st.labsPrev; st.labsPrev = null; }
   $('#bLab').setAttribute('aria-pressed', st.labs); if (st.mode === 'fat' && st.grad) toggleGrad(false); recolor(); showMode(); });
 $('#bGrad').addEventListener('click', () => toggleGrad(!st.grad));
@@ -3135,7 +3295,7 @@ $('#utab').innerHTML = `<thead><tr><th></th>${[1, 2, 3].map(u => `<th style="col
   <tr><td><b>Estruturas profundas no mapa</b></td><td>Tronco e formação reticular, hipotálamo, corpos mamilares, hipocampo, amígdala, núcleos anteriores e da linha média do tálamo, accumbens, prosencéfalo basal</td><td>Núcleos de relé sensoriais (CGL, CGM, VPL, VPM) e associativos posteriores (pulvinar, LP)</td><td>VL, VA, MD; caudado, putâmen, pálido, substância negra, subtalâmico, núcleo rubro</td></tr></tbody>`;
 
 /* ---------- Khomskaya: tipologia e preliminares ---------- */
-$('#ktipos').innerHTML = Object.keys(FGRP).map(g => { const fs = FORD.filter(f => FAT[f].g === +g);
+$('#ktipos').innerHTML = Object.keys(FGRP).map(g => { const fs = FORD.filter(f => FAT[f].g === +g && !PSET.has(f));
   return `<tr><td><b>${g}</b></td><td><b>${esc(FGRP[g][0])}</b><br><span class="note">${esc(FGRP[g][1])}</span></td><td>${fs.map(f => `<div style="margin:0 0 8px"><button class="chip" data-kf="${f}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].nome)}</button><br><span class="note">${esc(FAT[f].def)}</span></div>`).join('') || '<span class="note">síndromes nas fichas das estruturas profundas (caudado, VL, hipocampo, cíngulo)</span>'}</td></tr>`; }).join('');
 $('#kprelim').innerHTML = PRELIM.map((p, i) => `<article class="pitem"><h3>${esc(p.t)}</h3><p>${esc(p.txt)}</p><p class="note">${esc(p.ref)} · no mapa: ${esc(p.onde)}</p><button class="chip" data-pi="${i}">Ver no modelo</button></article>`).join('');
 const goK = el => {
@@ -3165,6 +3325,10 @@ const FK = FORD.filter(f => FS[f]);
 $('#stab').innerHTML = `<thead><tr><th>Sistema</th>${FK.map(f => `<th title="${esc(FAT[f].nome)}" style="text-align:center"><span class="dot" style="background:${FAT[f].cor};margin:0"></span><br><span style="font-size:12px">${esc(FAT[f].curto)}</span></th>`).join('')}</tr></thead><tbody>` +
   Object.keys(SYS).map(s => `<tr class="click" data-s="${s}" tabindex="0"><td><b>${esc(SYS[s].nome)}</b></td>${FK.map(f => { const S = SYS[s], L = S.links.find(l => l.f === f), et = (S.etapas || []).map((e, i) => e.f.includes(f) ? i + 1 : 0).filter(Boolean), fu = (S.fundo || []).some(x => x.f === f);
     return `<td style="text-align:center" ${L ? `title="${esc(L.papel)}"` : ''}>${L ? `<span class="dot" style="background:${FAT[f].cor};width:${et.length ? 16 : 11}px;height:${et.length ? 16 : 11}px;margin:0"></span><br><span class="note" style="font-size:12px">${et.length ? et.join(', ') : fu ? 'fundo' : ''}</span>` : ''}</td>`; }).join('')}</tr>`).join('') + '</tbody>';
+{ const L = new Set(['fala', 'compreensao']);
+  const sb = s => `<button class="chip" data-s="${s}">${esc(SYS[s].nome)}</button>`;
+  $('#lingRede').innerHTML = REDE.filter(r => L.has(r.a) || L.has(r.b) || r.a === 'memoria_med').map(r => `<li>${sb(r.a)} ${esc(RTIP[r.t][0])} ${sb(r.b)}<small>${esc(r.n)}</small></li>`).join('');
+  $('#lingRede').addEventListener('click', e => { const b = e.target.closest('[data-s]'); if (!b) return; if (st.mode !== 'sys') { st.mode = 'sys'; syncSeg('#mode', 'sys'); } showSystem(b.dataset.s); view.scrollIntoView({ behavior: 'smooth' }); }); }
 const goS = r => { showSystem(r.dataset.s); view.scrollIntoView({ behavior: 'smooth' }); };
 $('#stab').addEventListener('click', e => { const r = e.target.closest('tr[data-s]'); if (r) goS(r); });
 $('#stab').addEventListener('keydown', e => { const r = e.target.closest('tr[data-s]'); if (r && e.key === 'Enter') goS(r); });
@@ -3208,9 +3372,42 @@ Promise.resolve(window.MESH).then(D => { build(D); renderTab($('#q').value); }).
 }
 
 
+/* ---------- canal de sugestões ---------- */
+(() => {
+const F = document.getElementById('sugForm'); if (!F) return;
+const PARA = 'gustavo.fpio56@gmail.com', CC = 'hansel.soto@ufrn.br';
+const msg = document.getElementById('sugMsg'), btn = F.querySelector('.sugbtn');
+const aviso = (t, c) => { msg.textContent = t; msg.className = c || ''; };
+const versao = () => (document.querySelector('.vNum') || {}).textContent || '';
+const porEmail = d => {
+  const corpo = `${d.mensagem}\n\n—\nNome: ${d.nome || '(não informado)'}\nE-mail: ${d.email || '(não informado)'}\nVersão do mapa: ${versao()}`;
+  location.href = `mailto:${PARA}?cc=${CC}&subject=${encodeURIComponent('Sugestão para o mapa NPHC')}&body=${encodeURIComponent(corpo)}`;
+  aviso('Seu programa de e-mail foi aberto com a mensagem pronta; é só enviar. Se nada abrir, escreva para ' + PARA + ' e ' + CC + '.', 'ok');
+};
+F.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const d = Object.fromEntries(new FormData(F).entries());
+  if (d._honey) return;
+  d.mensagem = (d.mensagem || '').trim();
+  if (d.mensagem.length < 3) { aviso('Escreva a mensagem antes de enviar.', 'err'); F.mensagem.focus(); return; }
+  if (d.email && !F.email.checkValidity()) { aviso('Confira o e-mail para resposta.', 'err'); F.email.focus(); return; }
+  if (!location.protocol.startsWith('http')) { porEmail(d); return; }
+  btn.disabled = true; aviso('Enviando…');
+  try {
+    const r = await fetch('https://formsubmit.co/ajax/' + PARA, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ _subject: 'Sugestão para o mapa NPHC (versão ' + versao() + ')', _cc: CC, _template: 'table', _captcha: 'false', ...(d.email ? { _replyto: d.email } : {}),
+        Nome: d.nome || '(não informado)', 'E-mail': d.email || '(não informado)', Mensagem: d.mensagem, 'Versão do mapa': versao(), 'Página': location.href }) });
+    const j = await r.json().catch(() => ({}));
+    if (r.ok && String(j.success) === 'true') { F.reset(); aviso('Obrigado! Sua sugestão foi enviada.', 'ok'); }
+    else throw new Error(j.message || r.status);
+  } catch (e) { porEmail(d); }
+  finally { btn.disabled = false; }
+});
+})();
+
 /* ---------- versão e aviso de atualização ---------- */
 (() => {
-const V = { versao: '1.0.1', data: '24/11/2026', site: 'https://gugsphc.github.io/mapa-nphc/' };
+const V = { versao: '1.0.2', data: '25/11/2026', site: 'https://gugsphc.github.io/mapa-nphc/' };
 document.querySelectorAll('.vNum').forEach(e => e.textContent = V.versao);
 document.querySelectorAll('.vData').forEach(e => e.textContent = V.data);
 if (location.protocol.startsWith('http') && location.href.startsWith(V.site)) return;
