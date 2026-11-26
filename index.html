@@ -2516,13 +2516,24 @@ const tx = (a, i, s) => [a[i] / s - C0[0], a[i + 2] / s - C0[2], -(a[i + 1] / s 
 const dec = (s, T) => { const bin = atob(s), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new T(u.buffer); };
 const CLIP0 = { L: new THREE.Plane(new THREE.Vector3(-1, 0, 0), 0), R: new THREE.Plane(new THREE.Vector3(1, 0, 0), 0) };
 const CLIP = { L: [CLIP0.L.clone()], R: [CLIP0.R.clone()], B: [] };
-/* navegação: o encéfalo inteiro fica em MODEL, dentro de BRAIN, que gira em torno do centro e se desloca */
+/* navegação: o encéfalo inteiro fica em MODEL, dentro de BRAIN, que gira em torno do centro (o mesmo ponto em torno do qual o mouse gira a câmera).
+   A posição desloca só a imagem na tela (deslocamento da vista e zoom da câmera), para o giro com o mouse continuar centrado no encéfalo. */
 const BRAIN = new THREE.Group(), MODEL = new THREE.Group(); BRAIN.add(MODEL); scene.add(BRAIN);
 const NAV0 = new THREE.Vector3(0, -6, 0);
 BRAIN.position.copy(NAV0); MODEL.position.copy(NAV0).negate();
 const nav = { px: 0, py: 0, pz: 0, rx: 0, ry: 0, rz: 0, spin: 0 };
+function camNav() {
+  const w = view.clientWidth, h = view.clientHeight; if (!w || !h) return;
+  const z = Math.pow(2, nav.pz / 100);
+  if (cam.zoom !== z) cam.zoom = z;
+  if (nav.px || nav.py) {
+    const d = cam.position.distanceTo(ctl.target), k = h / (2 * d * Math.tan(cam.fov * Math.PI / 360)) * z;
+    cam.setViewOffset(w, h, -nav.px * k, nav.py * k, w, h);
+  } else if (cam.view && cam.view.enabled) cam.clearViewOffset();
+  cam.updateProjectionMatrix();
+}
 function applyNav() {
-  BRAIN.position.set(NAV0.x + nav.px, NAV0.y + nav.py, NAV0.z + nav.pz);
+  BRAIN.position.copy(NAV0);
   BRAIN.rotation.set(nav.rx * Math.PI / 180, nav.ry * Math.PI / 180, nav.rz * Math.PI / 180, 'XYZ');
   BRAIN.updateMatrixWorld(true);
   for (const s of ['L', 'R']) CLIP[s][0].copy(CLIP0[s]).applyMatrix4(MODEL.matrixWorld);
@@ -2831,7 +2842,7 @@ function loop() {
     if (anim.t >= 1) anim = null;
   }
   if (nav.spin) { const now = performance.now(), dt = Math.min(.05, (now - (nav.t || now)) / 1000); nav.t = now; nav.ry = ((nav.ry + nav.spin * 24 * dt + 540) % 360) - 180; applyNav(); syncNav(); } else nav.t = 0;
-  ctl.update(); R.render(scene, cam); placeLabels();
+  ctl.update(); camNav(); R.render(scene, cam); placeLabels();
 }
 const put = (el, p, w, h) => { v3.copy(p).applyMatrix4(MODEL.matrixWorld).project(cam); el.style.display = ''; el.style.left = ((v3.x + 1) / 2 * w) + 'px'; el.style.top = ((1 - v3.y) / 2 * h) + 'px'; };
 function placeLabels() {
@@ -2920,7 +2931,7 @@ function salvarImagem() {
   out.toBlob(b => { const u = URL.createObjectURL(b), lk = document.createElement('a'); lk.href = u; lk.download = nome; document.body.appendChild(lk); lk.click(); lk.remove(); setTimeout(() => URL.revokeObjectURL(u), 4000); }, 'image/png');
 }
 $('#bShot').addEventListener('click', salvarImagem);
-const NAVK = [['px', 'Posição X', 'esquerda ↔ direita', -150, 150, 'mm'], ['py', 'Posição Y', 'baixo ↔ cima', -150, 150, 'mm'], ['pz', 'Posição Z', 'frente ↔ trás', -150, 150, 'mm'], ['rx', 'Rotação X', 'inclina para a frente ou para trás', -180, 180, '°'], ['ry', 'Rotação Y', 'gira em torno do eixo vertical', -180, 180, '°'], ['rz', 'Rotação Z', 'inclina para os lados', -180, 180, '°']];
+const NAVK = [['px', 'Posição X', 'desloca na tela: esquerda ↔ direita', -150, 150, 'mm'], ['py', 'Posição Y', 'desloca na tela: baixo ↔ cima', -150, 150, 'mm'], ['pz', 'Posição Z', 'afasta ↔ aproxima', -150, 150, 'mm'], ['rx', 'Rotação X', 'inclina para a frente ou para trás', -180, 180, '°'], ['ry', 'Rotação Y', 'gira em torno do eixo vertical', -180, 180, '°'], ['rz', 'Rotação Z', 'inclina para os lados', -180, 180, '°']];
 $('#navRows').innerHTML = NAVK.map(([k, n, d, a, b, u]) => `<label class="navr" title="${d}"><span>${n}</span><input type="range" data-nk="${k}" min="${a}" max="${b}" step="1" value="0"><input type="number" data-nk="${k}" min="${a}" max="${b}" step="1" value="0"><i>${u}</i></label>`).join('');
 function syncNav() { for (const el of document.querySelectorAll('#navPanel [data-nk]')) if (document.activeElement !== el) el.value = Math.round(nav[el.dataset.nk]); }
 function syncSpin() { $('#navSpinR').setAttribute('aria-pressed', nav.spin > 0); $('#navSpinL').setAttribute('aria-pressed', nav.spin < 0); }
