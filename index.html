@@ -120,7 +120,7 @@ details.more>summary::before{content:"▸ ";color:var(--mute)}details.more[open]
 #tgSide{left:auto;right:2px;top:50%;transform:translateY(-50%);width:22px;height:44px}
 #tgLeft{left:2px;top:50%;transform:translateY(-50%);width:22px;height:44px}
 #tgTop{top:2px}#tgBot{bottom:2px}
-#viewer.noTop .bar.top,.stage.noInfo #viewer .bar.side,#viewer.noBot .bar.bot,#viewer.noLeft .bar.rail{display:none}
+#viewer.noTop .bar.top,#viewer.noBot .bar.bot,#viewer.noLeft .bar.rail{display:none}
 .stage{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 #viewer{position:relative;height:min(78vh,760px);min-height:440px;background:var(--panel);overflow:hidden;touch-action:none}
 #cv{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab}
@@ -200,7 +200,7 @@ dl.f{margin:0}dl.f dt{font-weight:600;font-size:14px;margin-top:12px;color:var(-
 .card dl.f dd{font-size:14.5px}
 .fig{position:relative;min-height:300px}
 .fig>svg{position:absolute;inset:0;width:100%;height:100%}
-.sw.prop{width:18px;height:18px;border-radius:4px;border:2px dashed #d6336c;background:repeating-linear-gradient(45deg,rgba(214,51,108,.28) 0 4px,transparent 4px 8px)}form.sug.prop{gap:10px;margin:10px 0}fieldset.pfonte{border:1px solid var(--line);border-radius:10px;padding:8px 12px 12px;margin:0;display:flex;flex-direction:column;gap:10px}fieldset.pfonte legend{font-size:14px;color:var(--ink);padding:0 6px}.sugrow.pf{grid-template-columns:1fr 92px}form.sug .plab{display:block;font-size:14px;color:var(--mute);margin-bottom:5px}#prMsg{font-size:14px;margin:0}#prMsg.ok{color:light-dark(#18794e,#4cc38a)}#prMsg.err{color:var(--car)}form.sug{display:flex;flex-direction:column;gap:12px}.sugrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}form.sug label{display:flex;flex-direction:column;gap:5px;font-size:14px;color:var(--mute)}form.sug label small{font-size:12px}form.sug input,form.sug textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;resize:vertical}form.sug input:focus,form.sug textarea:focus{outline:2px solid var(--pru);outline-offset:-1px;border-color:var(--pru)}form.sug .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}.sugact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.sugbtn{font:inherit;font-size:15px;cursor:pointer;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:9px 20px}.sugbtn:disabled{opacity:.55;cursor:wait}#sugMsg{font-size:14px;color:var(--mute)}#sugMsg.ok{color:light-dark(#18794e,#4cc38a)}#sugMsg.err{color:var(--car)}@media(max-width:600px){.sugrow{grid-template-columns:1fr}}.chips.vars .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chips.dim .chip{opacity:.6;text-decoration:line-through}.lingrede{list-style:none;padding:0;margin:8px 0 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:8px 28px}.lingrede li{font-size:15px;line-height:1.5}.lingrede li .chip{vertical-align:baseline}.lingrede li small{display:block;color:var(--mute);font-size:13.5px;margin-top:2px}.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px 28px;margin-top:8px}.dgrid .dg h3{font-size:16px;margin:14px 0 6px}.just{column-count:2;column-gap:44px}.just p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;margin-top:0;break-inside:avoid-column}@media(max-width:900px){.just{column-count:1}}.ktab{width:100%}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
+.sw.prop{width:18px;height:18px;border-radius:4px;border:2px dashed #d6336c;background:repeating-linear-gradient(45deg,rgba(214,51,108,.28) 0 4px,transparent 4px 8px)}form.sug.prop{gap:10px;margin:10px 0}fieldset.pfonte{border:1px solid var(--line);border-radius:10px;padding:8px 12px 12px;margin:0;display:flex;flex-direction:column;gap:10px}fieldset.pfonte legend{font-size:14px;color:var(--ink);padding:0 6px}.sugrow.pf{grid-template-columns:1fr 92px}form.sug .plab{display:block;font-size:14px;color:var(--mute);margin-bottom:5px}#prMsg{font-size:14px;margin:0}#prMsg.ok{color:light-dark(#18794e,#4cc38a)}#prMsg.err{color:var(--car)}form.sug{display:flex;flex-direction:column;gap:12px}.sugrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}form.sug label{display:flex;flex-direction:column;gap:5px;font-size:14px;color:var(--mute)}form.sug label small{font-size:12px}form.sug input,form.sug textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;resize:vertical}form.sug input:focus,form.sug textarea:focus{outline:2px solid var(--pru);outline-offset:-1px;border-color:var(--pru)}form.sug .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}.sugact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.sugbtn{font:inherit;font-size:15px;cursor:pointer;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:9px 20px}.sugbtn:disabled{opacity:.55;cursor:wait}#sugMsg{font-size:14px;color:var(--mute)}#sugMsg.ok{color:light-dark(#18794e,#4cc38a)}#sugMsg.err{color:var(--car)}@media(max-width:600px){.sugrow{grid-template-columns:1fr}}.chips.vars .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chips.dim .chip{opacity:.6;text-decoration:line-through}.lingrede{list-style:none;padding:0;margin:8px 0 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:8px 28px}.lingrede li{font-size:15px;line-height:1.5}.lingrede li .chip{vertical-align:baseline}.lingrede li small{display:block;color:var(--mute);font-size:13.5px;margin-top:2px}.gcol{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0 10px}.seg.mini{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg.mini button{font:inherit;font-size:13px;padding:4px 10px;border:0;background:var(--bg);color:var(--ink);cursor:pointer}.seg.mini button+button{border-left:1px solid var(--line)}.seg.mini button[aria-pressed=true]{background:var(--ink);color:var(--bg)}#navPanel[hidden]{display:none!important}.dock.navp{position:absolute;right:86px;top:110px;z-index:6;width:286px;padding:8px 12px 12px}.navh{cursor:move;user-select:none;touch-action:none}.navh{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}.navx{border:0;background:none;font-size:20px;line-height:1;cursor:pointer;color:var(--mute)}.navr{display:grid;grid-template-columns:72px 1fr 52px 16px;align-items:center;gap:6px;font-size:13px;margin:3px 0}.navr input[type=range]{width:100%;accent-color:var(--pru)}.navr input[type=number]{width:52px;font:inherit;font-size:12.5px;padding:2px 4px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}.navr i{font-style:normal;color:var(--mute);font-size:12px}.navb{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px 28px;margin-top:8px}.dgrid .dg h3{font-size:16px;margin:14px 0 6px}.just{column-count:2;column-gap:44px}.just p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;margin-top:0;break-inside:avoid-column}@media(max-width:900px){.just{column-count:1}}.ktab{width:100%}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
 th{font-weight:600;color:var(--mute);font-size:14px}
@@ -247,8 +247,14 @@ pre,.scroll{overflow-x:auto}
     <div class="bar side">
       <div class="dock acts">
         <button class="ico" id="bShot" title="Salvar a imagem atual do modelo, com rótulos, em PNG" aria-label="Salvar imagem"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.6"/></svg></button>
+        <button class="ico" id="bNav" title="Navegação: posição e rotação do encéfalo, e giro automático" aria-label="Navegação" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 5.5l2.2 6.5L12 18.5 9.8 12z"/></svg></button>
         <button class="ico" id="bFull" title="Tela cheia (Esc para sair)" aria-label="Tela cheia"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M15 4h5v5M20 15v5h-5M9 20H4v-5"/></svg></button>
       </div>
+    </div>
+    <div class="dock navp" id="navPanel" hidden role="dialog" aria-label="Navegação">
+      <div class="navh" title="Arraste para mover o painel"><span class="cap">Navegação ⠿</span><button class="navx" id="navClose" title="Fechar" aria-label="Fechar">×</button></div>
+      <div id="navRows"></div>
+      <div class="navb"><button class="chip tog" id="navSpinL" aria-pressed="false" title="Girar continuamente em torno do eixo vertical, para a esquerda">↺ Girar</button><button class="chip tog" id="navSpinR" aria-pressed="false" title="Girar continuamente em torno do eixo vertical, para a direita">↻ Girar</button><button class="chip" id="navZero" title="Voltar à posição e à rotação originais">Zerar</button></div>
     </div>
     <div class="bar rail">
       <div class="dock"><div class="grp"><span class="cap">Vista</span>
@@ -272,7 +278,7 @@ pre,.scroll{overflow-x:auto}
     <button class="tg" id="tgTop" aria-label="Ocultar ou mostrar o menu de cima">▲</button>
     <button class="tg" id="tgBot" aria-label="Ocultar ou mostrar o menu de baixo">▼</button>
     <button class="tg" id="tgLeft" aria-label="Ocultar ou mostrar o menu da esquerda" title="Ocultar o menu da esquerda">◀</button>
-    <button class="tg" id="tgSide" aria-label="Ocultar ou mostrar o painel de detalhes e os botões de imagem" title="Ocultar o painel de detalhes e os botões de imagem">▶</button>
+    <button class="tg" id="tgSide" aria-label="Ocultar ou mostrar o painel de detalhes" title="Ocultar o painel de detalhes">▶</button>
   </div>
   <aside id="info" aria-live="polite"></aside>
 </section>
@@ -463,7 +469,7 @@ pre,.scroll{overflow-x:auto}
 <p>Esta é a versão <b class="vNum"></b>, de <span class="vData"></span>.</p>
 <dl class="chg">
 <dt>1.0.2 · 25/11/2026</dt>
-<dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. Nos sistemas, entre as estruturas da 1ª unidade, só o hipocampo fica nomeado. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões.</dd>
+<dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. Nos sistemas, entre as estruturas da 1ª unidade, só o hipocampo fica nomeado. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). Nos gradientes de Goldberg, o córtex pode ser colorido por zonas, unidades ou fatores sem perder o gradiente escolhido; as estações fora dele ficam ocultas e aparecem ao passar o mouse; os números de Brodmann seguem o botão Números. Novo painel de navegação, inspirado no BrainTutor: posição e rotação do encéfalo nos três eixos e giro automático em torno do eixo vertical. A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões.</dd>
 <dt>1.0.1 · 24/11/2026</dt>
 <dd>Ajuste de redação sugerido pelo Prof. Dr. Hansel Soto Hernández nos pontos em aberto sobre os fatores: a 1ª unidade tratada como fator único e as zonas de projeção fora da lista são atribuídas aos continuadores de Luria.</dd>
 <dt>1.0 · 24/11/2026</dt>
@@ -2501,7 +2507,19 @@ const head = new THREE.DirectionalLight(0xffffff, .55); head.position.set(.4, .6
 const C0 = [0, -18, 6];
 const tx = (a, i, s) => [a[i] / s - C0[0], a[i + 2] / s - C0[2], -(a[i + 1] / s - C0[1])];
 const dec = (s, T) => { const bin = atob(s), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return new T(u.buffer); };
-const CLIP = { L: [new THREE.Plane(new THREE.Vector3(-1, 0, 0), 0)], R: [new THREE.Plane(new THREE.Vector3(1, 0, 0), 0)], B: [] };
+const CLIP0 = { L: new THREE.Plane(new THREE.Vector3(-1, 0, 0), 0), R: new THREE.Plane(new THREE.Vector3(1, 0, 0), 0) };
+const CLIP = { L: [CLIP0.L.clone()], R: [CLIP0.R.clone()], B: [] };
+/* navegação: o encéfalo inteiro fica em MODEL, dentro de BRAIN, que gira em torno do centro e se desloca */
+const BRAIN = new THREE.Group(), MODEL = new THREE.Group(); BRAIN.add(MODEL); scene.add(BRAIN);
+const NAV0 = new THREE.Vector3(0, -6, 0);
+BRAIN.position.copy(NAV0); MODEL.position.copy(NAV0).negate();
+const nav = { px: 0, py: 0, pz: 0, rx: 0, ry: 0, rz: 0, spin: 0 };
+function applyNav() {
+  BRAIN.position.set(NAV0.x + nav.px, NAV0.y + nav.py, NAV0.z + nav.pz);
+  BRAIN.rotation.set(nav.rx * Math.PI / 180, nav.ry * Math.PI / 180, nav.rz * Math.PI / 180, 'XYZ');
+  BRAIN.updateMatrixWorld(true);
+  for (const s of ['L', 'R']) CLIP[s][0].copy(CLIP0[s]).applyMatrix4(MODEL.matrixWorld);
+}
 
 const H = {}, labs = [], deep = [];
 const matC = new THREE.MeshLambertMaterial({ vertexColors: true });
@@ -2533,7 +2551,7 @@ function build(D) {
       for (const at of ['position', 'normal', 'color']) gp.setAttribute(at, g.attributes[at]);
       gp.morphAttributes.position = g.morphAttributes.position; gp.morphAttributes.normal = g.morphAttributes.normal;
       gp.setIndex(new THREE.BufferAttribute(new Uint16Array(idx), 1));
-      const m = new THREE.Mesh(gp, matC); m.morphTargetInfluences[0] = 0; m.userData.h = h; m.userData.part = k; m.renderOrder = 2; scene.add(m); parts[k] = m;
+      const m = new THREE.Mesh(gp, matC); m.morphTargetInfluences[0] = 0; m.userData.h = h; m.userData.part = k; m.renderOrder = 2; MODEL.add(m); parts[k] = m;
     }
     const mesh = parts.ant;
     const shade = new Float32Array(n); for (let v = 0; v < n; v++) shade[v] = Math.max(.62, Math.min(1.06, .92 - .2 * (S[v] / 20)));
@@ -2548,7 +2566,7 @@ function build(D) {
     const sm = key.match(/_(L|R)$/), side = sm ? sm[1] : 'M', base = sm ? key.slice(0, -2) : key, m = META(base);
     if (!m) continue;
     const mat = new THREE.MeshLambertMaterial({ color: '#999', side: THREE.DoubleSide });
-    const mesh = new THREE.Mesh(g, mat); mesh.userData.base = base; mesh.renderOrder = m.grp === 'cerebelo' && base !== 'denteado' ? 1 : 0; scene.add(mesh);
+    const mesh = new THREE.Mesh(g, mat); mesh.userData.base = base; mesh.renderOrder = m.grp === 'cerebelo' && base !== 'denteado' ? 1 : 0; MODEL.add(mesh);
     const el = document.createElement('div'); el.className = 'lab deep'; el.textContent = m.nuc || m.n; el.style.display = 'none'; $('#labs').appendChild(el);
     deep.push({ key, base, side, m, mesh, el, c: new THREE.Vector3(...tx(t.c.map(x => x * 50), 0, 50)) });
   }
@@ -2557,7 +2575,7 @@ function build(D) {
 }
 
 /* ---------- gradientes de Goldberg ---------- */
-const GRAD = { L: new THREE.Group(), R: new THREE.Group() }; scene.add(GRAD.L, GRAD.R);
+const GRAD = { L: new THREE.Group(), R: new THREE.Group() }; MODEL.add(GRAD.L, GRAD.R);
 const GSUB = {}; for (const s of ['L', 'R']) { GSUB[s] = { ant: new THREE.Group(), post: new THREE.Group() }; GRAD[s].add(GSUB[s].ant, GSUB[s].post); }
 const gnodes = [], gedges = [];
 const lvlCol = l => l === 1 ? ZN.P.cor : l === 2 ? ZN.S.cor : l === 3 ? ZN.T.cor : '#7a6a3a';
@@ -2628,14 +2646,15 @@ function applyGrad() {
   for (const s of ['L', 'R']) for (const k of ['ant', 'post']) { GSUB[s][k].visible = partOn(k); GSUB[s][k].position.z = st.div === 'sep' ? (k === 'ant' ? -OFFZ : OFFZ) : 0; }
   const any = st.gsel.size > 0;
   for (const nd of gnodes) {
-    const on = st.gsel.has(nd.id), c = lvlCol(GN[nd.id].lvl);
-    nd.m.material.color.set(any && !on ? '#bcb6ad' : c); nd.m.material.emissive.set(on ? c : '#000'); nd.m.material.emissiveIntensity = on ? .4 : 0;
+    const on = st.gsel.has(nd.id), c = lvlCol(GN[nd.id].lvl), hov = st.hgn === nd.id + nd.s;
+    nd.m.visible = !any || on || hov;
+    nd.m.material.color.set(c); nd.m.material.emissive.set(on ? c : '#000'); nd.m.material.emissiveIntensity = on ? .4 : 0;
     nd.m.scale.setScalar(on ? 1.35 : 1); nd.el.classList.toggle('on', on);
   }
   for (const e of gedges) { const on = st.gsel.has(e.a) && st.gsel.has(e.b) && (!st.grd || e.gg.includes(st.grd)); e.mat.color.set(any ? (on ? (st.grd ? GRD[st.grd].cor : '#b3121d') : '#7d776f') : '#10131a'); }
 }
 /* ---------- sistemas funcionais: triangulação ---------- */
-const SYSG = new THREE.Group(); SYSG.renderOrder = 20; scene.add(SYSG);
+const SYSG = new THREE.Group(); SYSG.renderOrder = 20; MODEL.add(SYSG);
 const syslabs = [];
 const ovMat = c => new THREE.MeshBasicMaterial({ color: c, depthTest: false, transparent: true, opacity: .95 });
 function factorPoint(Hh, f) {
@@ -2787,7 +2806,7 @@ function setView(v, instant) { syncSeg('#views', v);
 }
 function focusDeep(base) {
   const pts = deep.filter(D => D.base === base && D.mesh.visible); if (!pts.length) return;
-  const c = pts.reduce((a, D) => a.add(D.c), new THREE.Vector3()).multiplyScalar(1 / pts.length);
+  const c = MODEL.localToWorld(pts.reduce((a, D) => a.add(D.c), new THREE.Vector3()).multiplyScalar(1 / pts.length));
   const dir = cam.position.clone().sub(ctl.target).normalize();
   anim = { t: 0, p0: cam.position.clone(), p1: c.clone().add(dir.multiplyScalar(260)), u0: cam.up.clone(), u1: cam.up.clone(), g0: ctl.target.clone(), g1: c };
 }
@@ -2804,15 +2823,16 @@ function loop() {
     cam.up.copy(anim.u0).lerp(anim.u1, e).normalize(); ctl.target.copy(tg);
     if (anim.t >= 1) anim = null;
   }
+  if (nav.spin) { const now = performance.now(), dt = Math.min(.05, (now - (nav.t || now)) / 1000); nav.t = now; nav.ry = ((nav.ry + nav.spin * 24 * dt + 540) % 360) - 180; applyNav(); syncNav(); } else nav.t = 0;
   ctl.update(); R.render(scene, cam); placeLabels();
 }
-const put = (el, p, w, h) => { v3.copy(p).project(cam); el.style.display = ''; el.style.left = ((v3.x + 1) / 2 * w) + 'px'; el.style.top = ((1 - v3.y) / 2 * h) + 'px'; };
+const put = (el, p, w, h) => { v3.copy(p).applyMatrix4(MODEL.matrixWorld).project(cam); el.style.display = ''; el.style.left = ((v3.x + 1) / 2 * w) + 'px'; el.style.top = ((1 - v3.y) / 2 * h) + 'px'; };
 function placeLabels() {
-  const w = cv.clientWidth, h = cv.clientHeight, t = st.infl; cpos.copy(cam.position);
+  const w = cv.clientWidth, h = cv.clientHeight, t = st.infl; MODEL.updateMatrixWorld(true); cpos.copy(cam.position); MODEL.worldToLocal(cpos);
   for (const l of labs) {
     const Hh = H[l.h];
     const pk = FRONT.has(l.b) ? 'ant' : 'post';
-    if ((!st.labs && (st.sys || !st.sel.has(l.b))) || !Hh.parts[pk].visible || st.cortex !== 'op' || (st.grad && !st.sel.has(l.b))) { l.el.style.display = 'none'; continue; }
+    if ((!st.labs && (st.sys || st.gsel.size > 0 || !st.sel.has(l.b))) || !Hh.parts[pk].visible || st.cortex !== 'op' || (st.grad && !st.sel.has(l.b))) { l.el.style.display = 'none'; continue; }
     const i = l.v * 3;
     v3.set(Hh.P[i] + (Hh.I[i] - Hh.P[i]) * t, Hh.P[i + 1] + (Hh.I[i + 1] - Hh.P[i + 1]) * t, Hh.P[i + 2] + (Hh.I[i + 2] - Hh.P[i + 2]) * t);
     n3.set(Hh.Pn[i] + (Hh.In[i] - Hh.Pn[i]) * t, Hh.Pn[i + 1] + (Hh.In[i + 1] - Hh.Pn[i + 1]) * t, Hh.Pn[i + 2] + (Hh.In[i + 2] - Hh.Pn[i + 2]) * t).normalize();
@@ -2821,8 +2841,8 @@ function placeLabels() {
     put(l.el, v3, w, h);
   }
   for (const nd of gnodes) {
-    if (!GRAD[nd.s].visible || !nd.m.parent.visible) { nd.el.style.display = 'none'; continue; }
-    nd.m.getWorldPosition(v3); const ctr = H[nd.s === 'L' ? 'left' : 'right'].ctr;
+    if (!GRAD[nd.s].visible || !nd.m.parent.visible || !nd.m.visible) { nd.el.style.display = 'none'; continue; }
+    nd.m.getWorldPosition(v3); MODEL.worldToLocal(v3); const ctr = H[nd.s === 'L' ? 'left' : 'right'].ctr;
     if (st.cortex === 'op' && v3.clone().sub(ctr).dot(cpos.clone().sub(ctr).normalize()) < -4) { nd.el.style.display = 'none'; continue; }
     put(nd.el, v3, w, h); nd.el.style.transform = 'translate(-50%,-140%)';
   }
@@ -2848,7 +2868,7 @@ const syncTg = () => { $('#tgTop').textContent = view.classList.contains('noTop'
   $('#tgTop').title = view.classList.contains('noTop') ? 'Mostrar menu de cima' : 'Ocultar menu de cima'; $('#tgBot').title = view.classList.contains('noBot') ? 'Mostrar menu de baixo' : 'Ocultar menu de baixo';
   const nl = view.classList.contains('noLeft'); $('#tgLeft').textContent = nl ? '▶' : '◀'; $('#tgLeft').title = nl ? 'Mostrar o menu da esquerda' : 'Ocultar o menu da esquerda'; };
 $('#tgTop').addEventListener('click', () => { view.classList.toggle('noTop'); syncTg(); });
-$('#tgSide').addEventListener('click', () => { const s = view.parentElement; s.classList.toggle('noInfo'); $('#tgSide').textContent = s.classList.contains('noInfo') ? '◀' : '▶'; $('#tgSide').title = s.classList.contains('noInfo') ? 'Mostrar o painel de detalhes e os botões de imagem' : 'Ocultar o painel de detalhes e os botões de imagem'; });
+$('#tgSide').addEventListener('click', () => { const s = view.parentElement; s.classList.toggle('noInfo'); $('#tgSide').textContent = s.classList.contains('noInfo') ? '◀' : '▶'; $('#tgSide').title = s.classList.contains('noInfo') ? 'Mostrar o painel de detalhes' : 'Ocultar o painel de detalhes'; });
 $('#tgBot').addEventListener('click', () => { view.classList.toggle('noBot'); syncTg(); });
 $('#tgLeft').addEventListener('click', () => { view.classList.toggle('noLeft'); syncTg(); });
 /* encaixa o menu da esquerda entre os menus de cima e de baixo */
@@ -2893,6 +2913,23 @@ function salvarImagem() {
   out.toBlob(b => { const u = URL.createObjectURL(b), lk = document.createElement('a'); lk.href = u; lk.download = nome; document.body.appendChild(lk); lk.click(); lk.remove(); setTimeout(() => URL.revokeObjectURL(u), 4000); }, 'image/png');
 }
 $('#bShot').addEventListener('click', salvarImagem);
+const NAVK = [['px', 'Posição X', 'esquerda ↔ direita', -150, 150, 'mm'], ['py', 'Posição Y', 'baixo ↔ cima', -150, 150, 'mm'], ['pz', 'Posição Z', 'frente ↔ trás', -150, 150, 'mm'], ['rx', 'Rotação X', 'inclina para a frente ou para trás', -180, 180, '°'], ['ry', 'Rotação Y', 'gira em torno do eixo vertical', -180, 180, '°'], ['rz', 'Rotação Z', 'inclina para os lados', -180, 180, '°']];
+$('#navRows').innerHTML = NAVK.map(([k, n, d, a, b, u]) => `<label class="navr" title="${d}"><span>${n}</span><input type="range" data-nk="${k}" min="${a}" max="${b}" step="1" value="0"><input type="number" data-nk="${k}" min="${a}" max="${b}" step="1" value="0"><i>${u}</i></label>`).join('');
+function syncNav() { for (const el of document.querySelectorAll('#navPanel [data-nk]')) if (document.activeElement !== el) el.value = Math.round(nav[el.dataset.nk]); }
+function syncSpin() { $('#navSpinR').setAttribute('aria-pressed', nav.spin > 0); $('#navSpinL').setAttribute('aria-pressed', nav.spin < 0); }
+$('#navPanel').addEventListener('input', e => { const k = e.target.dataset.nk; if (!k) return; let v = +e.target.value; if (!Number.isFinite(v)) return;
+  const [, , , a, b] = NAVK.find(x => x[0] === k); v = Math.max(a, Math.min(b, v)); nav[k] = v; if (k === 'ry' && nav.spin) { nav.spin = 0; syncSpin(); } applyNav(); syncNav(); });
+$('#navSpinR').addEventListener('click', () => { nav.spin = nav.spin > 0 ? 0 : 1; syncSpin(); });
+$('#navSpinL').addEventListener('click', () => { nav.spin = nav.spin < 0 ? 0 : -1; syncSpin(); });
+$('#navZero').addEventListener('click', () => { for (const k of ['px', 'py', 'pz', 'rx', 'ry', 'rz']) nav[k] = 0; nav.spin = 0; syncSpin(); applyNav(); syncNav(); });
+$('#bNav').addEventListener('click', e => { const open = $('#navPanel').hidden; $('#navPanel').hidden = !open; e.currentTarget.setAttribute('aria-pressed', open); });
+{ const P = $('#navPanel'), hd = P.querySelector('.navh'); let d = null;
+  hd.addEventListener('pointerdown', e => { if (e.target.closest('button')) return; const r = P.getBoundingClientRect(), vr = view.getBoundingClientRect(); d = { x: e.clientX - r.left, y: e.clientY - r.top, vr }; hd.setPointerCapture(e.pointerId); });
+  hd.addEventListener('pointermove', e => { if (!d) return; const vr = view.getBoundingClientRect(), w = P.offsetWidth, h = P.offsetHeight;
+    const x = Math.max(0, Math.min(vr.width - w, e.clientX - vr.left - d.x)), y = Math.max(0, Math.min(vr.height - h, e.clientY - vr.top - d.y));
+    P.style.left = x + 'px'; P.style.top = y + 'px'; P.style.right = 'auto'; });
+  hd.addEventListener('pointerup', () => { d = null; }); }
+$('#navClose').addEventListener('click', () => { $('#navPanel').hidden = true; $('#bNav').setAttribute('aria-pressed', false); });
 
 /* ---------- picking ---------- */
 const ray = new THREE.Raycaster(), mp = new THREE.Vector2(); let down = null, pending = null;
@@ -2929,13 +2966,14 @@ cv.addEventListener('pointermove', ev => {
         txt = `<b style="color:${F ? F.cor : ELEM.cor}">${esc(F ? F.nome : ELEM.nome)}</b><br><span style="font-size:12px">${esc(s1.length > 220 ? s1.slice(0, 217) + '…' : s1)}</span><br><span class="note" style="font-size:11px">Área ${p.b} · ${esc(A.n)}</span>`; }
       else txt = `<b>Área ${p.b}</b> · ${esc(A.n)}<br>${esc(ZN[A.z].nome)} · ${esc(UN[A.u].nome)}`; }
     else if (p && p.b === 0) txt = 'Parede medial (não cortical)';
+    const hg = p && p.gn ? p.gn + p.side : null; if (hg !== st.hgn) { st.hgn = hg; applyGrad(); }
     if (hv !== st.hov) { st.hov = hv; recolor(); }
     if (txt) { tip.innerHTML = txt; tip.style.display = 'block'; tip.style.left = Math.min(ev.clientX - r.left + 14, r.width - 270) + 'px'; tip.style.top = (ev.clientY - r.top + 14) + 'px'; }
     else tip.style.display = 'none';
     cv.style.cursor = txt ? 'pointer' : 'grab';
   });
 });
-cv.addEventListener('pointerleave', () => { tip.style.display = 'none'; if (st.hov) { st.hov = null; recolor(); } });
+cv.addEventListener('pointerleave', () => { tip.style.display = 'none'; if (st.hov) { st.hov = null; recolor(); } if (st.hgn) { st.hgn = null; applyGrad(); } });
 cv.addEventListener('pointerdown', ev => { down = [ev.clientX, ev.clientY]; });
 cv.addEventListener('pointerup', ev => {
   if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 5) return; down = null;
@@ -3076,13 +3114,14 @@ function sysRel(s) {
   <div class="chips">${sh.map(x => `<button class="chip" data-s="${x.o}">${x.c.map(f => `<i style="background:${FAT[f].cor}"></i>`).join('')}${esc(SYS[x.o].nome)}</button>`).join('')}</div>`;
 }
 const lvlTxt = l => l === 2.5 ? '2–3' : String(l);
+const gcolHtml = () => `<div class="gcol"><span class="note">Colorir o córtex por</span><div class="seg mini" id="gcol">${[['zonas', 'Zonas de Poliakov'], ['luria', 'Unidades de Luria'], ['fat', 'Fatores']].map(([v, n]) => `<button data-gm="${v}" aria-pressed="${st.mode === v}">${n}</button>`).join('')}</div></div>`;
 function showGrad(id, side) {
   clearSys(); const G = GRD[id]; side = G.onlyL ? 'L' : G.onlyR ? 'R' : (side || (st.hemi === 'R' ? 'R' : 'L'));
   if (!st.grad) toggleGrad(true);
   if (st.hemi !== 'B' && st.hemi !== side) { st.hemi = side; syncSeg('#hemi', side); applyVis(); setView('lat'); }
   const areas = [...new Set(G.seq.flatMap(n => GN[n].areas))];
   setSel(areas, [], G.seq, id);
-  info.innerHTML = back + `<h3 style="color:${G.cor}">Gradiente ${esc(G.nome.toLowerCase())}</h3><p class="ru">${esc(G.base)} · elaboração esquerda: ${esc(G.esq)} · Goldberg, ${esc(G.pg)}</p><p>${esc(G.d)}</p>
+  info.innerHTML = back + `<h3 style="color:${G.cor}">Gradiente ${esc(G.nome.toLowerCase())}</h3><p class="ru">${esc(G.base)} · elaboração esquerda: ${esc(G.esq)} · Goldberg, ${esc(G.pg)}</p>${gcolHtml()}<p>${esc(G.d)}</p>
   <p class="note">Travessia de polo a polo${G.parcial ? ' (gradiente parcial)' : ''}:</p>
   <ol class="trav">${G.seq.map(n => { const g = GN[n]; return `<li><button class="chip" data-gn="${n}" data-side="${side}" style="border-color:${lvlCol(g.lvl)}"><i style="background:${lvlCol(g.lvl)}"></i>${esc(g.lab)}${NOSIDE.has(n) ? '' : side} · nível ${lvlTxt(g.lvl)}</button>
     <div class="note">${esc(g.ga)}</div><div><b>Função:</b> ${esc(g.fn)}</div><div><b>Lesão:</b> ${esc(g.sind)}</div>
@@ -3095,7 +3134,7 @@ function showNode(id, side) {
   setSel(g.areas, [], [...nb]);
   const zs = [...new Set(g.areas.map(b => AR[b].z))];
   const gl = gradsOf(side).filter(x => GRD[x].seq.includes(id));
-  info.innerHTML = back + `<h3>${esc(g.lab)}${NOSIDE.has(id) ? '' : side} · ${esc(g.nome)}</h3><p class="note">Goldberg (1990, ${esc(g.gp)}), nível ${g.lvl === 2.5 ? 'de transição 2–3' : g.lvl} · Brodmann ${esc(g.ga)}</p>
+  info.innerHTML = back + `<h3>${esc(g.lab)}${NOSIDE.has(id) ? '' : side} · ${esc(g.nome)}</h3><p class="note">Goldberg (1990, ${esc(g.gp)}), nível ${g.lvl === 2.5 ? 'de transição 2–3' : g.lvl} · Brodmann ${esc(g.ga)}</p>${gcolHtml()}
   <p><b>Função normal inferida:</b> ${esc(g.fn)}</p>
   <div class="chips">${gl.map(x => `<button class="chip" data-grd="${x}" data-side="${side}"><i style="background:${GRD[x].cor}"></i>gradiente ${esc(GRD[x].nome.toLowerCase())}</button>`).join('')}</div>
   <div class="chips">${zs.map(zchip).join('')}${g.fat.map(f => `<button class="chip" data-f="${f}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].nome)}</button>`).join('')}</div>
@@ -3154,6 +3193,7 @@ info.addEventListener('toggle', e => { if (e.target.matches && e.target.matches(
 info.addEventListener('input', e => { if (!st.prop) return; const campo = { prNome: 'nome', prDesc: 'desc', prAutor: 'autor', prAno: 'ano', prObra: 'obra', prPag: 'pag', prOutras: 'outras' }[e.target.id]; if (!campo) return; PROP[campo] = e.target.value; propSalvar(); });
 info.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return; const d = t.dataset;
+  if (d.gm) { setMode(d.gm); return; }
   if (d.prop) { showProposal(); return; }
   if (d.var != null && st.sys) { const k = +d.var; st.var = k < 0 ? null : { s: st.sys, i: k }; const sc = info.scrollTop; showSystem(st.sys); info.scrollTop = sc; return; }
   if (d.prx) { propToggle(d.prx === 'a' ? 'areas' : 'deep', d.prx === 'a' ? +d.k : d.k); return; }
@@ -3218,9 +3258,16 @@ $('#deepIdx').addEventListener('click', e => { const b = e.target.closest('[data
 /* ---------- controles ---------- */
 function syncSeg(sel, v) { for (const b of document.querySelectorAll(sel + ' button')) b.setAttribute('aria-pressed', b.dataset.v === v); }
 function syncGroups() { for (const c of document.querySelectorAll('#groups input')) c.checked = st.groups.has(c.value); }
-$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (st.prop) propSair(); st.mode = b.dataset.v; syncSeg('#mode', st.mode);
+function setMode(v) {
+  if (st.prop) propSair();
+  const manter = st.grad && st.gsel.size > 0 && !st.sys && ['zonas', 'luria', 'fat'].includes(v);
+  st.mode = v; syncSeg('#mode', st.mode);
   if (st.mode === 'brod') { if (st.labsPrev === null) st.labsPrev = st.labs; st.labs = true; if (st.grad) toggleGrad(false); } else if (st.labsPrev !== null) { st.labs = st.labsPrev; st.labsPrev = null; }
-  $('#bLab').setAttribute('aria-pressed', st.labs); if (st.mode === 'fat' && st.grad) toggleGrad(false); recolor(); showMode(); });
+  $('#bLab').setAttribute('aria-pressed', st.labs);
+  if (manter) { recolor(); document.querySelectorAll('#gcol button').forEach(b => b.setAttribute('aria-pressed', b.dataset.gm === st.mode)); return; }
+  if (st.mode === 'fat' && st.grad) toggleGrad(false); recolor(); showMode();
+}
+$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setMode(b.dataset.v); });
 $('#bGrad').addEventListener('click', () => toggleGrad(!st.grad));
 $('#hemi').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st.medSide = null; st.hemi = b.dataset.v; syncSeg('#hemi', st.hemi); applyVis(); applyGrad(); if (st.sys) showSystem(st.sys); else setView('lat'); if (st.sys && st.hemi !== 'B') setView('lat'); });
 $('#cortex').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st.cortex = b.dataset.v; syncSeg('#cortex', st.cortex); applyVis(); });
