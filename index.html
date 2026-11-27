@@ -200,6 +200,34 @@ dl.f{margin:0}dl.f dt{font-weight:600;font-size:14px;margin-top:12px;color:var(-
 .card dl.f dd{font-size:14.5px}
 .fig{position:relative;min-height:300px}
 .fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.mtools{position:sticky;top:-20px;z-index:3;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:8px 0;margin:6px 0 2px;background:var(--bg);border-bottom:1px solid var(--line)}
+#mDraw{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4;overflow:visible}
+.mundo{display:inline-flex;gap:4px;margin-left:auto}
+aside#info .mundo .chip{min-height:28px;padding:2px 10px;font-size:15px}
+aside#info .mundo .chip[disabled]{opacity:.35;cursor:default}
+.mtl{font-size:13px;color:var(--mute)}
+.mtools .seg.mini button{display:inline-flex;align-items:center;gap:6px}
+.mti{width:16px;height:16px;flex:none}
+.mhint{margin-top:6px}
+.sw.mont{width:18px;height:18px;border-radius:50%;border:2px dashed #d6336c;background:repeating-linear-gradient(-45deg,rgba(214,51,108,.28) 0 4px,transparent 4px 8px)}
+aside#info .chip.mf[aria-pressed=true]{border-color:var(--ink);box-shadow:inset 0 0 0 1px var(--ink);font-weight:600}
+aside#info .chips.kmont .chip.mf[aria-pressed=false]{opacity:.8}
+aside#info select{font:inherit;font-size:13px;min-height:30px;padding:3px 8px;border:1px dashed var(--line);border-radius:999px;background:var(--bg);color:var(--ink);cursor:pointer;max-width:100%}
+.mlab{display:flex;flex-direction:column;gap:5px;font-size:14px;color:var(--mute);margin:10px 0}
+aside#info .mlab select{border-style:solid;border-radius:8px;min-height:34px}
+ol.etapas.mont li{margin-bottom:12px}
+.mhead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.mbtns{display:inline-flex;gap:4px}
+aside#info .mbtns .chip{min-height:26px;padding:2px 8px;font-size:12px}
+aside#info .mbtns .chip[disabled]{opacity:.35;cursor:default}
+.mrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:6px 0}
+.mmsg{text-align:left!important;font-size:14px;padding:8px 10px;border-radius:8px;background:light-dark(#eef4ff,#1b2433)}
+.mmsg.err{background:light-dark(#fdecee,#3a1d22)}
+.mmsg.ok{background:light-dark(#eaf6ee,#18301f)}
+.mpos{font-size:11px;color:var(--mute);margin-left:2px}
+input.mlink{width:100%;box-sizing:border-box;font:inherit;font-size:12px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);margin-top:8px}
+details.mj{margin-top:12px}
+.lab.sysh.mont{border-color:#d6336c;color:#d6336c}
 .sw.prop{width:18px;height:18px;border-radius:4px;border:2px dashed #d6336c;background:repeating-linear-gradient(45deg,rgba(214,51,108,.28) 0 4px,transparent 4px 8px)}form.sug.prop{gap:10px;margin:10px 0}fieldset.pfonte{border:1px solid var(--line);border-radius:10px;padding:8px 12px 12px;margin:0;display:flex;flex-direction:column;gap:10px}fieldset.pfonte legend{font-size:14px;color:var(--ink);padding:0 6px}.sugrow.pf{grid-template-columns:1fr 92px}form.sug .plab{display:block;font-size:14px;color:var(--mute);margin-bottom:5px}#prMsg{font-size:14px;margin:0}#prMsg.ok{color:light-dark(#18794e,#4cc38a)}#prMsg.err{color:var(--car)}form.sug{display:flex;flex-direction:column;gap:12px}.sugrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}form.sug label{display:flex;flex-direction:column;gap:5px;font-size:14px;color:var(--mute)}form.sug label small{font-size:12px}form.sug input,form.sug textarea{font:inherit;font-size:15px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:9px 11px;resize:vertical}form.sug input:focus,form.sug textarea:focus{outline:2px solid var(--pru);outline-offset:-1px;border-color:var(--pru)}form.sug .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}.sugact{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.sugbtn{font:inherit;font-size:15px;cursor:pointer;background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:9px 20px}.sugbtn:disabled{opacity:.55;cursor:wait}#sugMsg{font-size:14px;color:var(--mute)}#sugMsg.ok{color:light-dark(#18794e,#4cc38a)}#sugMsg.err{color:var(--car)}@media(max-width:600px){.sugrow{grid-template-columns:1fr}}.chips.vars .chip[aria-pressed=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}.chips.dim .chip{opacity:.6;text-decoration:line-through}.lingrede{list-style:none;padding:0;margin:8px 0 12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(420px,1fr));gap:8px 28px}.lingrede li{font-size:15px;line-height:1.5}.lingrede li .chip{vertical-align:baseline}.lingrede li small{display:block;color:var(--mute);font-size:13.5px;margin-top:2px}.gcol{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0 10px}.seg.mini{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}.seg.mini button{font:inherit;font-size:13px;padding:4px 10px;border:0;background:var(--bg);color:var(--ink);cursor:pointer}.seg.mini button+button{border-left:1px solid var(--line)}.seg.mini button[aria-pressed=true]{background:var(--ink);color:var(--bg)}#navPanel[hidden]{display:none!important}.dock.navp{position:absolute;right:86px;top:110px;z-index:6;width:286px;padding:8px 12px 12px}.navh{cursor:move;user-select:none;touch-action:none}.navh{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}.navx{border:0;background:none;font-size:20px;line-height:1;cursor:pointer;color:var(--mute)}.navr{display:grid;grid-template-columns:72px 1fr 52px 16px;align-items:center;gap:6px;font-size:13px;margin:3px 0}.navr input[type=range]{width:100%;accent-color:var(--pru)}.navr input[type=number]{width:52px;font:inherit;font-size:12.5px;padding:2px 4px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink)}.navr i{font-style:normal;color:var(--mute);font-size:12px}.navb{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}kbd{font:inherit;font-size:.86em;padding:1px 6px;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;background:var(--panel);white-space:nowrap}.recarga{border-left:3px solid var(--pru);padding:6px 0 6px 12px;background:var(--panel)}footer.rodape{border-top:1px solid var(--line);padding:26px 0 34px;font-size:14.5px}footer.rodape p{margin:4px 0}.ulig{margin:4px 0 8px}.ulig-E{border-left:3px solid var(--car);padding-left:8px}.band p,.band dd,aside#info p,aside#info dd,.pitem p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:6 3 3}.jt{text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:6 3 3}span.jt{display:block}td p,td .note,.chips,.ru,.sugact,#sugMsg,#prMsg,footer p,.recarga,.lingrede li,.navr,.lede,.cred,.ver{text-align:left!important}.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:6px 28px;margin-top:8px}.dgrid .dg h3{font-size:16px;margin:14px 0 6px}.just{column-count:2;column-gap:44px}.just p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;margin-top:0;break-inside:avoid-column}@media(max-width:900px){.just{column-count:1}}.ktab{width:100%}.two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:32px;align-items:start}
 table{border-collapse:collapse;width:100%;font-size:15px}
 th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--line)}
@@ -339,11 +367,19 @@ pre,.scroll{overflow-x:auto}
 </div>
 <div>
 <p class="note">Na matriz, cada linha é um sistema e cada coluna um fator. O número sob o ponto é a etapa em que o fator entra; dois fatores com o mesmo número trabalham <b>simultaneamente</b> naquela etapa (ou, nas memórias, são alternativos conforme a modalidade). Um fator que volta em duas etapas aparece com os dois números (o programa que inicia e depois compara). “Fundo” marca o fator que atua durante todo o curso, sem etapa própria, como o tônus. Clique numa linha: o mapa triangula os fatores sobre o córtex, liga cada um ao sistema e acende as áreas, os nós de Goldberg e as estruturas profundas envolvidas. Lendo uma coluna de cima a baixo, você tem a síndrome daquele fator.</p>
-<p class="note">Os papéis e os erros de cada elo seguem o HCF (Partes II e III). Distribuir os sistemas pelos fatores e dividi-los em etapas é uma sistematização deste mapa, a partir do texto. Luria descreve os elos como componentes que interagem (p. 78–79): as etapas indicam a organização lógica do processo, não uma cronometria. A ativação aparece como fundo de todos os sistemas, e a programação, regulação e controle, em todos eles. A memória aparece em três sistemas, seguindo as distinções do HCF: voluntária direta, mediada (Vigotski, Leontiev) e involuntária (Smirnov, Zinchenko) (p. 381–383, 469–470).</p>
+<p class="note">Os papéis e os erros de cada elo seguem o HCF (Partes II e III). Distribuir os sistemas pelos fatores e dividi-los em etapas é uma sistematização deste mapa, a partir do texto. Luria descreve os elos como componentes que interagem (p. 78–79): as etapas indicam a organização lógica do processo, não uma cronometria. A ativação sustenta todos os sistemas como fundo (na atenção, entra como etapa própria). O lugar da programação, regulação e controle segue o critério descrito abaixo. A memória aparece em três sistemas, seguindo as distinções do HCF: voluntária direta, mediada (Vigotski, Leontiev) e involuntária (Smirnov, Zinchenko) (p. 381–383, 469–470).</p>
 </div>
 </div>
 <p class="note" style="margin-top:14px">A matriz mostra cada sistema na sua <b>tarefa de referência</b> (o ditado, na escrita; o cálculo mental, no cálculo). Os fatores pesam de outro modo quando a tarefa muda: a cópia dispensa a análise sonora; o cálculo no papel traz a leitura e a escrita dos algarismos e alivia a retenção; o objeto explorado pelo tato troca a gnose visual pela tátil. Na ficha de cada sistema, o item “Conforme a tarefa” mostra essas variações no modelo, com a fonte de cada uma.</p>
+<p class="note" style="margin-top:12px">Toda ação voluntária tem um objetivo, e a terceira unidade programa, regula e verifica toda a atividade consciente. Nos sistemas do mapa, porém, um fator só aparece como <b>etapa</b> quando a lesão quebra a tarefa num ponto definido e de modo próprio (HCF, p. 78). Por isso a programação entra de três modos. É <b>etapa</b> quando a própria pessoa tem de formar o programa, porque o material não traz um esquema pronto, ou de verificar o resultado: o esquema do enunciado na fala narrativa (p. 237), o plano da escrita espontânea (p. 543), a análise das condições e a estratégia no pensamento (p. 347), a evocação ativa na memorização (p. 342), a ação regulada pela instrução e controlada pela fala interna (p. 292–293). É <b>fundo</b> quando o programa é dado pelo material ou pela instrução e basta mantê-lo, como no ditado, na cópia, na repetição e na nomeação de objetos: ali o defeito frontal não é específico (p. 543) e se espalha pelo curso, como perseveração e inércia (p. 496, 510, 517). E quase <b>desaparece</b> nas tarefas automatizadas, como a assinatura, as séries automatizadas e a leitura de relance, em que o peso do controle cai com a aprendizagem (p. 79, 530–531); na terminologia de Leontiev, a ação se converte em operação. Quando a fonte descreve os dois papéis, como na atenção voluntária (a instrução que dá valor de sinal aos estímulos, p. 266, e sua manutenção ao longo da tarefa, p. 285), o fator aparece como etapa e como fundo. A seta vermelha de retorno só é desenhada onde a fonte descreve comparar o resultado e corrigir, e, por analogia, nas tarefas com um modelo à vista (cópia, imitação), marcadas como leitura do mapa. Toda ação voluntária tem aferentação de retorno (p. 22), mas desenhá-la em todos os sistemas apagaria a diferença.</p>
 <div class="scroll" style="margin-top:14px"><table id="stab"></table></div>
+<div class="montpg">
+<h3 style="margin-top:26px">Monte o seu sistema</h3>
+<p>Os sistemas acima são os que a literatura descreve. Mas qualquer tarefa concreta, como copiar um desenho, tocar uma melodia de ouvido ou resolver um problema escrito, recruta o seu próprio arranjo de fatores, e decompor a tarefa nos elos que ela exige é o raciocínio central da análise sindrômica. Em <b>Montar um sistema</b>, o encéfalo começa apagado; você escreve a tarefa e acumula, no modelo, os fatores que ela recruta: cada um acende suas áreas e entra na triangulação. Como num programa de desenho, há três ferramentas: <b>pôr ou tirar</b>; <b>consecutivo</b>, uma seta que se arrasta de um fator a outro para que o segundo venha logo depois do primeiro; e <b>simultâneo</b>, um laço que se arrasta de um fator a outro para que fiquem na mesma etapa. Os atalhos são Ctrl + clique (consecutivo), Shift + clique (simultâneo) e Ctrl + Z para desfazer. Marque também o que atua como fundo e o retorno de controle. Dá para começar de um sistema do mapa e adaptá-lo, comparar a sua montagem com um sistema descrito, guardar um link que abre o mesmo sistema em qualquer computador e, justificando cada elo com a fonte, enviá-lo como proposta aos autores do mapa.</p>
+<p><button class="chip" id="bMontPg" type="button"><span class="sw mont" style="display:inline-block;width:14px;height:14px"></span>Montar um sistema no modelo</button></p>
+<p class="note">Um sistema montado não é um sistema validado: ele aparece com o centro em magenta e o rótulo “Seu sistema”, para não se confundir com os sistemas descritos na literatura. Ideia do Prof. Dr. Hansel Soto Hernández.</p>
+</div>
+
 <h3 style="margin-top:30px">Como os sistemas se articulam (localização sistêmica)</h3>
 <div class="two">
 <div><p>Os sistemas não são independentes. Um sistema pode entrar como componente de outro (a análise fonêmica da compreensão está dentro da escrita), dois podem ser processos inversos (escrita e leitura), um pode regular outro (a fala, a ação e a atenção) e um pode se formar a partir de outro (a memória mediada a partir da direta). É a ideia de Vigotski de que as funções superiores formam sistemas interfuncionais, cujas relações mudam no desenvolvimento; para Luria, uma função passa de operações externas desdobradas a ações contraídas, apoiadas na fala interna (HCF, p. 34).</p>
@@ -469,8 +505,10 @@ pre,.scroll{overflow-x:auto}
 <p>Esta é a versão <b class="vNum"></b>, de <span class="vData"></span>.</p>
 <p class="recarga"><b>Não está vendo as novidades?</b> O navegador pode estar mostrando uma cópia guardada da página. Aperte <kbd>Ctrl</kbd> + <kbd>F5</kbd> (ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>; no Mac, <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>) para recarregar. No celular, feche a aba e abra o link de novo.</p>
 <dl class="chg">
+<dt>1.1 · 26/11/2026</dt>
+<dd>Novo recurso: <b>montar um sistema</b>, ideia do Prof. Dr. Hansel Soto Hernández. Na aba Sistemas, você escreve uma tarefa qualquer e acumula, clicando nos fatores ou nos campos do encéfalo (que começa apagado), os fatores que ela recruta; cada um acende suas áreas e entra na triangulação. Como num programa de desenho, as ferramentas consecutivo (seta) e simultâneo (laço) ligam os fatores arrastando de um a outro no encéfalo, com atalhos de teclado e Ctrl + Z para desfazer. Dá para marcar o fundo e o retorno de controle, começar de um sistema do mapa, comparar a montagem com os sistemas descritos, guardar um link que abre o mesmo sistema em qualquer computador e, justificando cada elo com a fonte, enviá-lo como proposta pelo canal de sugestões. Nos sistemas do mapa, o fator de programação passa a aparecer com papéis distintos: etapa inicial, verificação com retorno (agora também na leitura, na compreensão, na memorização direta, no pensamento e na construção) ou fundo (na atenção voluntária, na memorização involuntária, no ditado e na cópia), e quase desaparece nas tarefas automatizadas, segundo um critério explicado na seção dos sistemas. A escrita ganha a variante de escrita espontânea, e as páginas do HCF citadas nos sistemas foram conferidas uma a uma.</dd>
 <dt>1.0.2 · 25/11/2026</dt>
-<dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). Nos gradientes de Goldberg, o córtex pode ser colorido por zonas, unidades ou fatores sem perder o gradiente escolhido; as estações fora dele ficam ocultas e aparecem ao passar o mouse; os números de Brodmann seguem o botão Números. Novo painel de navegação, inspirado no BrainTutor: posição e rotação do encéfalo nos três eixos e giro automático em torno do eixo vertical. A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões. Nos sistemas, o fator de programação aparece com papéis distintos: etapa inicial, verificação com retorno (seta vermelha, agora também na leitura, na compreensão, na memorização direta, no pensamento e na construção) ou fundo, que sustenta a tarefa durante todo o curso (agora também na atenção voluntária e na memorização involuntária). A escrita ganhou a variante de escrita espontânea, e as páginas citadas nos sistemas foram conferidas uma a uma no HCF.</dd>
+<dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). Nos gradientes de Goldberg, o córtex pode ser colorido por zonas, unidades ou fatores sem perder o gradiente escolhido; as estações fora dele ficam ocultas e aparecem ao passar o mouse; os números de Brodmann seguem o botão Números. Novo painel de navegação, inspirado no BrainTutor: posição e rotação do encéfalo nos três eixos e giro automático em torno do eixo vertical. A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões.</dd>
 <dt>1.0.1 · 24/11/2026</dt>
 <dd>Ajuste de redação sugerido pelo Prof. Dr. Hansel Soto Hernández nos pontos em aberto sobre os fatores: a 1ª unidade tratada como fator único e as zonas de projeção fora da lista são atribuídas aos continuadores de Luria.</dd>
 <dt>1.0 · 24/11/2026</dt>
@@ -2127,28 +2165,29 @@ for (const f in CURTO) FAT[f].curto = CURTO[f];
 const SYS = {
   escrita: { hemE: "Componentes principais (codificadores), representados pelas consoantes. Lesões temporais e pós-centrais esquerdas produzem trocas, confluências e inversões de ordem de consoantes.", hemD: "Componentes de fundo, representados pelas vogais. Na rara agrafia por lesão temporoparietal direita, as vogais são omitidas ou trocadas (num caso, 35 de 67 erradas) e as consoantes ficam quase intactas (Simernitskaya; HCF, p. 380).", nome: 'Escrita', ru: 'письмо', ref: 'HCF, p. 79–81; III.10C, p. 537–543',
     def: 'Escrever sob ditado exige quatro passos: analisar acusticamente a composição sonora (com participação estreita da articulação), recodificar cada fonema num grafema com suas propriedades topológicas, recodificar o grafema numa série cinestésica de movimentos e organizá-la numa “melodia” cinética. Com a automatização, o peso de cada elo muda (HCF, p. 79–80).',
-    etapas: [{ f: ['prog'], n: 'Tarefa e intenção: escrever o que foi ditado' }, { f: ['fon', 'cin'], rel: 'sim', n: 'Análise da composição sonora, com apoio articulatório' }, { f: ['esp', 'om'], rel: 'sim', n: 'Recodificação de cada fonema num grafema' }, { f: ['tat', 'kin'], rel: 'sim', n: 'Recodificação do grafema numa série cinestésica de movimentos, organizada em melodia cinética' }],
-    ciclo: { para: 0, n: 'O escrito é confrontado com a tarefa, isto é, com o que foi ditado. Sem esse controle, a escrita perde a seletividade, e na escrita espontânea a frase inicial se repete (p. 543).' },
-    tempo: 'As etapas são sucessivas: Luria as descreve como passos do processo (p. 79–80). Dentro das etapas 2, 3 e 4, os elos trabalham juntos: a articulação sustenta a análise sonora; a imagem da letra e sua topologia formam um só ato; e o esquema tátil-cinestésico do traçado se realiza na melodia cinética. Na escrita de palavras muito familiares, as etapas intermediárias se encurtam até uma melodia cinética única (p. 79).',
-    fundo: [{ f: 'ativ', n: 'tônus' }],
-    tarefa: "Ditado", tarefaD: "Escrever palavras e frases ditadas. É a forma que exige todos os passos descritos por Luria: analisar a composição sonora, recodificar cada fonema num grafema, recodificar o grafema numa série de movimentos e organizar essa série numa melodia cinética.",
-    variantes: [{"n": "Cópia", "ref": "HCF III.10C, p. 538, 540", "d": "Copiar um texto, de preferência passando do impresso para o cursivo. O ponto de partida é o modelo visto, e não o som: a análise fonêmica perde peso, e a cópia fica preservada nas lesões temporais que desorganizam o ditado. Se o paciente desenha as letras em vez de transcrevê-las, a recodificação falhou.", "etapas": [{"f": ["prog"], "n": "Tarefa e intenção"}, {"f": ["vis", "esp"], "rel": "sim", "n": "Percepção do modelo escrito e da disposição de seus elementos"}, {"f": ["om"], "n": "Recodificação do impresso no cursivo (imagem da letra)"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Série cinestésica do traçado e melodia cinética"}], "ciclo": {"para": 1, "n": "Na cópia, a referência do controle é o modelo, e não uma intenção: a cada trecho, quem copia volta ao modelo, confere o que escreveu e lê o trecho seguinte. Por isso o retorno é à percepção do modelo (etapa 2), e não à etapa 1. É uma leitura do mapa: o HCF descreve a cópia (p. 538, 540), mas não esse controle em detalhe."}, "menos": ["fon", "cin"], "mais": [{"f": "vis", "papel": "Percepção do modelo escrito, com os traços distintivos de cada letra.", "q": "Letras do modelo mal identificadas; reprodução de detalhes inessenciais do impresso com o mesmo cuidado que os essenciais (p. 538)."}]}, {"n": "Escrita automatizada (o próprio nome, a assinatura)", "ref": "HCF, p. 79; III.10C, p. 538, 540", "d": "Escrever algo muito automatizado. As etapas intermediárias se encurtam até uma melodia cinética única, e a análise sonora deixa de ser necessária: por isso a assinatura se conserva quando o ditado já está desorganizado.", "etapas": [{"f": ["prog"], "n": "Intenção"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Melodia cinética única do traçado"}], "ciclo": null, "menos": ["fon", "cin", "esp", "om"], "mais": []}, {"n": "Escrita espontânea (escrever o próprio enunciado)", "ref": "HCF III.10C, p. 540, 543; III.9E", "d": "Escrever o nome de um objeto, a resposta a uma pergunta ou um enunciado com sentido próprio, como uma carta. É a escrita no sentido próprio da palavra: além da análise sonora, exige planejar o caráter seletivo do que se escreve, e as provas se parecem com as da nomeação e da fala narrativa (p. 540). Nas lesões temporais, ela se desorganiza junto com o ditado, enquanto a cópia e a assinatura se conservam (p. 540). Nas frontais, palavras isoladas podem sair, mas, ao pôr o pensamento no papel, perde-se o plano: numa carta, a primeira frase se repete (“quero lhe dizer que quero lhe dizer…”) (p. 543).", "etapas": [{"f": ["prog"], "n": "Intenção e plano do texto: o que dizer e em que ordem"}, {"f": ["am"], "n": "Escolha e retenção das palavras do enunciado, na ordem, enquanto se escreve"}, {"f": ["fon", "cin"], "rel": "sim", "n": "Análise da composição sonora de cada palavra, com apoio articulatório"}, {"f": ["esp", "om"], "rel": "sim", "n": "Recodificação de cada fonema num grafema"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Série cinestésica do traçado, organizada em melodia cinética"}], "ciclo": {"para": 0, "n": "O que foi escrito é confrontado com o plano do texto. Sem esse controle, o paciente frontal perde o plano e repete a primeira frase (p. 543)."}, "menos": [], "mais": [{"f": "am", "papel": "Retenção do enunciado e da ordem das palavras enquanto se escreve.", "q": "Perde a ordem das palavras e persevera em palavras anteriores, como já na escrita de frases ditadas, sobretudo nas lesões frontais e frontotemporais (p. 540)."}]}],
+    etapas: [{ f: ['fon', 'cin'], rel: 'sim', n: 'Análise da composição sonora do que foi ditado, com apoio articulatório' }, { f: ['am'], n: 'Retenção da palavra ou da frase ditada, na ordem, enquanto se escreve' }, { f: ['esp', 'om'], rel: 'sim', n: 'Recodificação de cada fonema num grafema' }, { f: ['tat', 'kin'], rel: 'sim', n: 'Recodificação do grafema numa série cinestésica de movimentos, organizada em melodia cinética' }],
+    
+    tempo: 'Luria descreve os passos do processo em sucessão (p. 79–80). Nas etapas 1, 3 e 4, os elos trabalham juntos: a articulação sustenta a análise sonora; a imagem da letra e sua topologia formam um só ato; e o esquema tátil-cinestésico do traçado se realiza na melodia cinética. A retenção (etapa 2) pesa nas séries de palavras e nas frases, que repetem por escrito as provas de repetição (p. 540). A programação atua como fundo, sem etapa própria: no ditado, a escrita parte do que se ouve, como na repetição, e não de uma intenção a formular; o defeito frontal aparece ao longo do curso, como perseveração e perda da ordem (p. 540, 543). Na escrita de palavras muito familiares, as etapas intermediárias se encurtam até uma melodia cinética única (p. 79).',
+    fundo: [{ f: 'ativ', n: 'tônus' }, { f: 'prog', n: 'manter a tarefa e inibir perseverações' }],
+    tarefa: "Ditado", tarefaD: "Escrever palavras e frases ditadas. É a forma que exige todos os passos descritos por Luria: analisar a composição sonora, recodificar cada fonema num grafema, recodificar o grafema numa série de movimentos e organizar essa série numa melodia cinética. Nas frases, é preciso ainda reter o que foi ditado, na ordem.",
+    variantes: [{"n": "Cópia", "ref": "HCF III.10C, p. 538, 540", "d": "Copiar um texto, de preferência passando do impresso para o cursivo. O ponto de partida é o modelo visto, e não o som: a análise fonêmica perde peso, e a cópia fica preservada nas lesões temporais que desorganizam o ditado. Se o paciente desenha as letras em vez de transcrevê-las, a recodificação falhou.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção do modelo escrito e da disposição de seus elementos"}, {"f": ["om"], "n": "Recodificação do impresso no cursivo (imagem da letra)"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Série cinestésica do traçado e melodia cinética"}], "ciclo": {"para": 0, "n": "Na cópia, a referência do controle é o modelo: a cada trecho, quem copia volta ao modelo, confere o que escreveu e lê o trecho seguinte. Por isso o retorno é à percepção do modelo (etapa 1). É uma leitura do mapa: o HCF descreve a cópia (p. 538, 540), mas não esse controle em detalhe."}, "menos": ["fon", "cin", "am"], "mais": [{"f": "vis", "papel": "Percepção do modelo escrito, com os traços distintivos de cada letra.", "q": "Letras do modelo mal identificadas; reprodução de detalhes inessenciais do impresso com o mesmo cuidado que os essenciais (p. 538)."}]}, {"n": "Escrita automatizada (o próprio nome, a assinatura)", "ref": "HCF, p. 79; III.10C, p. 538, 540", "d": "Escrever algo muito automatizado. As etapas intermediárias se encurtam até uma melodia cinética única, e a análise sonora deixa de ser necessária: por isso a assinatura se conserva quando o ditado já está desorganizado.", "etapas": [{"f": ["tat", "kin"], "rel": "sim", "n": "Melodia cinética única do traçado"}], "ciclo": null, "fundo": [{"f": "ativ", "n": "tônus"}], "menos": ["fon", "cin", "esp", "om", "am", "prog"], "mais": []}, {"n": "Escrita espontânea (escrever o próprio enunciado)", "ref": "HCF III.10C, p. 540, 543; III.9E", "d": "Escrever o nome de um objeto, a resposta a uma pergunta ou um enunciado com sentido próprio, como uma carta. É a escrita no sentido próprio da palavra: além da análise sonora, exige planejar o caráter seletivo do que se escreve, e as provas se parecem com as da nomeação e da fala narrativa (p. 540). Nas lesões temporais, ela se desorganiza junto com o ditado, enquanto a cópia e a assinatura se conservam (p. 540). Nas frontais, palavras isoladas podem sair, mas, ao pôr o pensamento no papel, perde-se o plano: numa carta, a primeira frase se repete (“quero lhe dizer que quero lhe dizer…”) (p. 543).", "etapas": [{"f": ["prog"], "n": "Intenção e plano do texto: o que dizer e em que ordem"}, {"f": ["am"], "n": "Escolha e retenção das palavras do enunciado, na ordem, enquanto se escreve"}, {"f": ["fon", "cin"], "rel": "sim", "n": "Análise da composição sonora de cada palavra, com apoio articulatório"}, {"f": ["esp", "om"], "rel": "sim", "n": "Recodificação de cada fonema num grafema"}, {"f": ["tat", "kin"], "rel": "sim", "n": "Série cinestésica do traçado, organizada em melodia cinética"}], "ciclo": {"para": 0, "n": "O que foi escrito é confrontado com o plano do texto. Sem esse controle, o paciente frontal perde o plano e repete a primeira frase (p. 543)."}, "fundo": [{"f": "ativ", "n": "tônus"}], "menos": [], "mais": []}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da escrita.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'fon', papel: 'Análise da composição sonora da palavra ditada.', q: 'Omissões, substituições de sons acusticamente próximos e transposições, sobretudo no ditado e na escrita espontânea. A cópia e a assinatura ficam preservadas (p. 540).' },
       { f: 'cin', papel: 'Articulação como apoio da análise sonora.', q: 'Substituições articulatoriamente próximas (d/n/l, m/b). A escrita piora se a articulação externa é proibida e melhora com controle visual da boca no espelho (p. 541–542).' },
+      { f: 'am', papel: 'Retenção da palavra ou da frase ditada e da ordem das palavras enquanto se escreve.', q: 'Palavras isoladas costumam sair corretas; o defeito aparece quando o volume aumenta, nas séries de palavras e nas frases ditadas, com perda de parte da série e da ordem (II.2E, p. 130, 132; III.10C, p. 540).' },
       { f: 'esp', papel: 'Recodificação do fonema no grafema, com sua topologia e a disposição espacial de seus elementos.', q: 'Elementos da letra mal dispostos e letras em espelho, também na cópia. A análise fonêmica fica intacta (p. 542).' },
       { f: 'om', papel: 'Ligação óptico-acústica entre o som e a imagem da letra.', q: 'Agrafia óptica (Kaufman): o paciente sabe o som, mas não encontra o grafema. É forma rara (p. 542).' },
       { f: 'tat', papel: 'Recodificação do grafema numa série cinestésica de movimentos da mão (HCF, p. 78): o esquema tátil-cinestésico e espacial do traçado de cada letra, retido e evocado sem apoio da visão.', q: 'Proposta, ainda sem caso descrito por Luria na escrita: o traçado se desorganiza quando falta o controle visual, como nos movimentos diferenciados da mão em lesões do campo 5 (HCF II.4C, p. 204). Letras com elementos mal dispostos ou em espelho também na cópia apontam antes para a síntese espacial (p. 542).' },
       { f: 'kin', papel: 'Melodia cinética: ordem e fluidez dos movimentos.', q: 'Letras isoladas sim, palavras não: a ordem se perde, com perseverações e inércia na passagem de um elemento a outro (p. 81, 542).' },
-      { f: 'prog', papel: 'Tarefa e intenção; na escrita espontânea, o plano do texto.', q: 'Defeito não específico. A frase inicial se repete (“quero lhe dizer que quero lhe dizer…”). A inércia e a fadiga produzem “escrita inicial” e micrografia (p. 543).' } ] },
+      { f: 'prog', papel: 'Mantém a tarefa e a seletividade durante toda a escrita, inibindo perseverações; na escrita espontânea, é o plano do texto.', q: 'Defeito não específico da escrita (p. 543). A inércia e a fadiga produzem “escrita inicial” e micrografia; nas séries e frases ditadas, perseverações e perda da ordem (p. 540); ao pôr o próprio pensamento no papel, perde-se o plano e a frase inicial se repete (“quero lhe dizer que quero lhe dizer…”) (p. 543).' } ] },
   leitura: { hemE: "Leitura propriamente dita: percepção de letras, sílabas e palavras como códigos de linguagem (vantagem do campo visual direito).", hemD: "Percepção não verbal e sentido afetivo. Com só o hemisfério direito disponível, a paciente não lê “norte”, mas diz “algo frio”; não lê o nome da filha, mas diz “algo próximo de mim” (Simernitskaya; HCF, p. 381).", nome: 'Leitura', ru: 'чтение', ref: 'HCF III.10D, p. 543–552',
     def: 'Faz o caminho inverso da escrita: percepção e análise visual do grafema, recodificação dos grafemas em estruturas fonéticas e compreensão do sentido do que está escrito (p. 543–544).',
     etapas: [{ f: ['vis', 'esp'], rel: 'sim', n: 'Percepção dos grafemas e da estrutura visual da palavra' }, { f: ['fon', 'cin'], rel: 'sim', n: 'Recodificação em estrutura fonética (com articulação, na leitura em voz alta)' }, { f: ['kin'], n: 'Síntese sucessiva dos elementos lidos' }, { f: ['prog'], n: 'Compreensão controlada: confronto do sentido com o texto' }],
     tempo: 'Caminho inverso da escrita (p. 543–544). No leitor fluente, palavras familiares são reconhecidas de relance, saltando a etapa 2: é por isso que um paciente pode reconhecer “Moscou” sem conseguir lê-la em voz alta (p. 548).',
     fundo: [{ f: 'ativ', n: 'tônus' }], ciclo: { para: 0, n: 'Se o sentido esperado não confere com o que está escrito, a hipótese é inibida e corrigida, e o leitor volta ao texto. No paciente frontal, a hipótese não se corrige, e a leitura vira conjectura (p. 532, 546).' },
     tarefa: "Leitura em voz alta de palavras e frases", tarefaD: "Ler em voz alta letras, sílabas, palavras e frases. É o caminho inverso da escrita: perceber os grafemas, recodificá-los em estrutura fonética com apoio da articulação, sintetizar em sucessão os elementos lidos e controlar o sentido do que foi lido.",
-    variantes: [{"n": "Leitura de relance de palavras familiares", "ref": "HCF III.10D, p. 548", "d": "Palavras muito familiares (nomes próprios, títulos de jornal) são reconhecidas como um todo, sem recodificação em fonemas. Por isso um paciente pode reconhecer “Moscou” sem conseguir lê-la em voz alta nem analisar sua composição.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção global da palavra"}, {"f": ["om"], "n": "Ligação direta entre a imagem da palavra e seu sentido"}, {"f": ["prog"], "n": "Confronto com o contexto"}], "menos": ["fon", "cin", "kin"], "mais": [{"f": "om", "papel": "Ligação direta entre a imagem visual da palavra e seu sentido, sem passar pelos sons.", "q": "As palavras familiares deixam de ser reconhecidas de relance, e a leitura fica toda analítica, letra a letra."}]}],
+    variantes: [{"n": "Leitura de relance de palavras familiares", "ref": "HCF III.10D, p. 548", "d": "Palavras muito familiares (nomes próprios, títulos de jornal) são reconhecidas como um todo, sem recodificação em fonemas. Por isso um paciente pode reconhecer “Moscou” sem conseguir lê-la em voz alta nem analisar sua composição.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção global da palavra"}, {"f": ["om"], "n": "Ligação direta entre a imagem da palavra e seu sentido"}], "menos": ["fon", "cin", "kin", "prog"], "mais": [{"f": "om", "papel": "Ligação direta entre a imagem visual da palavra e seu sentido, sem passar pelos sons.", "q": "As palavras familiares deixam de ser reconhecidas de relance, e a leitura fica toda analítica, letra a letra."}]}],
     links: [
       { f: 'ativ', papel: 'Tônus cortical que sustenta todo o curso da leitura.', q: 'Rendimento flutuante e esgotamento ao longo da tarefa, com erros inespecíficos que crescem com a fadiga (HCF II.6; FN, p. 28–49).' },
       { f: 'vis', papel: 'Percepção integrada dos grafemas e de seus traços distintivos.', q: 'Alexia óptica literal: as letras perdem o sentido ou são identificadas de modo instável (lesões occipitais).' },
@@ -2178,7 +2217,7 @@ const SYS = {
     fundo: [{ f: 'ativ', n: 'tônus da escuta' }], ciclo: { para: 2, n: 'Em textos, a busca do sentido levanta hipóteses e as verifica contra o esquema de relações; se não conferem, a análise recomeça. O paciente frontal não analisa o texto nem cria hipóteses para verificar: conclui a partir de fragmentos (II.5G, p. 352).' },
     tempo: 'A fala chega como série sucessiva. Compreender uma construção lógico-gramatical exige convertê-la num esquema simultâneo, quase-espacial. Por isso a afasia acústico-mnéstica (perde a série) e a semântica (não faz a conversão) quebram o mesmo sistema em pontos vizinhos.',
     tarefa: "Construções lógico-gramaticais e textos", tarefaD: "Compreender frases com relações lógico-gramaticais (“o irmão do pai”, “o círculo sob o quadrado”, comparações, construções invertidas) e textos. A série sucessiva das palavras precisa ser retida e convertida num esquema simultâneo, e o sentido do todo, buscado ativamente.",
-    variantes: [{"n": "Palavras isoladas e ordens simples", "ref": "HCF III.8, p. 489, 496–498", "d": "Mostrar o objeto nomeado ou cumprir uma ordem curta. É a forma mais elementar da compreensão, que resiste até a lesões corticais grosseiras: depende da discriminação dos sons e da retenção da palavra, sem a conversão das relações num esquema simultâneo.", "etapas": [{"f": ["fon"], "n": "Discriminação fonêmica e reconhecimento da palavra"}, {"f": ["am"], "n": "Retenção da palavra ou da ordem"}], "menos": ["esp", "prog"], "mais": []}],
+    variantes: [{"n": "Palavras isoladas e ordens simples", "ref": "HCF III.8, p. 489, 496–498", "d": "Mostrar o objeto nomeado ou cumprir uma ordem curta. É a forma mais elementar da compreensão, que resiste até a lesões corticais grosseiras: depende da discriminação dos sons e da retenção da palavra, sem a conversão das relações num esquema simultâneo.", "etapas": [{"f": ["fon"], "n": "Discriminação fonêmica e reconhecimento da palavra"}, {"f": ["am"], "n": "Retenção da palavra ou da ordem"}], "fundo": [{"f": "ativ", "n": "tônus da escuta"}, {"f": "prog", "n": "inibir o sentido da palavra anterior"}], "menos": ["esp", "prog"], "mais": [{"f": "prog", "papel": "Manter a seletividade de palavra a palavra, inibindo o sentido da anterior.", "q": "Palavras apresentadas uma a uma são compreendidas; numa sequência, o paciente continua a dar à palavra nova o sentido da anterior (“paragnosias”), nas lesões frontais extensas e sobretudo frontotemporais (III.8, p. 496)."}]}],
     links: [
       { f: 'fon', papel: 'Discriminação de fonemas e reconhecimento da palavra.', q: 'Alienação do sentido das palavras: “ouve, mas não entende” (II.2D).' },
       { f: 'am', papel: 'Retenção de enunciados longos.', q: 'Perda de partes de frases longas e de séries de instruções (II.2E).' },
@@ -2197,7 +2236,7 @@ const SYS = {
       { f: 'am', papel: 'Retenção da série.', q: 'Repete uma ou duas palavras de uma série de três ou quatro, com perda e inversão da ordem.' },
       { f: 'cin', papel: 'Encontrar o articulema.', q: 'Busca articulatória e substituições.' },
       { f: 'kin', papel: 'Passagem de um elemento a outro.', q: 'Perseverações: repete o elemento anterior no lugar do seguinte.' },
-      { f: 'prog', papel: 'Seletividade da resposta.', q: 'Ecolalia, ou repetição inerte de séries já dadas.' } ] },
+      { f: 'prog', papel: 'Seletividade da resposta ao longo da série.', q: 'Defeito não localizado num ponto da tarefa: inércia dos estereótipos que se formam, com repetição de séries já dadas e contaminação entre elas (III.9C, p. 510, 513).' } ] },
   nomeacao: { hemE: "Nomear: ligar o objeto à palavra.", hemD: "Reconhecer e até classificar o objeto pela situação de uso (cigarro com cinzeiro, e não cigarro com lápis), mas sem nomeá-lo. São generalizações de outro nível, não verbais (Sperry; HCF, p. 381).", nome: 'Nomeação', ru: 'номинативная функция речи', ref: 'HCF III.9D, p. 513–518',
     def: 'Reconhecer o objeto, evocar sua imagem, encontrar a palavra entre as alternativas e realizá-la sonoramente.',
     etapas: [{ f: ['vis'], n: 'Reconhecimento do objeto' }, { f: ['om'], n: 'Ligação entre imagem e palavra' }, { f: ['am'], n: 'Escolha da palavra entre alternativas' }, { f: ['fon'], n: 'Forma sonora da palavra' }],
@@ -2210,7 +2249,7 @@ const SYS = {
       { f: 'om', papel: 'Ligação entre imagem visual e palavra.', q: 'Anomia: sabe para que serve, mas não acha o nome. Ajuda pela primeira sílaba.' },
       { f: 'am', papel: 'Seleção da palavra entre alternativas.', q: 'Parafasias verbais e substituições por palavras do mesmo campo.' },
       { f: 'fon', papel: 'Forma sonora da palavra.', q: 'Parafasias literais. A ajuda pela primeira sílaba não funciona.' },
-      { f: 'prog', papel: 'Inibição de respostas irrelevantes.', q: 'Repete o nome anterior (perseveração) ou nomeia por associação imediata.' } ] },
+      { f: 'prog', papel: 'Inibição de respostas irrelevantes.', q: 'Objetos concretos costumam ser nomeados; a dificuldade surge quando a palavra tem de ser buscada ativamente, inibindo as alternativas irrelevantes, como na fala espontânea (III.9D, p. 517). Pode repetir o nome anterior.' } ] },
   calculo: { hemE: "Acalculia ligada à afasia semântica e à síndrome de Gerstmann, por lesão inferoparietal esquerda.", hemD: "Acalculia espacial isolada pode surgir de lesão direita (Hécaen). Goldberg conclui que os dois lados contribuem de modos diferentes e com pesos individuais variáveis (Goldberg, p. 242–243).", nome: 'Cálculo', ru: 'счёт', ref: 'HCF II.3G, p. 182; III.11, p. 553–561',
     def: 'Compreender a estrutura categorial do número (valor posicional) e executar operações sucessivas, retendo os resultados intermediários sob um programa.',
     etapas: [{ f: ['esp'], n: 'Estrutura categorial do número e direção da operação' }, { f: ['prog', 'am'], rel: 'sim', n: 'Execução por etapas: programa e retenção dos resultados intermediários' }],
@@ -2226,10 +2265,10 @@ const SYS = {
   praxis: { hemE: "Apraxias ideatória e ideomotora bilaterais, por lesão parietal esquerda (Goldberg, p. 239). Regulação verbal do ato.", hemD: "Orientação direta no próprio corpo e no espaço imediato. As lesões direitas produzem distúrbio do esquema corporal e anosognosia da hemiparesia esquerda (síndrome de Anton) (HCF, p. 376–377).", nome: 'Movimento voluntário (práxis)', ru: 'произвольное движение', ref: 'HCF II.3E, II.4C–E, II.5D; III.3, p. 414–435',
     def: 'Uma intenção formulada (muitas vezes verbalmente) se organiza num programa motor, realizado sob aferentação cinestésica e espacial e numa sequência cinética fluida.',
     etapas: [{ f: ['prog'], n: 'Intenção (muitas vezes verbal) e programa motor' }, { f: ['esp', 'cin', 'tat', 'kin'], rel: 'sim', n: 'Execução: coordenadas espaciais, aferentação cinestésica, esquema tátil-espacial do movimento e melodia cinética' }],
-    ciclo: { para: 0, n: 'A aferentação de retorno compara o efeito com o programa, como no sistema funcional de Anokhin (HCF, p. 22).' },
+    ciclo: { para: 0, n: 'Ao longo da ação, a fala interna compara o que foi feito com o plano, sinaliza o acordo ou o desacordo, corrige os erros e encerra a ação ou a retoma: é o aceptor da ação de Anokhin (HCF II.5D, p. 292–293; p. 22).' },
     fundo: [{ f: 'ativ', n: 'tônus' }],
     tarefa: "Gestos e posições a partir de instrução", tarefaD: "Fazer, sob instrução, posições e gestos da mão e séries de movimentos alternados. A intenção, muitas vezes verbal, organiza um programa motor, realizado sob aferentação cinestésica e espacial, numa sequência cinética fluida.",
-    variantes: [{"n": "Imitação de posições mostradas", "ref": "HCF III.3, p. 417–420", "d": "Reproduzir a posição da mão mostrada pelo examinador, sentado à frente. É preciso transpor a pose, sem espelhá-la. A dificuldade de transposição indica o componente óptico-espacial do ato; a tendência a espelhar pode ser ecopraxia, sinal de baixa atividade.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção da posição mostrada e sua transposição espacial"}, {"f": ["cin", "tat", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 0, "n": "A posição alcançada é comparada com o modelo."}, "fundo": [{"f": "ativ", "n": "tônus"}, {"f": "prog", "n": "evitar a ecopraxia e o espelho"}], "menos": [], "mais": [{"f": "vis", "papel": "Percepção da posição mostrada.", "q": "Não distingue as posições dos dedos no modelo."}]}, {"n": "Posições sem controle visual (mão atrás de um anteparo)", "ref": "HCF III.3, p. 416–417; II.4C, p. 204", "d": "Reproduzir com uma mão, de olhos fechados, a posição dada à outra, ou uma posição dos dedos com a mão escondida. Sem a visão, o ato depende só da análise cinestésica: é a prova que revela o defeito da base cinestésica do movimento.", "etapas": [{"f": ["prog"], "n": "Instrução"}, {"f": ["cin", "tat"], "rel": "sim", "n": "Análise cinestésica e esquema tátil-espacial da posição, sem a visão"}, {"f": ["kin"], "n": "Execução"}], "ciclo": null, "menos": ["esp"], "mais": []}, {"n": "Ação com objeto imaginário", "ref": "HCF III.3, p. 425", "d": "Mostrar como se mexe o chá, se enfia a linha na agulha ou se corta com a tesoura, sem os objetos. Sem o apoio do objeto, o programa tem de ser formado só a partir da instrução.", "etapas": [{"f": ["prog"], "n": "Programa a partir da instrução, sem o objeto"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução do gesto"}], "menos": ["tat"], "mais": []}, {"n": "Ação por instrução verbal complexa", "ref": "HCF III.3, p. 429–435", "d": "Cumprir uma série de movimentos dada verbalmente (por exemplo, responder a um sinal com um gesto e a outro com outro). Nas lesões temporais, a instrução complexa não é retida; nas frontais, é retida, mas não regula a ação, que escorrega para estereótipos.", "etapas": [{"f": ["fon", "am"], "rel": "sim", "n": "Compreensão e retenção da instrução"}, {"f": ["prog"], "n": "Programa motor regulado pela instrução"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 1, "n": "Cada resposta é confrontada com a instrução."}, "menos": ["tat"], "mais": [{"f": "fon", "papel": "Compreensão da instrução ouvida.", "q": "Desentende as palavras da instrução e troca os sinais."}, {"f": "am", "papel": "Retenção da instrução complexa.", "q": "Perde partes da instrução: incapacidade de reter uma instrução verbal complexa (lesões temporais, p. 435)."}]}],
+    variantes: [{"n": "Imitação de posições mostradas", "ref": "HCF III.3, p. 417–420", "d": "Reproduzir a posição da mão mostrada pelo examinador, sentado à frente. É preciso transpor a pose, sem espelhá-la. A dificuldade de transposição indica o componente óptico-espacial do ato; a tendência a espelhar pode ser ecopraxia, sinal de baixa atividade.", "etapas": [{"f": ["vis", "esp"], "rel": "sim", "n": "Percepção da posição mostrada e sua transposição espacial"}, {"f": ["cin", "tat", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 0, "n": "A posição alcançada é comparada com o modelo, que continua à vista, e corrigida. O HCF descreve essa comparação na construção a partir de um modelo (p. 349) e, em geral, no controle da ação voluntária pela fala interna (II.5D, p. 292–293); na imitação, é uma leitura do mapa."}, "fundo": [{"f": "ativ", "n": "tônus"}, {"f": "prog", "n": "evitar a ecopraxia e o espelho"}], "menos": [], "mais": [{"f": "vis", "papel": "Percepção da posição mostrada.", "q": "Não distingue as posições dos dedos no modelo."}]}, {"n": "Posições sem controle visual (mão atrás de um anteparo)", "ref": "HCF III.3, p. 416–417; II.4C, p. 204", "d": "Reproduzir com uma mão, de olhos fechados, a posição dada à outra, ou uma posição dos dedos com a mão escondida. Sem a visão, o ato depende só da análise cinestésica: é a prova que revela o defeito da base cinestésica do movimento.", "etapas": [{"f": ["cin", "tat"], "rel": "sim", "n": "Análise cinestésica e esquema tátil-espacial da posição, sem a visão"}, {"f": ["kin"], "n": "Execução"}], "ciclo": null, "fundo": [{"f": "ativ", "n": "tônus"}, {"f": "prog", "n": "manter a instrução"}], "menos": ["esp"], "mais": []}, {"n": "Ação com objeto imaginário", "ref": "HCF III.3, p. 425", "d": "Mostrar como se mexe o chá, se enfia a linha na agulha ou se corta com a tesoura, sem os objetos. Sem o apoio do objeto, o programa tem de ser formado só a partir da instrução.", "etapas": [{"f": ["prog"], "n": "Programa a partir da instrução, sem o objeto"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução do gesto"}], "ciclo": {"para": 0, "n": "Como em toda ação por instrução, o gesto é comparado com o programa e corrigido pela fala interna (II.5D, p. 292–293)."}, "menos": ["tat"], "mais": []}, {"n": "Ação por instrução verbal complexa", "ref": "HCF III.3, p. 429–435", "d": "Cumprir uma série de movimentos dada verbalmente (por exemplo, responder a um sinal com um gesto e a outro com outro). Nas lesões temporais, a instrução complexa não é retida; nas frontais, é retida, mas não regula a ação, que escorrega para estereótipos.", "etapas": [{"f": ["fon", "am"], "rel": "sim", "n": "Compreensão e retenção da instrução"}, {"f": ["prog"], "n": "Programa motor regulado pela instrução"}, {"f": ["esp", "cin", "kin"], "rel": "sim", "n": "Execução"}], "ciclo": {"para": 1, "n": "Cada resposta é confrontada com a instrução. Nas lesões frontais, a instrução é retida e repetida, mas deixa de regular as respostas, que escorregam para a ecopraxia e para o estereótipo anterior (p. 431–432, 435; controle pela fala interna, p. 292–293)."}, "menos": ["tat"], "mais": [{"f": "fon", "papel": "Compreensão da instrução ouvida.", "q": "Desentende as palavras da instrução e troca os sinais."}, {"f": "am", "papel": "Retenção da instrução complexa.", "q": "Perde partes da instrução: incapacidade de reter uma instrução verbal complexa (lesões temporais, p. 435)."}]}],
     links: [
       { f: 'cin', papel: 'Aferentação cinestésica: endereçar o impulso aos músculos certos.', q: 'Apraxia aferente: “mão-pá”, procura da posição dos dedos, apraxia oral (II.4C, p. 202–203).' },
       { f: 'tat', papel: 'Esquema tátil-cinestésico e espacial da postura e do movimento, retido para executar sem controle visual.', q: 'Movimentos diferenciados impossíveis sem o apoio da visão, em lesões parietais situadas atrás das pós-centrais, campo 5 (Foerster; HCF II.4C, p. 204). Leitura proposta, ligada ao fator novo.' },
@@ -2684,15 +2723,25 @@ function factorPoint(Hh, f) {
   const set = new Set(FAT[f].pt || FAT[f].areas); const vs = [];
   for (let v = 0; v < Hh.n; v++) if (set.has(Hh.L[v])) vs.push(v);
   if (!vs.length) return null;
-  const P = vs.map(v => vpos(Hh, v, new THREE.Vector3())), c = P.reduce((s, p) => s.add(p), new THREE.Vector3()).multiplyScalar(1 / P.length);
-  let bi = 0, bd = 1e9; P.forEach((p, i) => { const d = p.distanceTo(c) + (Hh.S[vs[i]] > 0 ? 5 : 0); if (d < bd) { bd = d; bi = i; } });
-  const v = vs[bi], out = vpos(Hh, v, new THREE.Vector3(), 4);
+  const P = vs.map(v => vpos(Hh, v, new THREE.Vector3()));
+  /* o ponto fica na face lateral, sobre um giro: vértices afastados da linha média, com a normal para fora;
+     sem isso, o centroide de campos que se estendem à face medial ou basal (18, 19, 6, 9…) caía fora da vista e o ponto parecia solto */
+  let keep = vs.map((v, i) => i);
+  if (!FAT[f].pt) {
+    const mx = P.reduce((s, p) => s + Math.abs(p.x), 0) / P.length;
+    const lat = keep.filter(i => Math.abs(P[i].x) >= mx - 2 && Hh.Pn[vs[i] * 3] * Math.sign(P[i].x) > .3);
+    if (lat.length >= Math.max(8, vs.length * .2)) keep = lat;
+  }
+  const c = keep.reduce((s, i) => s.add(P[i]), new THREE.Vector3()).multiplyScalar(1 / keep.length);
+  let bi = keep[0], bd = 1e9; for (const i of keep) { const d = P[i].distanceTo(c) + (Hh.S[vs[i]] > 0 ? 12 : 0); if (d < bd) { bd = d; bi = i; } }
+  const v = vs[bi], out = vpos(Hh, v, new THREE.Vector3(), 4); out.n = n3.clone();
   if (st.div === 'sep') out.z += FRONT.has(Hh.L[v]) ? -OFFZ : OFFZ;
   return out;
 }
 /* variantes conforme a tarefa: troca etapas, fundo e ciclo e acrescenta ou tira elos */
-function sysAt(s) {
-  const S = SYS[s], i = st.var && st.var.s === s ? st.var.i : -1, V = S && S.variantes && S.variantes[i];
+function sysAt(s) { return s === '_mont' ? montS() : sysVar(s, st.var && st.var.s === s ? st.var.i : -1); }
+function sysVar(s, i) {
+  const S = SYS[s], V = S && S.variantes && S.variantes[i];
   if (!V) return S;
   const menos = new Set(V.menos || []);
   return Object.assign({}, S, { etapas: V.etapas || S.etapas, fundo: V.fundo || S.fundo, ciclo: 'ciclo' in V ? V.ciclo : (V.etapas ? null : S.ciclo),
@@ -2719,9 +2768,9 @@ function drawSys() {
   const sides = both ? ['left', 'right'] : [st.hemi === 'R' ? 'right' : 'left'];
   const sx0 = sides.length === 1 ? (sides[0] === 'left' ? -1 : 1) : 0;
   const hub = both ? new THREE.Vector3(0, 60, -112) : new THREE.Vector3(sx0 * 55, 56, -112);
-  const hm = new THREE.Mesh(new THREE.SphereGeometry(6, 24, 16), ovMat('#10131a')); hm.position.copy(hub); hm.renderOrder = 22; SYSG.add(hm);
+  const hm = new THREE.Mesh(new THREE.SphereGeometry(6, 24, 16), ovMat(S.mont ? PCOR : '#10131a')); hm.position.copy(hub); hm.renderOrder = 22; SYSG.add(hm);
   const addLab = (p, txt, cls, col, op) => { const el = document.createElement('div'); el.className = 'lab ' + cls; el.textContent = txt; if (col) el.style.borderColor = col; if (op) el.style.opacity = op; $('#labs').appendChild(el); syslabs.push({ p: p.clone(), el }); };
-  addLab(hub.clone().add(new THREE.Vector3(0, 11, 0)), S.nome + (both ? ' · E + D' : ''), 'sysh');
+  addLab(hub.clone().add(new THREE.Vector3(0, 11, 0)), (S.mont ? 'Seu sistema: ' : '') + S.nome + (both ? ' · E + D' : ''), 'sysh' + (S.mont ? ' mont' : ''));
   for (const side of sides) {
     const Hh = H[side], sx = side === 'left' ? -1 : 1, faint = both && side === 'right';
     const mat = c => { const m = ovMat(c); if (faint) m.opacity = .45; return m; };
@@ -2730,9 +2779,10 @@ function drawSys() {
     for (const k in pts) {
       const p = pts[k], col = FAT[k].cor, ctrl = p.clone().lerp(hub, .5); ctrl.x += sx * 40; ctrl.y += 15;
       const tube = new THREE.Mesh(new THREE.TubeGeometry(new THREE.QuadraticBezierCurve3(hub, ctrl, p), 40, faint ? .9 : 1.3, 8, false), mat(col)); tube.renderOrder = 21; SYSG.add(tube);
-      const s = new THREE.Mesh(new THREE.SphereGeometry(faint ? 3.4 : 4.2, 20, 14), mat(col)); s.position.copy(p); s.renderOrder = 23; s.userData.sysf = k; SYSG.add(s);
+      const s = new THREE.Mesh(new THREE.SphereGeometry(faint ? 3.4 : 4.2, 20, 14), mat(col)); s.position.copy(p); s.renderOrder = 23; s.userData.sysf = k; s.userData.nrm = p.n; s.userData.op = s.material.opacity; SYSG.add(s);
       let lp = p.clone().add(new THREE.Vector3(0, fundSet.has(k) ? -9 : 8, 0)); const scr = v => { const n = v.clone().project(cam); return new THREE.Vector2(n.x * 400, n.y * 300); }; let guard = 0; while (guard++ < 6 && placed.some(q => { const d = scr(lp); return Math.abs(q.x - d.x) < 75 && Math.abs(q.y - d.y) < 13; })) lp.y -= 8; placed.push(scr(lp));
       addLab(lp, FAT[k].curto + (fundSet.has(k) ? ' · fundo' : '') + (both ? (side === 'left' ? ' · E' : ' · D') : ''), 'sysf', col, faint ? .7 : 0);
+      Object.assign(syslabs[syslabs.length - 1], { nrm: p.n, pp: p.clone(), op: faint ? '.7' : '' });
     }
     const E = S.etapas || [], seen = new Set(), fund = new Set((S.fundo || []).map(x => x.f));
     const segLine = (p, q, r, dashed, col) => { const curve = new THREE.LineCurve3(p, q); if (!dashed) { const t = new THREE.Mesh(new THREE.TubeGeometry(curve, 2, r, 6, false), mat(col)); t.renderOrder = 21; SYSG.add(t); return; }
@@ -2761,7 +2811,8 @@ let gradPend = null;
 const rebuildGrad = () => { if (gradPend) return; gradPend = setTimeout(() => { gradPend = null; buildGrad(); drawSys(); }, 120); };
 
 function recolor() {
-  const sel = st.sel, any = sel.size > 0 || st.lit.size > 0;
+  const sel = st.sel, any = sel.size > 0 || st.lit.size > 0 || st.mont;
+  const hovF = st.mont && st.hov && st.hov[0] === 'a' ? FA[+st.hov.slice(1)] : null;
   for (const h in H) {
     const { g, L, shade, n } = H[h], c = g.attributes.color.array, cache = {};
     for (let v = 0; v < n; v++) {
@@ -2769,7 +2820,8 @@ function recolor() {
       if (!col) {
         col = areaColor(b, sel.has(b));
         if (st.hemiPaint) col = b ? mix(hex(h === 'left' ? '#1d5fb8' : '#c2557a'), W, b && AR[b] && AR[b].z === 'P' ? .45 : .12) : MW;
-        else if (any && !sel.has(b)) col = mix(col, GREY, .86);
+        else if (hovF && FA[b] === hovF && !sel.has(b)) col = mix(col, GREY, .35);
+        else if (any && !sel.has(b)) col = mix(col, GREY, st.mont ? 1 : .86);
         if (b && st.hov === 'a' + b) col = mix(col, W, .32);
         cache[b] = col;
       }
@@ -2780,7 +2832,7 @@ function recolor() {
   for (const l of labs) l.el.classList.toggle('on', sel.has(l.b) && sel.size < 6);
   for (const D of deep) {
     const on = st.lit.has(D.base); let col = deepColor(D.m);
-    if (any && !on) col = mix(col, GREY, .7);
+    if (any && !on) col = mix(col, GREY, st.mont ? .92 : .7);
     if (st.hov === 'd' + D.base) col = mix(col, W, .3);
     D.mesh.material.color.setRGB(...col);
     D.mesh.material.emissive.setRGB(...(on ? col.map(x => x * .35) : [0, 0, 0]));
@@ -2870,6 +2922,10 @@ function placeLabels() {
     put(nd.el, v3, w, h); nd.el.style.transform = 'translate(-50%,-140%)';
   }
   for (const l of syslabs) put(l.el, l.p, w, h);
+  /* pontos de fator na face oposta à câmera (por exemplo, a ativação, na face medial, vista de lado) ficam esmaecidos, para não parecerem soltos sobre o córtex */
+  if (st.sys) { const op = st.cortex === 'op';
+    for (const o of SYSG.children) if (o.userData.nrm) o.material.opacity = op && o.userData.nrm.dot(v3.copy(cpos).sub(o.position).normalize()) < -.2 ? .28 : o.userData.op;
+    for (const l of syslabs) if (l.nrm) l.el.style.opacity = op && l.nrm.dot(v3.copy(cpos).sub(l.pp).normalize()) < -.2 ? '.45' : l.op; }
   const shown = new Set();
   for (const D of deep) {
     const show = D.on && D.mesh.visible && !shown.has(D.base) && !st.sys && (st.cortex !== 'op' || ['tronco', 'cerebelo'].includes(D.m.grp));
@@ -2976,32 +3032,58 @@ function pick(ev) {
 }
 const tip = $('#tip');
 cv.addEventListener('pointermove', ev => {
+  if (mDrag && Math.hypot(ev.clientX - mDrag.x, ev.clientY - mDrag.y) > 5) mDrag.mov = true;
   if (pending) return; pending = requestAnimationFrame(() => {
-    pending = null; if (ev.buttons) { tip.style.display = 'none'; return; }
+    pending = null;
+    if (mDrag && mDrag.mov) { const p = pick(ev), r = view.getBoundingClientRect(); const alvo = p && (p.sysf || (p.b && FA[p.b]) || (p.deep && FD[p.deep])); const ok = alvo && alvo !== mDrag.f && MPAL.includes(alvo), sq = mDrag.tool === 'seq';
+      mTraco(ev.clientX - r.left, ev.clientY - r.top, ok);
+      tip.innerHTML = `<b>${esc(FAT[mDrag.f].curto)}</b> ${sq ? '→' : '+'} ${ok ? `<b>${esc(FAT[alvo].curto)}</b><br>${sq ? `Solte: ${esc(FAT[alvo].curto)} vem logo depois` : 'Solte: ficam simultâneos'}` : 'solte sobre outro fator'}`; tip.style.display = 'block';
+      { const cx = ev.clientX - r.left, cy = ev.clientY - r.top, w = tip.offsetWidth, hh = tip.offsetHeight;
+        tip.style.left = Math.max(4, Math.min(cx < mDrag.x0 ? cx - w - 16 : cx + 16, r.width - w - 4)) + 'px'; tip.style.top = Math.max(4, Math.min(cy < mDrag.y0 ? cy - hh - 16 : cy + 16, r.height - hh - 4)) + 'px'; }
+      cv.style.cursor = ok ? 'copy' : 'no-drop'; return; }
+    if (ev.buttons) { tip.style.display = 'none'; return; }
     const p = pick(ev), r = view.getBoundingClientRect();
     let txt = '', hv = null;
     if (p && p.grd) { txt = `<b>Gradiente ${p.gl.map(g => esc(GRD[g].nome.toLowerCase())).join(' / ')}</b><br>${p.gl.map(g => esc(GRD[g].esq)).join(' / ')} · clique para percorrer`; }
-    else if (p && p.sysf) { const L = sysAt(st.sys).links.find(l => l.f === p.sysf); txt = `<b>${esc(FAT[p.sysf].nome)}</b><br>${esc(L.papel)}`; }
+    else if (p && p.sysf) { const L = sysAt(st.sys).links.find(l => l.f === p.sysf); txt = `<b>${esc(FAT[p.sysf].nome)}</b><br>${esc(L.papel)}` + (st.mont ? `<br><span class="note" style="font-size:11px">${montDica(p.sysf)}</span>` : ''); }
     else if (p && p.gn) { const g = GN[p.gn]; hv = null; txt = `<b>${esc(g.lab)}${NOSIDE.has(p.gn) ? '' : p.side}</b> · ${esc(g.nome)}<br>Goldberg, nível ${g.lvl === 2.5 ? '2–3' : g.lvl}`; }
     else if (p && p.deep) { const m = META(p.deep); hv = 'd' + p.deep; txt = `<b>${esc(m.n)}</b><br>${esc(GR[m.grp])}${m.u ? ' · ' + esc(UN[m.u].nome) : ''}`; }
     else if (p && p.b && AR[p.b]) { hv = 'a' + p.b; const A = AR[p.b];
       if ((st.mode === 'fat' || st.mode === 'sys') && (FA[p.b] || A.z === 'P')) { const F = FA[p.b] ? FAT[FA[p.b]] : null, d = F ? F.def : ELEM.d, s1 = d.split(/(?<=\.)\s/)[0];
-        txt = `<b style="color:${F ? F.cor : ELEM.cor}">${esc(F ? F.nome : ELEM.nome)}</b><br><span style="font-size:12px">${esc(s1.length > 220 ? s1.slice(0, 217) + '…' : s1)}</span><br><span class="note" style="font-size:11px">Área ${p.b} · ${esc(A.n)}</span>`; }
+        txt = `<b style="color:${F ? F.cor : ELEM.cor}">${esc(F ? F.nome : ELEM.nome)}</b><br><span style="font-size:12px">${esc(s1.length > 220 ? s1.slice(0, 217) + '…' : s1)}</span><br><span class="note" style="font-size:11px">Área ${p.b} · ${esc(A.n)}</span>` + (st.mont && F && MPAL.includes(FA[p.b]) ? `<br><span class="note" style="font-size:11px">${montDica(FA[p.b])}</span>` : ''); }
       else txt = `<b>Área ${p.b}</b> · ${esc(A.n)}<br>${esc(ZN[A.z].nome)} · ${esc(UN[A.u].nome)}`; }
     else if (p && p.b === 0) txt = 'Parede medial (não cortical)';
     const hg = p && p.gn ? p.gn + p.side : null; if (hg !== st.hgn) { st.hgn = hg; applyGrad(); }
     if (hv !== st.hov) { st.hov = hv; recolor(); }
     if (txt) { tip.innerHTML = txt; tip.style.display = 'block'; tip.style.left = Math.min(ev.clientX - r.left + 14, r.width - 270) + 'px'; tip.style.top = (ev.clientY - r.top + 14) + 'px'; }
     else tip.style.display = 'none';
-    cv.style.cursor = txt ? 'pointer' : 'grab';
+    cv.style.cursor = txt ? (st.mont && st.mtool && st.mtool !== 'esc' ? 'crosshair' : 'pointer') : 'grab';
   });
 });
+cv.addEventListener('pointercancel', () => { if (mDrag) { mDrag = null; ctl.enabled = true; mSvg.innerHTML = ''; } });
 cv.addEventListener('pointerleave', () => { tip.style.display = 'none'; if (st.hov) { st.hov = null; recolor(); } if (st.hgn) { st.hgn = null; applyGrad(); } });
 cv.addEventListener('pointerdown', ev => { down = [ev.clientX, ev.clientY]; });
+let mDrag = null;
+cv.addEventListener('pointerdown', ev => { if (!st.mont || ev.button !== 0) return; const tool = st.mtool || 'esc'; if (tool === 'esc') return;
+  const p = pick(ev), f = p && (p.sysf || (p.b && FA[p.b]) || (p.deep && FD[p.deep])); if (f && MPAL.includes(f)) { const r = view.getBoundingClientRect(); mDrag = { f, x: ev.clientX, y: ev.clientY, x0: ev.clientX - r.left, y0: ev.clientY - r.top, mov: false, tool }; ctl.enabled = false; } }, true);
+/* traço do arrasto: seta (consecutivo) ou laço (simultâneo) */
+const mSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); mSvg.id = 'mDraw'; view.appendChild(mSvg);
+function mTraco(x1, y1, ok) {
+  if (!mDrag) { mSvg.innerHTML = ''; return; }
+  const { x0, y0, tool } = mDrag, c = ok ? '#10131a' : '#8a8f98';
+  if (tool === 'seq') { const ang = Math.atan2(y1 - y0, x1 - x0), L = 13, a1 = ang + 2.6, a2 = ang - 2.6;
+    mSvg.innerHTML = `<line x1="${x0}" y1="${y0}" x2="${x1}" y2="${y1}" stroke="${c}" stroke-width="3" stroke-linecap="round"/><path d="M${x1} ${y1} L${x1 + L * Math.cos(a1)} ${y1 + L * Math.sin(a1)} L${x1 + L * Math.cos(a2)} ${y1 + L * Math.sin(a2)} Z" fill="${c}"/><circle cx="${x0}" cy="${y0}" r="5" fill="#fff" stroke="${c}" stroke-width="2.5"/>`; }
+  else { const mx = (x0 + x1) / 2, my = (y0 + y1) / 2, dx = x1 - x0, dy = y1 - y0, k = .35;
+    mSvg.innerHTML = `<path d="M${x0} ${y0} Q${mx - dy * k} ${my + dx * k} ${x1} ${y1} Q${mx + dy * k} ${my - dx * k} ${x0} ${y0}" fill="rgba(214,51,108,.08)" stroke="${ok ? '#d6336c' : '#8a8f98'}" stroke-width="2.5" stroke-dasharray="7 5" stroke-linecap="round"/><circle cx="${x0}" cy="${y0}" r="5" fill="#fff" stroke="${c}" stroke-width="2.5"/><circle cx="${x1}" cy="${y1}" r="5" fill="#fff" stroke="${c}" stroke-width="2.5"/>`; }
+}
 cv.addEventListener('pointerup', ev => {
+  if (mDrag) { const d0 = mDrag; mDrag = null; ctl.enabled = true;
+    mSvg.innerHTML = '';
+    if (d0.mov) { down = null; tip.style.display = 'none'; const p = pick(ev), alvo = p && (p.sysf || (p.b && FA[p.b]) || (p.deep && FD[p.deep])); if (alvo && alvo !== d0.f && MPAL.includes(alvo)) { if (d0.tool === 'seq') montChain(d0.f, alvo); else montJoin(d0.f, alvo); } return; } }
   if (!down || Math.hypot(ev.clientX - down[0], ev.clientY - down[1]) > 5) return; down = null;
   const p = pick(ev);
   if (st.prop) { if (p && p.deep) propToggle('deep', p.deep); else if (p && p.b && AR[p.b]) propToggle('areas', p.b); return; }
+  if (st.mont) { const f = p && (p.sysf || (p.b && FA[p.b]) || (p.deep && FD[p.deep])); if (f && MPAL.includes(f)) montUsar(f, ev); return; }
   if (p && p.grd) showGrad(p.grd, p.side); else if (p && p.sysf) showFactor(p.sysf); else if (p && p.gn) showNode(p.gn, p.side); else if (p && p.deep) showDeep(p.deep); else if (p && p.b && AR[p.b]) showArea(p.b); else showMode();
 });
 
@@ -3015,7 +3097,7 @@ const bchips = list => `<div class="chips">${list.filter(b => AR[b]).map(b => `<
 const dchips = list => `<div class="chips">${list.map(k => { const m = META(k); return `<button class="chip" data-d="${k}"><i style="background:${esc(m.cor)}"></i>${esc(m.nuc || m.n)}</button>`; }).join('')}</div>`;
 const deepBases = () => [...new Set(deep.map(D => D.base))];
 function clearSys() { if (st.sys) { st.sys = null; drawSys(); } }
-function setSel(areas, lit, gs, grd) { st.prop = false; st.grd = grd || null; st.hemiPaint = false; st.sel = new Set(areas); st.lit = new Set(lit || []); st.gsel = new Set(gs || []); recolor(); if (gnodes.length) applyGrad(); }
+function setSel(areas, lit, gs, grd) { st.prop = false; st.mont = false; st.grd = grd || null; st.hemiPaint = false; st.sel = new Set(areas); st.lit = new Set(lit || []); st.gsel = new Set(gs || []); recolor(); if (gnodes.length) applyGrad(); }
 const back = '<button class="back" data-back>← legenda</button>';
 const ensureVisible = base => { const g = META(base).grp; if (!st.groups.has(g)) { st.groups.add(g); syncGroups(); applyVis(); } };
 
@@ -3035,8 +3117,13 @@ function showMode() {
     h = '<h3>Mecanismos reflexos de Poliakov (1971)</h3><p class="note">O encéfalo inteiro, do eixo ao neocórtex. Cada mecanismo sustenta uma função: auto-regulação, auto-controle, auto-direção e direção. Use <b>Córtex: Vidro</b> para ver o interior.</p>';
     items = MORD.map(m => `<button class="lg" data-m="${m}"><span class="sw" style="background:${MEC[m].cor}"></span><span>${esc(MEC[m].nome)}<small>${esc(MEC[m].fun)}</small></span></button>`);
   } else if (st.mode === 'sys') {
-    h = '<h3>Sistemas funcionais complexos</h3><p class="note">Uma função psicológica superior é um sistema funcional: a tarefa e o efeito são constantes, os meios e elos são variáveis (Anokhin; Bernstein) (HCF, p. 22). Qualquer elo lesado perturba o sistema, cada um de modo diferente (HCF, p. 78). Conforme o conteúdo da tarefa, muda o peso de cada fator no sistema funcional (por exemplo, na escrita por cópia, sob ditado ou espontânea; na leitura em voz alta ou silenciosa). Com a automatização (decorrente da aprendizagem), o peso de cada elo muda (localização dinâmica). A ativação aparece como fundo em todos os sistemas, assim como a programação, regulação e controle. Clique num sistema: o mapa triangula os fatores envolvidos, com raios do sistema a cada fator. Setas pretas: etapas sucessivas. Nó branco: elos simultâneos na mesma etapa (traço contínuo) ou alternativos (tracejado). Seta vermelha: retorno de controle. Fatores “de fundo” atuam durante todo o curso.</p>';
-    items = Object.keys(SYS).map(s => `<button class="lg" data-s="${s}"><span class="sw" style="background:conic-gradient(${SYS[s].links.map((l, i, A) => `${FAT[l.f].cor} ${i / A.length * 100}% ${(i + 1) / A.length * 100}%`).join(',')})"></span><span>${esc(SYS[s].nome)}<small>${esc(stageTxt(SYS[s]))}${SYS[s].fundo ? ' · fundo: ' + SYS[s].fundo.map(x => esc(FAT[x.f].curto)).join(', ') : ''}</small></span></button>`);
+    h = '<h3>Sistemas funcionais complexos</h3><p class="note">Uma função psicológica superior é um sistema funcional: a tarefa e o efeito são constantes, os meios e elos são variáveis (Anokhin; Bernstein) (HCF, p. 22). Qualquer elo lesado perturba o sistema, cada um de modo diferente (HCF, p. 78).</p>'
+      + '<p class="note">O peso de cada fator muda conforme o conteúdo da tarefa (na escrita por cópia, sob ditado ou espontânea; na leitura em voz alta ou silenciosa) e com a automatização, que decorre da aprendizagem (localização dinâmica).</p>'
+      + '<details class="notas nsys"' + (st.notasSys ? ' open' : '') + '><summary title="Mostrar ou ocultar a nota"><span class="ni">i</span>Notas importantes<span class="nc">1</span></summary><div class="nb"><p class="note"><b>Ativação e programação.</b> A ativação sustenta todos os sistemas; na atenção, entra como etapa própria. A programação, regulação e controle aparece como <b>etapa</b> quando a própria pessoa precisa formar o programa ou verificar o resultado; como <b>fundo</b>, quando o programa é dado pelo material ou pela instrução; e quase desaparece nas tarefas automatizadas. O critério completo, com as fontes, está na seção dos sistemas, abaixo do modelo.</p></div></details>'
+      + '<p class="note">Clique num sistema: o mapa triangula os fatores envolvidos, com raios do sistema a cada fator. Setas pretas: etapas sucessivas. Nó branco: elos simultâneos na mesma etapa (traço contínuo) ou alternativos (tracejado). Seta vermelha: retorno de controle. Fatores “de fundo” atuam durante todo o curso.</p>'
+      + '<p class="note">No fim da lista, você pode <b>montar o seu sistema</b> para uma tarefa qualquer.</p>';
+    items = Object.keys(SYS).map(s => `<button class="lg" data-s="${s}"><span class="sw" style="background:conic-gradient(${SYS[s].links.map((l, i, A) => `${FAT[l.f].cor} ${i / A.length * 100}% ${(i + 1) / A.length * 100}%`).join(',')})"></span><span>${esc(SYS[s].nome)}<small>${esc(stageTxt(SYS[s]))}${SYS[s].fundo ? ' · fundo: ' + SYS[s].fundo.map(x => esc(FAT[x.f].curto)).join(', ') : ''}</small></span></button>`)
+      .concat([`<p class="fsub">Seu sistema</p>`, `<button class="lg" data-mont="1" title="Escrever uma tarefa e compor o sistema com os fatores"><span class="sw mont"></span><span>${MONT.tarefa.trim() ? esc(MONT.tarefa) : 'Montar um sistema'}<small>${MONT.fs.length ? esc(MONT.fs.map(f => FAT[f].curto).join(', ')) : 'escreva a tarefa e acumule os fatores que ela recruta'}</small></span></button>`]);
   } else if (st.mode === 'fat') {
     h = '<h3>Fatores neuropsicológicos</h3><p class="note">Os fatores (também chamados, na literatura, de elos ou mecanismos) são processos fisiológicos locais que se desenvolvem em determinadas estruturas cerebrais formadoras de síndromes. São a unidade mínima estrutural e funcional do encéfalo que determina o caráter da síndrome neuropsicológica. Por fator, Luria compreendia “a função propriamente dita” (<i>modus operandi</i>) de uma ou outra estrutura encefálica, o princípio ou modo de seu funcionamento. Cada área do sistema funcional que está na base de uma função psicológica (linguagem, percepção, movimentos etc.) responde por determinado grupo de fatores; quebrado um fator, vários sistemas se desorganizam de uma vez, cada um a seu modo (HCF, p. 82–84; Luria, 1966, p. xvii, 49–51).</p><details class="notas"' + (st.notas ? ' open' : '') + '><summary title="Mostrar ou ocultar as notas"><span class="ni">i</span>Notas importantes<span class="nc">3</span></summary><div class="nb"><p class="note"><b>Fatores do adulto.</b> Os fatores, como aparecem nestes esquemas, são os do adulto: resultam de um longo processo de desenvolvimento e aprendizagem e são uma formação tardia da ontogênese. Em cada etapa do desenvolvimento, a atividade consciente se realiza por sistemas funcionais diferentes, que não resultam da simples maturação dos neurônios, mas da comunicação com os adultos e da linguagem (Luria, 2010, p. 196–198). Por isso uma lesão de zona secundária na criança perturba todo o desenvolvimento das formas complexas que dependem dela, enquanto no adulto o mesmo defeito é compensado por sistemas já formados (Vigotski, citado em Luria, 2010, p. 207). Os fatores na infância, pela dificuldade de sistematizar uma organização ainda em mudança, foram menos estudados.</p><p class="note"><b>Memória (retenção ou armazenamento).</b> Nos fatores mnésticos modais, o que se localiza é a retenção ou o armazenamento do traço de uma modalidade, não a memória. A memória é uma função psicológica superior, um sistema funcional que recruta vários elos, inclusive frontais (ver os sistemas de memorização). Por isso a escola mexicana de Luis Quintanar Rojas e Yulia Solovieva traduz esses fatores como retenção audioverbal e retenção visual.</p><p class="note"><b>Ordem da legenda.</b> Primeiro os nove fatores clássicos de Luria, por unidade funcional; depois as ampliações de Khomskaya (2003, p. 268–273), em discussão. Cada fator traz o grupo correspondente na tipologia de Khomskaya; o ponto colorido indica a unidade de Luria. </p></div></details><p class="note"> Clique num fator para acender suas áreas, seus nós e linhas no esquema de Goldberg e suas estruturas profundas. As linhas seguem a Fig. 2–3 de Goldberg (1990): contínuas à esquerda, tracejadas à direita.</p>';
     const fbtn = (f, ext) => { const F = FAT[f]; const sub = PSET.has(f) ? esc(KNOTA[f] || '') : ext ? `Khomskaya, grupo ${F.g} · ${esc(KNOTA[f] || '')}` : `<span style="color:${UCOR(F.u)}">●</span> ${esc(uname(F.u))} · Khomskaya, grupo ${F.g}`;
@@ -3098,6 +3185,7 @@ function showFactor(f) {
   ${F.deep.length && st.cortex === 'op' ? '<p class="note">Use <b>Córtex: Vidro</b> para ver as estruturas profundas.</p>' : ''}`;
 }
 function showSystem(s) {
+  if (s === '_mont') return showMont();
   if (st.var && st.var.s !== s) st.var = null;
   const S0 = sysAt(s), ord = f => { const i = (S0.etapas || []).findIndex(e => e.f.includes(f)); return i < 0 ? 99 : i; };
   const S = Object.assign({}, S0, { links: S0.links.slice().sort((x, y) => ord(x.f) - ord(y.f)) }); if (st.mode !== 'sys' && st.mode !== 'fat') { st.mode = 'sys'; syncSeg('#mode', 'sys'); }
@@ -3223,10 +3311,53 @@ function showDeep(base) {
   ${m.areas && m.areas.length ? `<dt>Campos corticais ligados</dt><dd>${bchips(m.areas)}</dd>` : ''}</dl>
   <button class="chip" data-focus="${base}" style="margin-top:10px">Aproximar</button>`;
 }
-info.addEventListener('toggle', e => { if (e.target.matches && e.target.matches('details.notas')) st.notas = e.target.open; }, true);
+info.addEventListener('toggle', e => { if (!e.target.matches) return; if (e.target.matches('details.mj')) st.mjOpen = e.target.open; else if (e.target.matches('details.nsys')) st.notasSys = e.target.open; else if (e.target.matches('details.notas')) st.notas = e.target.open; }, true);
+info.addEventListener('input', e => { if (!st.mont) return; const t = e.target;
+  if (t.id === 'mTarefa') { MONT.tarefa = t.value; montSalvar(); clearTimeout(montTimer); montTimer = setTimeout(drawSys, 300); }
+  else if (t.id === 'mDesc') { MONT.desc = t.value; montSalvar(); }
+  else if (t.dataset.mj) { MONT.just[t.dataset.mj] = t.value; montSalvar(); } });
+info.addEventListener('change', e => { if (!st.mont) return; const t = e.target, d = t.dataset, v = t.value; if (t.tagName !== 'SELECT') return;
+  if ('mcmp' in d) { st.mcmp = v || null; montRender(); return; }
+  if ('mbase' in d) { if (v) montBase(v); return; }
+  if (!v && !('mciclo' in d)) return;
+  montSnap();
+  if ('madd' in d) MONT.etapas[+d.madd].f.push(v);
+  else if ('mnova' in d) MONT.etapas.push({ f: [v], rel: 'sim' });
+  else if ('mfundo' in d) MONT.fundo.push(v);
+  else if ('mciclo' in d) MONT.ciclo = v ? +v : null;
+  else return;
+  st.mmsg = null; montSalvar(); montRender(); });
+function montClick(t, d, ev) {
+  if (d.mont) { st.mmsg = null; showMont(); return true; }
+  if (d.mver) { const [s, i] = d.mver.split(':'); st.var = +i >= 0 ? { s, i: +i } : null; showSystem(s); return true; }
+  if (!st.mont) return false;
+  const E = MONT.etapas; let mudou = true;
+  if (d.mtool) { st.mtool = d.mtool; montRender(); return true; }
+  if (d.mf) { montUsar(d.mf, ev); return true; }
+  if ('mundo' in d) { montUndo(false); return true; }
+  if ('mredo' in d) { montUndo(true); return true; }
+  if (d.metx || d.mup || d.mdown || d.mdel || d.mrel || d.mfx || 'mseq' in d || 'mlimpar' in d) montSnap();
+  if (d.metx) { const [i, f] = d.metx.split(':'); E[+i].f = E[+i].f.filter(k => k !== f); }
+  else if (d.mup) { const i = +d.mup; if (i > 0) { [E[i - 1], E[i]] = [E[i], E[i - 1]]; MONT.ciclo = null; } }
+  else if (d.mdown) { const i = +d.mdown; if (i < E.length - 1) { [E[i + 1], E[i]] = [E[i], E[i + 1]]; MONT.ciclo = null; } }
+  else if (d.mdel) { E.splice(+d.mdel, 1); MONT.ciclo = null; }
+  else if (d.mrel) { E[+d.mrel].rel = d.rv === 'alt' ? 'alt' : 'sim'; }
+  else if (d.mfx) { MONT.fundo = MONT.fundo.filter(k => k !== d.mfx); }
+  else if ('mseq' in d) { for (const f of montSemLugar()) E.push({ f: [f], rel: 'sim' }); }
+  else if ('mlimpar' in d) { montPrev = JSON.parse(JSON.stringify(MONT)); Object.assign(MONT, montNorm({})); st.mcmp = null; st.mmsg = { t: 'A montagem foi apagada. Para recuperá-la, use Desfazer ou Ctrl + Z.', c: 'ok', undo: true }; }
+  else if ('mlink' in d) { const L = montLink(); mudou = false;
+    const fim = ok => { st.mlink = L; st.mmsg = ok ? { t: 'Link copiado. Quem abrir verá este sistema no mapa (no endereço do site).', c: 'ok' } : { t: 'Copie o link abaixo.', c: '' }; montRender(); const i = info.querySelector('input.mlink'); if (i && !ok) i.select(); };
+    try { navigator.clipboard.writeText(L).then(() => fim(true), () => fim(false)); } catch (e) { fim(false); } return true; }
+  else if ('menviar' in d) { montEnviar(); return true; }
+  else mudou = false;
+  if (!mudou) return false;
+  if (!('mlimpar' in d)) st.mmsg = null;
+  montSalvar(); montRender(); return true;
+}
 info.addEventListener('input', e => { if (!st.prop) return; const campo = { prNome: 'nome', prDesc: 'desc', prAutor: 'autor', prAno: 'ano', prObra: 'obra', prPag: 'pag', prOutras: 'outras' }[e.target.id]; if (!campo) return; PROP[campo] = e.target.value; propSalvar(); });
 info.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return; const d = t.dataset;
+  if (montClick(t, d, e)) return;
   if (d.gm) { setMode(d.gm); return; }
   if (d.prop) { showProposal(); return; }
   if (d.var != null && st.sys) { const k = +d.var; st.var = k < 0 ? null : { s: st.sys, i: k }; const sc = info.scrollTop; showSystem(st.sys); info.scrollTop = sc; return; }
@@ -3283,11 +3414,230 @@ function showProposal() {
   <p class="note">A proposta fica guardada neste navegador até você limpar. Ao enviar, ela vai pelo canal de sugestões para os autores do mapa.</p>`;
 }
 
+
+/* ---------- montar um sistema (usuário) ---------- */
+const MONTK = '_mont', SITE = 'https://gugsphc.github.io/mapa-nphc/';
+const MPAL = FORD.filter(f => !PSET.has(f) && (FAT[f].pt || FAT[f].areas.length));
+const MLUR = new Set(FSEC[0].subs.flatMap(x => x.fs));
+function montNorm(o) {
+  o = o && typeof o === 'object' ? o : {};
+  const fs = Array.isArray(o.fs) ? [...new Set(o.fs.filter(f => MPAL.includes(f)))] : [];
+  const just = {}; for (const f of fs) just[f] = String((o.just && o.just[f]) || '').slice(0, 1500);
+  const etapas = (Array.isArray(o.etapas) ? o.etapas : []).map(e => ({ f: Array.isArray(e && e.f) ? e.f : [], rel: e && e.rel === 'alt' ? 'alt' : 'sim' }));
+  const M = { tarefa: String(o.tarefa || '').slice(0, 160), desc: String(o.desc || '').slice(0, 3000), fs, etapas,
+    fundo: Array.isArray(o.fundo) ? o.fundo : [], ciclo: Number.isInteger(o.ciclo) ? o.ciclo : null, just };
+  montFix(M); return M;
+}
+/* tira o que não está mais na lista, apaga etapas vazias e confere o retorno */
+function montFix(M) {
+  const ok = new Set(M.fs), old = M.etapas.map(e => ({ f: [...new Set(e.f.filter(f => ok.has(f)))], rel: e.rel === 'alt' ? 'alt' : 'sim' }));
+  const map = {}; let n = 0; old.forEach((e, i) => { if (e.f.length) map[i + 1] = ++n; });
+  if (Number.isInteger(M.ciclo)) M.ciclo = map[M.ciclo] || null;
+  M.etapas = old.filter(e => e.f.length);
+  M.etapas.forEach(e => { if (e.f.length < 2) e.rel = 'sim'; });
+  M.fundo = [...new Set(M.fundo.filter(f => ok.has(f)))];
+  if (!(Number.isInteger(M.ciclo) && M.ciclo >= 1 && M.ciclo < M.etapas.length)) M.ciclo = null;
+}
+const MONT = (() => { let o = null; try { o = JSON.parse(localStorage.getItem('nphc-sistema')); } catch (e) {} return montNorm(o); })();
+let montPrev = null, montTimer = null;
+const montHist = [], montRedo = [];
+/* guarda o estado antes de cada mudança (Ctrl + Z) */
+function montSnap() { const s = JSON.stringify(MONT); if (montHist[montHist.length - 1] !== s) { montHist.push(s); if (montHist.length > 80) montHist.shift(); } montRedo.length = 0; }
+function montUndo(refazer) {
+  const de = refazer ? montRedo : montHist, para = refazer ? montHist : montRedo;
+  if (!de.length) { st.mmsg = { t: refazer ? 'Nada a refazer.' : 'Nada a desfazer.', c: '' }; montRender(); return; }
+  para.push(JSON.stringify(MONT)); Object.assign(MONT, montNorm(JSON.parse(de.pop())));
+  montSalvar(); st.mmsg = { t: refazer ? 'Refeito.' : 'Desfeito.', c: 'ok' }; montRender();
+}
+document.addEventListener('keydown', e => {
+  if (!st.mont || !(e.ctrlKey || e.metaKey) || e.altKey) return;
+  const k = e.key.toLowerCase(); if (k !== 'z' && k !== 'y') return;
+  if (e.target.closest && e.target.closest('input, textarea, select')) return;
+  e.preventDefault(); montUndo(k === 'y' || e.shiftKey);
+});
+const montSalvar = () => { montFix(MONT); st.mlink = null; try { localStorage.setItem('nphc-sistema', JSON.stringify(MONT)); } catch (e) {} };
+const montSemLugar = () => MONT.fs.filter(f => !MONT.fundo.includes(f) && !MONT.etapas.some(e => e.f.includes(f)));
+function montS() {
+  return { nome: MONT.tarefa.trim() || 'Sistema sem nome', mont: true,
+    etapas: MONT.etapas.map((e, i) => ({ f: e.f.slice(), rel: e.rel, n: 'Etapa ' + (i + 1) })),
+    fundo: MONT.fundo.length ? MONT.fundo.map(f => ({ f, n: 'durante todo o curso' })) : null,
+    ciclo: MONT.ciclo ? { para: MONT.ciclo - 1, n: '' } : null,
+    links: MONT.fs.map(f => ({ f, papel: (MONT.just[f] || '').trim() || 'Elo escolhido na montagem.', q: '' })) };
+}
+const montOrgTxt = S => [(S.etapas || []).map((e, i) => `etapa ${i + 1}: ${e.f.map(f => FAT[f].curto).join(e.rel === 'alt' ? ' ou ' : ' + ')}`).join(' → '),
+  S.fundo ? 'durante todo o curso: ' + S.fundo.map(x => FAT[x.f].curto).join(', ') : '', S.ciclo ? `retorno da etapa ${S.etapas.length} à etapa ${S.ciclo.para + 1}` : ''].filter(Boolean).join(' · ');
+function montToggle(f) {
+  if (!MPAL.includes(f)) return;
+  montSnap(); const i = MONT.fs.indexOf(f); if (i < 0) MONT.fs.push(f); else MONT.fs.splice(i, 1);
+  st.mmsg = null; montSalvar(); montRender();
+}
+/* ferramentas: pôr ou tirar; em sequência (nova etapa); simultâneo (na última etapa). Ctrl + clique = em sequência; Shift + clique = simultâneo */
+const MTOOL = { esc: 'Pôr ou tirar', seq: 'Consecutivo', sim: 'Simultâneo' };
+const MICO = {
+  esc: '<svg class="mti" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 2 L5 16 L8.6 12.6 L11 18 L13.4 17 L11 11.6 L16 11.4 Z" fill="currentColor"/></svg>',
+  seq: '<svg class="mti" viewBox="0 0 20 20" aria-hidden="true"><circle cx="4" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 10 H15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M13 6 L18 10 L13 14 Z" fill="currentColor"/></svg>',
+  sim: '<svg class="mti" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10 Q10 1 17 10 Q10 19 3 10 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3.2 2.4"/><circle cx="3.5" cy="10" r="2.3" fill="currentColor"/><circle cx="16.5" cy="10" r="2.3" fill="currentColor"/></svg>' };
+const montFerr = ev => ev && (ev.ctrlKey || ev.metaKey) ? 'seq' : ev && ev.shiftKey ? 'sim' : (st.mtool || 'esc');
+function montDica(f) {
+  const t = st.mtool || 'esc', em = MONT.fs.includes(f);
+  return t === 'seq' ? 'Arraste deste fator até outro: o outro vem logo depois. Clique: nova etapa no fim.'
+    : t === 'sim' ? `Arraste deste fator até outro: ficam simultâneos. Clique: junto na etapa ${Math.max(1, MONT.etapas.length)}.`
+    : `Clique para ${em ? 'tirar do' : 'pôr no'} seu sistema. Ctrl + clique: consecutivo; Shift + clique: simultâneo.`;
+}
+function montUsar(f, ev) {
+  if (!MPAL.includes(f)) return;
+  const t = montFerr(ev);
+  if (t === 'esc') { montToggle(f); return; }
+  if (t === 'sim' && MONT.etapas.length && MONT.etapas[MONT.etapas.length - 1].f.includes(f)) { st.mmsg = { t: `${FAT[f].curto} já está na etapa ${MONT.etapas.length}.`, c: '' }; montRender(); return; }
+  montSnap(); if (!MONT.fs.includes(f)) MONT.fs.push(f);
+  MONT.fundo = MONT.fundo.filter(k => k !== f);
+  const E = MONT.etapas;
+  if (t === 'seq' || !E.length) { E.push({ f: [f], rel: 'sim' }); st.mmsg = { t: `${FAT[f].curto} entrou como etapa ${E.length}.`, c: 'ok' }; }
+  else { const L = E[E.length - 1]; if (L.f.includes(f)) st.mmsg = { t: `${FAT[f].curto} já está na etapa ${E.length}.`, c: '' }; else { L.f.push(f); st.mmsg = { t: `${FAT[f].curto} entrou na etapa ${E.length}, simultâneo a ${L.f.filter(k => k !== f).map(k => FAT[k].curto).join(', ')}.`, c: 'ok' }; } }
+  montSalvar(); montRender();
+}
+/* seta de a para b: b vem logo depois de a (etapa nova logo após a de a); se b já vem depois, é movido; se vem antes, repete-se */
+function montChain(a, b) {
+  if (a === b) return;
+  montSnap();
+  for (const f of [a, b]) if (!MONT.fs.includes(f)) MONT.fs.push(f);
+  MONT.fundo = MONT.fundo.filter(k => k !== a && k !== b);
+  const E = MONT.etapas; let ia = -1;
+  for (let i = E.length - 1; i >= 0; i--) if (E[i].f.includes(a)) { ia = i; break; }
+  if (ia < 0) { E.push({ f: [a], rel: 'sim' }); ia = E.length - 1; }
+  for (let i = E.length - 1; i > ia; i--) if (E[i].f.includes(b)) { E[i].f = E[i].f.filter(k => k !== b); break; }
+  E.splice(ia + 1, 0, { f: [b], rel: 'sim' });
+  if (MONT.ciclo && MONT.ciclo >= ia + 2) MONT.ciclo++;
+  montSalvar();
+  let na = -1; for (let i = 0; i < MONT.etapas.length - 1; i++) if (MONT.etapas[i].f.includes(a) && MONT.etapas[i + 1].f.includes(b)) na = i;
+  st.mmsg = { t: `${FAT[a].curto} → ${FAT[b].curto}: ${FAT[b].curto} vem logo depois, na etapa ${na + 2}.`, c: 'ok' }; montRender();
+}
+/* laço entre a e b: a passa para a etapa de b, simultâneo */
+function montJoin(a, b) {
+  const E = MONT.etapas; let ti = -1;
+  for (let i = E.length - 1; i >= 0; i--) if (E[i].f.includes(b)) { ti = i; break; }
+  if (ti >= 0 && E[ti].f.includes(a)) { st.mmsg = { t: `${FAT[a].curto} e ${FAT[b].curto} já estão na mesma etapa.`, c: '' }; montRender(); return; }
+  montSnap();
+  for (const f of [a, b]) if (!MONT.fs.includes(f)) MONT.fs.push(f);
+  MONT.fundo = MONT.fundo.filter(k => k !== b);
+  if (ti < 0) { E.push({ f: [b], rel: 'sim' }); ti = E.length - 1; }
+  for (let i = E.length - 1; i >= 0; i--) if (i !== ti && E[i].f.includes(a)) { E[i].f = E[i].f.filter(k => k !== a); break; }
+  E[ti].f.push(a); E[ti].rel = 'sim'; MONT.fundo = MONT.fundo.filter(k => k !== a);
+  montSalvar(); const n = MONT.etapas.findIndex(e => e.f.includes(a) && e.f.includes(b)) + 1;
+  st.mmsg = { t: `${FAT[a].curto} e ${FAT[b].curto} agora são simultâneos, na etapa ${n}.`, c: 'ok' }; montRender();
+}
+function montRef(k) {
+  const [s, i] = String(k).split(':'); if (!SYS[s]) return null;
+  const R = sysVar(s, i == null ? -1 : +i), V = i == null ? null : SYS[s].variantes[+i];
+  return Object.assign({}, R, { rotulo: SYS[s].nome + ' · ' + (V ? V.n : (SYS[s].tarefa || 'tarefa de referência')), key: s, vi: i == null ? -1 : +i });
+}
+const montRefOpts = sel => Object.keys(SYS).flatMap(s => [[s, SYS[s].nome + (SYS[s].tarefa ? ' · ' + SYS[s].tarefa : '')]]
+  .concat((SYS[s].variantes || []).map((v, i) => [s + ':' + i, SYS[s].nome + ' · ' + v.n])))
+  .map(([v, t]) => `<option value="${v}"${sel === v ? ' selected' : ''}>${esc(t)}</option>`).join('');
+function montBase(k) {
+  const R = montRef(k); if (!R) return;
+  montSnap(); montPrev = JSON.parse(JSON.stringify(MONT));
+  const fs = [...new Set(R.links.map(l => l.f))].filter(f => MPAL.includes(f)), fora = R.links.map(l => l.f).filter(f => !MPAL.includes(f));
+  const just = {}; for (const l of R.links) if (MPAL.includes(l.f)) just[l.f] = `${l.papel} (conforme o mapa: ${R.ref}${R._var ? '; ' + R._var.ref : ''})`;
+  Object.assign(MONT, { tarefa: MONT.tarefa.trim() ? MONT.tarefa : R.rotulo, fs, just,
+    etapas: (R.etapas || []).map(e => ({ f: e.f.slice(), rel: e.rel === 'alt' ? 'alt' : 'sim' })),
+    fundo: (R.fundo || []).map(x => x.f), ciclo: R.ciclo ? R.ciclo.para + 1 : null });
+  montSalvar(); st.mmsg = { t: `Montagem substituída pelo sistema do mapa (${R.rotulo}). Agora você pode alterá-lo para a sua tarefa.` + (fora.length ? ` Ficaram de fora fatores sem ponto no córtex: ${fora.map(f => FAT[f].curto).join(', ')}.` : ''), c: 'ok', undo: true };
+  montRender();
+}
+const b64e = s => btoa(String.fromCharCode(...new TextEncoder().encode(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+const b64d = s => new TextDecoder().decode(Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/')), c => c.charCodeAt(0)));
+const montLink = () => SITE + '#sistema=' + b64e(JSON.stringify({ tarefa: MONT.tarefa, desc: MONT.desc, fs: MONT.fs, etapas: MONT.etapas, fundo: MONT.fundo, ciclo: MONT.ciclo, just: MONT.just }));
+function montHash() {
+  const m = /[#&]sistema=([A-Za-z0-9_-]+)/.exec(location.hash); if (!m) return false;
+  let o = null; try { o = JSON.parse(b64d(m[1])); } catch (e) { return false; }
+  montSnap(); if (MONT.fs.length) { montPrev = JSON.parse(JSON.stringify(MONT)); try { localStorage.setItem('nphc-sistema-anterior', JSON.stringify(MONT)); } catch (e) {} }
+  Object.assign(MONT, montNorm(o)); montSalvar();
+  st.mmsg = { t: 'Sistema aberto a partir de um link.' + (montPrev ? ' A sua montagem anterior foi guardada: Ctrl + Z a traz de volta.' : ''), c: 'ok', undo: !!montPrev };
+  try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+  showMont(); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); return true;
+}
+function montEnviar() {
+  const nome = f => FAT[f].curto;
+  if (!MONT.tarefa.trim()) { st.mmsg = { t: 'Dê um nome à tarefa antes de enviar.', c: 'err' }; montRender(); $('#mTarefa').focus(); return; }
+  if (MONT.fs.length < 2) { st.mmsg = { t: 'Um sistema precisa de pelo menos dois fatores.', c: 'err' }; montRender(); return; }
+  const falta = MONT.fs.filter(f => !/\b(1[89]|20)\d\d\b/.test(MONT.just[f] || ''));
+  if (falta.length) { st.mjOpen = true; st.mmsg = { t: 'Para enviar, justifique cada elo com o papel na tarefa e a fonte (autor, ano e página). Falta em: ' + falta.map(nome).join(', ') + '.', c: 'err' }; montRender(); const t = info.querySelector(`[data-mj="${falta[0]}"]`); if (t) t.focus(); return; }
+  const f = $('#sugForm'); if (!f) return;
+  const S = montS();
+  f.mensagem.value = `Proposta de sistema funcional (montado no mapa)\nTarefa: ${MONT.tarefa.trim()}${MONT.desc.trim() ? '\nDescrição: ' + MONT.desc.trim() : ''}\nOrganização: ${montOrgTxt(S) || 'sem etapas definidas'}${montSemLugar().length ? '\nSem lugar definido: ' + montSemLugar().map(nome).join(', ') : ''}\n\nElos:\n${MONT.fs.map(k => `- ${FAT[k].nome}: ${MONT.just[k].trim()}`).join('\n')}\n\nAbrir no mapa: ${montLink()}`;
+  $('#sugestoes').scrollIntoView({ behavior: 'smooth' }); setTimeout(() => f.mensagem.focus({ preventScroll: true }), 600);
+  st.mmsg = { t: 'A proposta foi para o canal de sugestões, logo abaixo. Confira e clique em Enviar sugestão.', c: 'ok' }; montRender();
+}
+function montCmpHtml() {
+  const R = st.mcmp ? montRef(st.mcmp) : null;
+  let h = `<label class="mlab"><span>Comparar com um sistema do mapa</span><select data-mcmp><option value="">escolha um sistema…</option>${montRefOpts(st.mcmp)}</select></label>`;
+  if (!R) return h;
+  const pos = S => { const o = {}; (S.etapas || []).forEach((e, i) => e.f.forEach(f => { (o[f] = o[f] || []).push(String(i + 1)); })); (S.fundo || []).forEach(x => { (o[x.f] = o[x.f] || []).push('fundo'); }); return o; };
+  const pm = pos(montS()), pr = pos(R), A = new Set(MONT.fs), B = new Set(R.links.map(l => l.f));
+  const onde = (o, f) => o[f] ? o[f].join(', ') : 'sem etapa';
+  const sp = (f, x) => `<span class="chip"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)}${x ? `<small class="mpos">${x}</small>` : ''}</span>`;
+  const com = [...A].filter(f => B.has(f)), so = [...A].filter(f => !B.has(f)), mapa = [...B].filter(f => !A.has(f));
+  h += `<div class="mcmp"><p class="note">Em comum (${com.length})${com.length ? ', com a etapa no seu e no do mapa' : ''}</p><div class="chips">${com.map(f => sp(f, `seu: ${onde(pm, f)} · mapa: ${onde(pr, f)}`)).join('') || '<span class="note">nenhum</span>'}</div>
+  <p class="note">Só no seu (${so.length})</p><div class="chips">${so.map(f => sp(f)).join('') || '<span class="note">nenhum</span>'}</div>
+  <p class="note">Só no do mapa (${mapa.length})${mapa.some(f => MPAL.includes(f)) ? ': clique para pôr no seu' : ''}</p><div class="chips">${mapa.map(f => MPAL.includes(f) ? `<button class="chip" data-mf="${f}" title="Pôr no seu sistema"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)} +</button>` : sp(f)).join('') || '<span class="note">nenhum</span>'}</div>
+  <p class="note">A comparação mostra os elos e a etapa de cada um; os papéis e as fontes estão na ficha do sistema do mapa.</p><div class="chips"><button class="chip" data-mver="${R.key}:${R.vi}" title="${esc(R.rotulo)}">Abrir o sistema do mapa</button></div></div>`;
+  return h;
+}
+function montRender() { if (st.sys !== MONTK) return; const sc = info.scrollTop; showMont(); info.scrollTop = sc; }
+function showMont() {
+  const novo = st.sys !== MONTK;
+  if (st.mode !== 'sys') { st.mode = 'sys'; syncSeg('#mode', 'sys'); }
+  if (novo) { if (st.grad) toggleGrad(false); st.labs = false; st.labsPrev = null; $('#bLab').setAttribute('aria-pressed', false); st.var = null;
+    if (st.hemi === 'B') { st.hemi = 'L'; st.medSide = null; syncSeg('#hemi', 'L'); applyVis(); applyGrad(); setView('lat'); } }
+  const fs = MONT.fs;
+  st.sys = MONTK; setSel(fs.flatMap(f => FAT[f].areas), fs.flatMap(f => FAT[f].deep), []); st.mont = true; recolor(); drawSys();
+  const fc = (f, attr, extra) => `<button class="chip" ${attr} title="${esc(FAT[f].nome)}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)}${extra || ''}</button>`;
+  const pal = lista => lista.map(f => `<button class="chip mf" data-mf="${f}" aria-pressed="${fs.includes(f)}" title="${esc(FAT[f].nome)}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].curto)}</button>`).join('');
+  const addSel = (attr, exclui, rotulo) => { const l = fs.filter(f => !exclui.includes(f)); return l.length ? `<select ${attr} aria-label="${esc(rotulo)}"><option value="">${esc(rotulo)}</option>${l.map(f => `<option value="${f}">${esc(FAT[f].curto)}</option>`).join('')}</select>` : ''; };
+  const E = MONT.etapas, m = E.length, sem = montSemLugar();
+  const etapas = E.map((e, i) => `<li><div class="mhead"><b>Etapa ${i + 1}</b><span class="mbtns"><button class="chip" data-mup="${i}" title="Subir" ${i ? '' : 'disabled'}>↑</button><button class="chip" data-mdown="${i}" title="Descer" ${i < m - 1 ? '' : 'disabled'}>↓</button><button class="chip" data-mdel="${i}" title="Apagar a etapa">apagar</button></span></div>
+    <div class="chips">${e.f.map(f => fc(f, `data-metx="${i}:${f}"`, ' ×')).join(e.rel === 'alt' ? '<span class="rel">ou</span>' : '<span class="rel">+</span>')}${addSel(`data-madd="${i}"`, e.f, '+ fator nesta etapa')}</div>
+    ${e.f.length > 1 ? `<div class="seg mini">${['sim', 'alt'].map(v => `<button data-mrel="${i}" data-rv="${v}" aria-pressed="${e.rel === v}">${v === 'sim' ? 'simultâneos' : 'alternativos'}</button>`).join('')}</div>` : ''}</li>`).join('');
+  const msg = st.mmsg ? `<p class="mmsg ${st.mmsg.c || ''}" role="status">${esc(st.mmsg.t)}${st.mmsg.undo && montHist.length ? ' <button class="chip" data-mundo>Desfazer</button>' : ''}</p>` : '';
+  info.innerHTML = back + `<h3><span class="sw mont" style="display:inline-block;vertical-align:-3px;margin-right:8px"></span>Montar um sistema</h3>
+  <p class="note">O encéfalo começa apagado. Escreva a tarefa e escolha os fatores que ela recruta, <b>clicando nos fatores abaixo ou nos campos do encéfalo</b>: ao passar o mouse, o fator inteiro se destaca; ao clicar, ele acende e entra na triangulação, que vai se acumulando. A montagem é sua: não é um sistema validado pela literatura até ser conferida pelos autores do mapa.</p>
+  <div class="mtools" role="toolbar" aria-label="Ferramenta de clique"><span class="mtl">Ferramenta:</span><div class="seg mini">${Object.keys(MTOOL).map(k => `<button data-mtool="${k}" aria-pressed="${(st.mtool || 'esc') === k}" title="${k === 'esc' ? 'Clique põe o fator no sistema, sem etapa, ou tira. Arrastar gira o encéfalo.' : k === 'seq' ? 'Arraste de um fator até outro: o segundo vem logo depois do primeiro. Clique: nova etapa no fim (atalho: Ctrl + clique).' : 'Arraste de um fator até outro: ficam na mesma etapa. Clique: junta o fator à última etapa (atalho: Shift + clique).'}">${MICO[k]}${MTOOL[k]}</button>`).join('')}</div><span class="mundo"><button class="chip" data-mundo title="Desfazer (Ctrl + Z)" ${montHist.length ? '' : 'disabled'}>↶</button><button class="chip" data-mredo title="Refazer (Ctrl + Y ou Ctrl + Shift + Z)" ${montRedo.length ? '' : 'disabled'}>↷</button></span></div>
+  <p class="note mhint">Com <b>Consecutivo</b> (seta), arraste no encéfalo de um fator até outro: o segundo passa a vir logo depois do primeiro. Com <b>Simultâneo</b> (laço), arraste de um fator até outro: os dois ficam na mesma etapa. Nessas duas ferramentas, clicar também funciona (etapa nova no fim, ou junto na última), e para girar o encéfalo arraste fora dele ou volte a Pôr ou tirar. <b>Atalhos:</b> Ctrl + clique, consecutivo; Shift + clique, simultâneo; Ctrl + Z desfaz e Ctrl + Y refaz.</p>
+  ${msg}
+  <form class="sug prop mont" onsubmit="return false">
+  <label><span>Tarefa</span><input id="mTarefa" maxlength="160" value="${esc(MONT.tarefa)}" placeholder="Por exemplo: copiar um desenho de um modelo visual"></label>
+  <label><span>Descrição <small>(opcional)</small></span><textarea id="mDesc" rows="2" maxlength="3000" placeholder="Como a tarefa é proposta: material, instrução, o que se pede">${esc(MONT.desc)}</textarea></label>
+  </form>
+  <h3 style="margin-top:14px">Fatores</h3>
+  <p class="fsub">Fatores de Luria</p><div class="chips">${pal(MPAL.filter(f => MLUR.has(f)))}</div>
+  <p class="fsub">Ampliações e propostas (Khomskaya; revisão técnica)</p><div class="chips kmont">${pal(MPAL.filter(f => !MLUR.has(f)))}</div>
+  <p class="note">O cerebelo e os fatores inter-hemisféricos e gerais ficam de fora por enquanto, porque não têm um ponto no córtex para a triangulação.</p>
+  ${fs.length ? `<h3 style="margin-top:14px">Organização no tempo <small class="note">(opcional)</small></h3>
+  ${m ? `<ol class="etapas mont">${etapas}</ol>` : '<p class="note">Ainda sem etapas: os fatores aparecem ligados ao sistema, sem ordem.</p>'}
+  <div class="mrow">${addSel('data-mnova', [], '+ nova etapa com…')}${sem.length > 1 ? `<button class="chip" data-mseq>Pôr em sequência os fatores sem lugar</button>` : ''}</div>
+  <p class="note" style="margin-top:8px"><b>Durante todo o curso (fundo):</b></p>
+  <div class="chips">${MONT.fundo.map(f => fc(f, `data-mfx="${f}"`, ' ×')).join('')}${addSel('data-mfundo', MONT.fundo, '+ fator de fundo')}</div>
+  ${m >= 2 ? `<label class="mlab"><span>Retorno de controle (seta vermelha)</span><select data-mciclo><option value="">sem retorno</option>${Array.from({ length: m - 1 }, (_, i) => `<option value="${i + 1}"${MONT.ciclo === i + 1 ? ' selected' : ''}>da etapa ${m} à etapa ${i + 1}</option>`).join('')}</select></label>` : ''}
+  ${sem.length ? `<p class="note">Sem lugar definido: ${sem.map(f => esc(FAT[f].curto)).join(', ')}.</p>` : ''}
+  <details class="notas mj"${st.mjOpen ? ' open' : ''}><summary><span class="ni">i</span>Justificar os elos<span class="nc">${fs.filter(f => (MONT.just[f] || '').trim()).length}/${fs.length}</span></summary><div class="nb">
+  <p class="note">Para cada fator: o papel dele nesta tarefa e a fonte (autor, ano, página). É opcional para estudar e obrigatório para enviar a proposta.</p>
+  <form class="sug prop" onsubmit="return false">${fs.map(f => `<label><span><i class="dot" style="background:${FAT[f].cor}"></i> ${esc(FAT[f].nome)}</span><textarea data-mj="${f}" rows="2" maxlength="1500" placeholder="Papel na tarefa; fonte: autor, ano, página">${esc(MONT.just[f] || '')}</textarea></label>`).join('')}</form></div></details>` : ''}
+  <h3 style="margin-top:16px">Comparar e reaproveitar</h3>
+  ${montCmpHtml()}
+  <label class="mlab"><span>Começar a partir de um sistema do mapa</span><select data-mbase><option value="">escolha um sistema…</option>${montRefOpts(null)}</select></label>
+  <h3 style="margin-top:16px">Guardar, compartilhar e enviar</h3>
+  <p class="note">A montagem fica guardada neste navegador até você limpar. O link abre este mesmo sistema no mapa, em qualquer computador. Para propô-lo aos autores, justifique cada elo e envie pelo canal de sugestões.</p>
+  <div class="sugact"><button type="button" class="chip" data-mlink>Copiar link</button><button type="button" class="sugbtn" data-menviar>Enviar como proposta</button><button type="button" class="chip" data-mlimpar>Limpar</button></div>
+  ${st.mlink ? `<input class="mlink" readonly value="${esc(st.mlink)}" aria-label="Link do sistema">` : ''}`;
+}
+
 /* índice das estruturas profundas, na página */
 function fillDeepIdx() {
   $('#deepIdx').innerHTML = Object.keys(GR).map(g => { const l = deepBases().filter(b => META(b).grp === g); return l.length ? `<div class="dg"><h3>${esc(GR[g])}</h3>${dchips(l)}</div>` : ''; }).join('');
 }
 $('#khIr').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (st.prop) propSair(); if (b.dataset.d) showDeep(b.dataset.d); else showArea(+b.dataset.a); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
+$('#bMontPg').addEventListener('click', () => { if (document.getElementById('load')) return; if (st.prop) propSair(); st.mmsg = null; showMont(); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
 $('#deepIdx').addEventListener('click', e => { const b = e.target.closest('[data-d]'); if (!b) return; if (st.prop) propSair(); showDeep(b.dataset.d); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
 
 /* ---------- controles ---------- */
@@ -3452,7 +3802,7 @@ $('#atab').addEventListener('click', e => { const r = e.target.closest('tr[data-
 $('#atab').addEventListener('keydown', e => { const r = e.target.closest('tr[data-b],tr[data-d]'); if (r && e.key === 'Enter') go(r); });
 
 /* ---------- carga ---------- */
-Promise.resolve(window.MESH).then(D => { build(D); renderTab($('#q').value); }).catch(err => { $('#load').textContent = 'Não foi possível carregar a superfície (' + err.message + ').'; });
+Promise.resolve(window.MESH).then(D => { build(D); renderTab($('#q').value); montHash(); window.addEventListener('hashchange', montHash); }).catch(err => { $('#load').textContent = 'Não foi possível carregar a superfície (' + err.message + ').'; });
 }
 
 
@@ -3491,7 +3841,7 @@ F.addEventListener('submit', async ev => {
 
 /* ---------- versão e aviso de atualização ---------- */
 (() => {
-const V = { versao: '1.0.2', data: '25/11/2026', site: 'https://gugsphc.github.io/mapa-nphc/' };
+const V = { versao: '1.1', data: '26/11/2026', site: 'https://gugsphc.github.io/mapa-nphc/' };
 document.querySelectorAll('.vNum').forEach(e => e.textContent = V.versao);
 document.querySelectorAll('.vData').forEach(e => e.textContent = V.data);
 const maior = (a, b) => { const x = String(a).split('.').map(Number), y = String(b).split('.').map(Number);
