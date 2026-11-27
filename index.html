@@ -205,6 +205,18 @@ dl.f{margin:0}dl.f dt{font-weight:600;font-size:14px;margin-top:12px;color:var(-
 .mundo{display:inline-flex;gap:4px;margin-left:auto}
 aside#info .mundo .chip{min-height:28px;padding:2px 10px;font-size:15px}
 aside#info .mundo .chip[disabled]{opacity:.35;cursor:default}
+.lwrap{position:relative;display:inline-flex}
+.lwrap #bLur i{font-style:normal;font-size:10px;opacity:.7;margin-left:2px}
+.lmenu{position:fixed;z-index:60;display:flex;flex-direction:row;padding:3px;background:var(--bg);border:1px solid var(--line);border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.lmenu[hidden]{display:none!important}
+.lmenu::before{content:'';position:absolute;top:-6px;left:50%;margin-left:-6px;border:6px solid transparent;border-top:0;border-bottom-color:var(--line)}
+.seg.lmenu{overflow:visible}
+.seg.lmenu button{border-radius:999px;padding:0 12px;min-height:28px;font-size:13px}
+.seg.lmenu button+button{border-left:1px solid var(--line);border-radius:0}
+.seg.lmenu button:first-child{border-radius:999px 0 0 999px}.seg.lmenu button:last-child{border-radius:0 999px 999px 0}
+.prims{display:flex;flex-direction:column;gap:6px}
+.prims>div{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.pmot{font-size:13px}
 .mtl{font-size:13px;color:var(--mute)}
 .mtools .seg.mini button{display:inline-flex;align-items:center;gap:6px}
 .mti{width:16px;height:16px;flex:none}
@@ -261,10 +273,12 @@ pre,.scroll{overflow-x:auto}
         <div class="grp"><span class="cap">Modelo</span>
         <div class="seg" id="mode" role="group" aria-label="Modelo exibido">
           <button data-v="zonas" aria-pressed="true" title="Zonas primárias, secundárias e terciárias de Poliakov">Zonas <small>Poliakov</small></button>
-          <button data-v="luria" title="As três unidades funcionais de Luria">Unidades <small>Luria</small></button>
-          <button data-v="fat" title="Fatores neuropsicológicos e gradientes de Goldberg">Fatores</button>
-          <button data-v="sys" title="Sistemas funcionais complexos e os fatores que os compõem">Sistemas</button>
-          <button data-v="brod" title="Áreas de Brodmann e estruturas profundas, sem classificação">Anatomia</button>
+          <div class="lwrap"><button data-v="lur" id="bLur" aria-haspopup="true" aria-expanded="false" title="Modelos de Luria: unidades funcionais, fatores neuropsicológicos e sistemas funcionais">Modelos <small>Luria</small> <i>▾</i></button>
+          <div class="seg lmenu" id="lmenu" hidden role="group" aria-label="Modelos de Luria">
+            <button data-v="luria" title="As três unidades funcionais de Luria">Unidades</button><button data-v="fat" title="Fatores neuropsicológicos e a tipologia de Khomskaya">Fatores</button><button data-v="sys" title="Sistemas funcionais complexos e os fatores que os compõem; monte o seu">Sistemas</button>
+          </div></div>
+          <button data-v="brod" title="Áreas de Brodmann e estruturas profundas, sem classificação">Anatomia <small>Brodmann</small></button>
+          <button data-v="grad" title="Gradientes cognitivos de Goldberg (1990), sobre as zonas, as unidades ou os fatores">Gradientes <small>Goldberg</small></button>
         </div></div>
         <div class="grp"><span class="cap">Hemisfério</span>
         <div class="seg" id="hemi" role="group" aria-label="Hemisfério">
@@ -298,7 +312,6 @@ pre,.scroll{overflow-x:auto}
       <div class="dock">
         <div class="grp"><span class="cap">Camadas</span>
         <div class="row"><details class="menu"><summary class="chip" title="Mostrar ou esconder grupos de estruturas profundas">Estruturas <i>▾</i></summary><div id="groups"></div></details>
-        <button class="chip tog" id="bGrad" aria-pressed="false" title="Gradientes de Goldberg (linhas e estações)">Gradientes</button>
         <button class="chip tog" id="bLab" aria-pressed="false" title="Números das áreas de Brodmann">Números</button></div></div>
       </div>
     </div>
@@ -343,7 +356,7 @@ pre,.scroll{overflow-x:auto}
 <p class="note">A lista de fatores não está fechada e pede pesquisa. Os pontos em aberto (a 1ª unidade como um ou vários fatores, as zonas de projeção, as nomenclaturas mais vagas) estão nas fichas dos campos primários e dos fatores, e no bloco de propostas da aba Fatores.</p>
 <p>Goldberg (1990) lê essa distribuição de outro modo: propõe o <b>gradiente cognitivo</b> como unidade da organização horizontal do córtex, assim como o nível é a unidade da organização vertical (hierárquica). As duas abordagens não se excluem: cada uma capta um aspecto da organização (p. 230, 263). A premissa é o <b>isomorfismo entre as métricas espacial e funcional</b>: duas regiões são funcionalmente próximas se, e somente se, são espacialmente próximas (p. 231).</p>
 <p>Um gradiente é definido por dois polos primários. A estrutura invariante é 1 → 2 → 3 → 2 → 1, com o terciário no centro geométrico (p. 231–232). No córtex posterior há três gradientes, que formam um triângulo. No anterior, o gradiente é “parcial” (1 → 2 → 3), porque o frontal é um só lobo (p. 253–254). É uma versão contínua das zonas de sobreposição de Poliakov, que nascem do encontro das zonas nucleares em expansão (P71, p. 146). Goldberg ancora a continuidade entre pré-motor e pré-frontal justamente em Kononova e Poliakov (p. 256).</p>
-<p class="note">No modelo, ligue <b>Gradientes</b>, embaixo: os nós de Goldberg aparecem sobre o córtex real, com linhas que seguem a superfície, e podem ser vistos sobre as zonas, as unidades ou os fatores. Clique num nó, numa linha ou numa faixa abaixo.</p>
+<p class="note">No modelo, abra a aba <b>Gradientes</b> (Goldberg), no menu de cima: os nós de Goldberg aparecem sobre o córtex real, com linhas que seguem a superfície, e podem ser vistos sobre as zonas, as unidades ou os fatores. Clique num nó, numa linha ou numa faixa abaixo.</p>
 </div>
 <div>
 <h3>Duas perguntas diferentes: o que quebrou e como se distribui</h3>
@@ -372,6 +385,7 @@ pre,.scroll{overflow-x:auto}
 </div>
 <p class="note" style="margin-top:14px">A matriz mostra cada sistema na sua <b>tarefa de referência</b> (o ditado, na escrita; o cálculo mental, no cálculo). Os fatores pesam de outro modo quando a tarefa muda: a cópia dispensa a análise sonora; o cálculo no papel traz a leitura e a escrita dos algarismos e alivia a retenção; o objeto explorado pelo tato troca a gnose visual pela tátil. Na ficha de cada sistema, o item “Conforme a tarefa” mostra essas variações no modelo, com a fonte de cada uma.</p>
 <p class="note" style="margin-top:12px">Toda ação voluntária tem um objetivo, e a terceira unidade programa, regula e verifica toda a atividade consciente. Nos sistemas do mapa, porém, um fator só aparece como <b>etapa</b> quando a lesão quebra a tarefa num ponto definido e de modo próprio (HCF, p. 78). Por isso a programação entra de três modos. É <b>etapa</b> quando a própria pessoa tem de formar o programa, porque o material não traz um esquema pronto, ou de verificar o resultado: o esquema do enunciado na fala narrativa (p. 237), o plano da escrita espontânea (p. 543), a análise das condições e a estratégia no pensamento (p. 347), a evocação ativa na memorização (p. 342), a ação regulada pela instrução e controlada pela fala interna (p. 292–293). É <b>fundo</b> quando o programa é dado pelo material ou pela instrução e basta mantê-lo, como no ditado, na cópia, na repetição e na nomeação de objetos: ali o defeito frontal não é específico (p. 543) e se espalha pelo curso, como perseveração e inércia (p. 496, 510, 517). E quase <b>desaparece</b> nas tarefas automatizadas, como a assinatura, as séries automatizadas e a leitura de relance, em que o peso do controle cai com a aprendizagem (p. 79, 530–531); na terminologia de Leontiev, a ação se converte em operação. Quando a fonte descreve os dois papéis, como na atenção voluntária (a instrução que dá valor de sinal aos estímulos, p. 266, e sua manutenção ao longo da tarefa, p. 285), o fator aparece como etapa e como fundo. A seta vermelha de retorno só é desenhada onde a fonte descreve comparar o resultado e corrigir, e, por analogia, nas tarefas com um modelo à vista (cópia, imitação), marcadas como leitura do mapa. Toda ação voluntária tem aferentação de retorno (p. 22), mas desenhá-la em todos os sistemas apagaria a diferença.</p>
+<p class="note">Como nos exemplos de Luria, os sistemas também não desenham os campos primários (17, 41, 3, 4), para não sobrecarregar o esquema. Mas a tarefa os recruta: pela lei da estrutura hierárquica das zonas corticais, as zonas secundárias trabalham sobre o que chega pelas zonas de projeção dos seus analisadores (FN, p. 55–56). Por isso a ficha de cada sistema indica quais campos primários a tarefa recruta, pela sua entrada e pela sua saída; o ditado, por exemplo, recruta o auditivo (o ditado chega pelo ouvido), o somatossensorial e o motor (o traçado) e o visual (o controle do que se escreve), enquanto a cópia dispensa o auditivo. Sugestão da revisão técnica.</p>
 <div class="scroll" style="margin-top:14px"><table id="stab"></table></div>
 <div class="montpg">
 <h3 style="margin-top:26px">Monte o seu sistema</h3>
@@ -506,7 +520,7 @@ pre,.scroll{overflow-x:auto}
 <p class="recarga"><b>Não está vendo as novidades?</b> O navegador pode estar mostrando uma cópia guardada da página. Aperte <kbd>Ctrl</kbd> + <kbd>F5</kbd> (ou <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>; no Mac, <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>) para recarregar. No celular, feche a aba e abra o link de novo.</p>
 <dl class="chg">
 <dt>1.1 · 26/11/2026</dt>
-<dd>Novo recurso: <b>montar um sistema</b>, ideia do Prof. Dr. Hansel Soto Hernández. Na aba Sistemas, você escreve uma tarefa qualquer e acumula, clicando nos fatores ou nos campos do encéfalo (que começa apagado), os fatores que ela recruta; cada um acende suas áreas e entra na triangulação. Como num programa de desenho, as ferramentas consecutivo (seta) e simultâneo (laço) ligam os fatores arrastando de um a outro no encéfalo, com atalhos de teclado e Ctrl + Z para desfazer. Dá para marcar o fundo e o retorno de controle, começar de um sistema do mapa, comparar a montagem com os sistemas descritos, guardar um link que abre o mesmo sistema em qualquer computador e, justificando cada elo com a fonte, enviá-lo como proposta pelo canal de sugestões. Nos sistemas do mapa, o fator de programação passa a aparecer com papéis distintos: etapa inicial, verificação com retorno (agora também na leitura, na compreensão, na memorização direta, no pensamento e na construção) ou fundo (na atenção voluntária, na memorização involuntária, no ditado e na cópia), e quase desaparece nas tarefas automatizadas, segundo um critério explicado na seção dos sistemas. A escrita ganha a variante de escrita espontânea, e as páginas do HCF citadas nos sistemas foram conferidas uma a uma.</dd>
+<dd>Novo recurso: <b>montar um sistema</b>, ideia do Prof. Dr. Hansel Soto Hernández. Na aba Sistemas, você escreve uma tarefa qualquer e acumula, clicando nos fatores ou nos campos do encéfalo (que começa apagado), os fatores que ela recruta; cada um acende suas áreas e entra na triangulação. Como num programa de desenho, as ferramentas consecutivo (seta) e simultâneo (laço) ligam os fatores arrastando de um a outro no encéfalo, com atalhos de teclado e Ctrl + Z para desfazer. Dá para marcar o fundo e o retorno de controle, começar de um sistema do mapa, comparar a montagem com os sistemas descritos, guardar um link que abre o mesmo sistema em qualquer computador e, justificando cada elo com a fonte, enviá-lo como proposta pelo canal de sugestões. O menu do modelo foi reorganizado, por sugestão da revisão técnica: <b>Zonas</b> (Poliakov), <b>Modelos</b> (Luria: um botão que abre unidades, fatores e sistemas), <b>Anatomia</b> (Brodmann) e <b>Gradientes</b> (Goldberg), que ganharam aba própria e saíram da legenda dos fatores. Nos sistemas do mapa, o fator de programação passa a aparecer com papéis distintos: etapa inicial, verificação com retorno (agora também na leitura, na compreensão, na memorização direta, no pensamento e na construção) ou fundo (na atenção voluntária, na memorização involuntária, no ditado e na cópia), e quase desaparece nas tarefas automatizadas, segundo um critério explicado na seção dos sistemas. A escrita ganha a variante de escrita espontânea, as fichas dos sistemas passam a indicar os campos primários que cada tarefa recruta, sem desenhá-los (sugestão da revisão técnica), e as páginas do HCF citadas nos sistemas foram conferidas uma a uma.</dd>
 <dt>1.0.2 · 25/11/2026</dt>
 <dd>Ajustes sugeridos pelo Prof. Dr. Hansel Soto Hernández. Os fatores mnésticos passam a se chamar memória (retenção ou armazenamento) audioverbal e visual, com nota sobre a diferença entre a retenção, que se localiza, e a memória, que é um sistema funcional. Entra um fator novo, memória (retenção ou armazenamento) tátil-espacial, nos campos 5 e 7, marcado como proposta e ponto em aberto, com apoio em Khomskaya (p. 185), no HCF (p. 470) e na literatura atual. A memorização voluntária direta ganha o elo tátil. Na aba Fatores, as notas sobre a memória e a ordem da legenda ficam num botão “Notas importantes”, que abre e fecha. O fator tátil-espacial entra também na escrita e na práxis. A seção sobre Khomskaya passa a ocupar a largura toda, com os sete grupos embaixo. Novo canal de sugestões, que envia a mensagem aos autores. Nos sistemas, as estruturas profundas deixam de ser nomeadas, e cada ficha ganha “Conforme a tarefa”, com as variações que mudam os elos (cópia e escrita automatizada; leitura de relance; séries automatizadas; palavras isoladas; repetição de sons; nomeação pelo tato; cálculo escrito; imitação, posições sem controle visual, ação imaginária e por instrução verbal, na práxis). A construção com blocos ganha a gnose tátil. A ficha de cada sistema descreve também a tarefa de referência. Nova seção sobre a linguagem na construção e na reorganização dos sistemas, a partir do capítulo de Luria e da apresentação da coletânea (2010). Na aba Fatores e na seção sobre fatores, uma nota esclarece que os fatores do mapa são os do adulto, formação tardia da ontogênese (Luria, 2010). Nos gradientes de Goldberg, o córtex pode ser colorido por zonas, unidades ou fatores sem perder o gradiente escolhido; as estações fora dele ficam ocultas e aparecem ao passar o mouse; os números de Brodmann seguem o botão Números. Novo painel de navegação, inspirado no BrainTutor: posição e rotação do encéfalo nos três eixos e giro automático em torno do eixo vertical. A lista das estruturas profundas saiu dos painéis e virou uma seção da página, depois dos três grupos de campos. Na aba Fatores, um bloco novo de propostas em aberto traz o fator analisador-coordenador (cerebelo), a partir de Poliakov, e um espaço para o usuário propor o seu fator, escolhendo campos e estruturas no modelo, indicando a fonte que a embasa (autor, ano e obra) e enviando a proposta pelo canal de sugestões.</dd>
 <dt>1.0.1 · 24/11/2026</dt>
@@ -2481,16 +2495,49 @@ const FSEC = [
   { t: 'Propostas em aberto', letra: 'P', d: 'A lista de fatores não está fechada (Khomskaya, p. 269). Aqui entram propostas ainda sem apoio direto nas fontes da NPHC, e o espaço para o usuário propor o seu.', subs: [
     { t: 'Revisão técnica', fs: ['cer'], nota: 'Proposta a partir do mecanismo analisador-coordenador de Poliakov. Ainda não entra nos sistemas.' }] }];
 const KNOTA = { cer: 'sem síndrome em Luria e Khomskaya; leitura de Poliakov', tat: 'memórias tátil e espacial em Khomskaya (p. 185); proposta da revisão técnica', mem: 'em Luria, função da 1ª unidade (ativação)', inerc: 'menção vaga em Luria', espont: 'proposta de Khomskaya; menção vaga em Luria', hemi: 'em Luria, localização inter-hemisférica, não fator', comm: 'em Luria, síndromes de comissurotomia (HCF, p. 381)', geral: 'condições gerais, não localizáveis' };
+
+/* campos primários que cada tarefa recruta (não desenhados nos sistemas): pela entrada e pela saída da tarefa.
+   Lei da estrutura hierárquica das zonas corticais: as zonas secundárias trabalham sobre o que chega pelas zonas de projeção (FN, p. 55–56).
+   V = visual (17), A = auditivo (41), S = somatossensorial (3), M = motor (4) */
+const PRIMS = {
+  escrita: { V: 'controle visual do que se escreve', A: 'o ditado chega pelo ouvido', S: 'aferentação cinestésica do traçado', M: 'execução do traçado' },
+  'escrita:0': { V: 'o modelo chega pela visão', S: 'aferentação cinestésica do traçado', M: 'execução do traçado' },
+  'escrita:1': { S: 'aferentação cinestésica do traçado', M: 'execução do traçado' },
+  'escrita:2': { V: 'controle visual do que se escreve', S: 'aferentação cinestésica do traçado', M: 'execução do traçado' },
+  leitura: { V: 'o texto chega pela visão', A: 'escuta da própria leitura', S: 'aferentação da articulação', M: 'articulação' },
+  'leitura:0': { V: 'a palavra chega pela visão' },
+  fala: { A: 'escuta da própria fala', S: 'aferentação da articulação', M: 'articulação' },
+  'fala:0': { A: 'escuta da própria fala', S: 'aferentação da articulação', M: 'articulação' },
+  compreensao: { A: 'a fala chega pelo ouvido' },
+  'compreensao:0': { A: 'a fala chega pelo ouvido', S: 'aferentação do movimento, nas ordens', M: 'execução das ordens' },
+  repeticao: { A: 'a série chega pelo ouvido', S: 'aferentação da articulação', M: 'articulação' },
+  'repeticao:0': { A: 'o som ou a palavra chega pelo ouvido', S: 'aferentação da articulação', M: 'articulação' },
+  nomeacao: { V: 'o objeto chega pela visão', S: 'aferentação da articulação', M: 'articulação' },
+  'nomeacao:0': { S: 'o objeto chega pelo tato; aferentação da articulação', M: 'exploração do objeto e articulação' },
+  calculo: { A: 'a tarefa é dada oralmente', S: 'aferentação da articulação', M: 'resposta falada' },
+  'calculo:0': { V: 'os números escritos chegam pela visão', S: 'aferentação cinestésica do traçado', M: 'escrita da conta' },
+  praxis: { A: 'a instrução chega pelo ouvido', S: 'aferentação cinestésica da posição', M: 'execução do gesto' },
+  'praxis:0': { V: 'o modelo chega pela visão', S: 'aferentação cinestésica da posição', M: 'execução do gesto' },
+  'praxis:1': { S: 'a posição modelo chega pela aferentação cinestésica', M: 'execução do gesto' },
+  'praxis:2': { A: 'a instrução chega pelo ouvido', S: 'aferentação cinestésica do gesto', M: 'execução do gesto' },
+  'praxis:3': { A: 'a instrução chega pelo ouvido', V: 'os sinais, quando são visuais', S: 'aferentação cinestésica da resposta', M: 'execução da resposta' },
+  percepcao: { V: 'a figura chega pela visão', M: 'movimentos de busca dos olhos' },
+  atencao: { V: 'conforme o analisador em que se dá a seleção', A: 'conforme o analisador em que se dá a seleção', S: 'conforme o analisador em que se dá a seleção', M: 'conforme o analisador em que se dá a seleção' },
+  memoria: { A: 'quando a série é apresentada oralmente', V: 'quando a série é apresentada à vista', S: 'quando o material é tátil' },
+  memoria_med: { A: 'as palavras chegam pelo ouvido', V: 'as figuras chegam pela visão' },
+  memoria_inv: { V: 'o material da outra tarefa chega pela visão' },
+  pensamento: { A: 'o problema dado oralmente', V: 'o problema dado por escrito' },
+  construcao: { V: 'o modelo chega pela visão', S: 'aferentação cinestésica da montagem', M: 'manipulação dos blocos' } };
 const FSUB = FSEC.flatMap(x => x.subs);
 const FORD = FSEC.flatMap(s => s.subs.flatMap(x => x.fs));
 const FS = {}; for (const s in SYS) for (const l of SYS[s].links) (FS[l.f] = FS[l.f] || []).push(s);
-return { ZN, AN, UN, AR, TH, THT, ZL, AL, MEC, GR, THU, DS, MIDLINE, FAT, ELEM, FA, FD, GN, GE, GRD, SYS, FS, HEMI, FGRP, PRELIM, FSUB, FSEC, KNOTA, FORD, REDE, RTIP, ULIG };
+return { ZN, AN, UN, AR, TH, THT, ZL, AL, MEC, GR, THU, DS, MIDLINE, FAT, ELEM, FA, FD, GN, GE, GRD, SYS, FS, HEMI, FGRP, PRELIM, FSUB, FSEC, KNOTA, FORD, REDE, RTIP, ULIG, PRIMS };
 })();
 
 </script>
 <script>
 {
-const { ZN, AN, UN, AR, TH, THT, ZL, MEC, GR, THU, DS, MIDLINE, FAT, ELEM, FA, FD, GN, GE, GRD, SYS, FS, HEMI, FGRP, PRELIM, FSUB, FSEC, KNOTA, FORD, REDE, RTIP, ULIG } = window.POL;
+const { ZN, AN, UN, AR, TH, THT, ZL, MEC, GR, THU, DS, MIDLINE, FAT, ELEM, FA, FD, GN, GE, GRD, SYS, FS, HEMI, FGRP, PRELIM, FSUB, FSEC, KNOTA, FORD, REDE, RTIP, ULIG, PRIMS } = window.POL;
 const UCOR = u => u ? UN[u].cor : '#8a8f98';
 const stageTxt = S => (S.etapas || []).map(e => e.f.map(f => FAT[f].curto).join(e.rel === 'alt' ? ' ou ' : ' + ')).join(' → ');
 const uname = u => u ? UN[u].nome : 'várias unidades';
@@ -3104,7 +3151,10 @@ const ensureVisible = base => { const g = META(base).grp; if (!st.groups.has(g))
 function showMode() {
   clearSys(); setSel([]);
   let h = '', items = [];
-  if (st.mode === 'zonas') {
+  if (st.gtab) {
+    h = '<h3>Gradientes de Goldberg</h3><p class="note">Goldberg (1990) propõe o <b>gradiente cognitivo</b> como unidade da organização horizontal do córtex, assim como o nível é a unidade da vertical: entre as zonas, a função muda de modo contínuo, das estações modais às supramodais, na estrutura 1-2-3-2-1 (p. 231–232). Os nomes discretos das áreas são “bandeiras” que aproximam esse contínuo (p. 268).</p><p class="note">Clique num gradiente, ou numa linha do modelo, para percorrê-lo de polo a polo; as estações fora do gradiente escolhido ficam ocultas e aparecem ao passar o mouse.</p>' + gcolHtml();
+    items = Object.keys(GRD).filter(g => !GRD[g].onlyR).map(g => `<button class="lg" data-grd="${g}"><span class="sw" style="background:${GRD[g].cor}"></span><span>${esc(GRD[g].nome)}<small>${esc(GRD[g].esq)} · ${GRD[g].seq.map(n => GN[n].lab).join(' → ')}</small></span></button>`);
+  } else if (st.mode === 'zonas') {
     h = '<h3>Zonas de Poliakov</h3><p class="note">Cor = grupo de campos. Primários são as zonas de projeção, extremidade cortical de cada analisador (no sentido de Pavlov retomado por Luria, do receptor até o córtex); secundários e terciários são zonas de associação, modais e amodais. Clique numa zona para destacá-la, ou num campo ou estrutura do modelo para abrir sua ficha.</p>';
     items = ZORD.map(z => `<button class="lg" data-z="${z}"><span class="sw" style="background:${ZN[z].cor}"></span><span>${esc(ZN[z].nome)}<small>${esc(ZN[z].sub)}</small></span></button>`);
   } else if (st.mode === 'anal') {
@@ -3119,7 +3169,7 @@ function showMode() {
   } else if (st.mode === 'sys') {
     h = '<h3>Sistemas funcionais complexos</h3><p class="note">Uma função psicológica superior é um sistema funcional: a tarefa e o efeito são constantes, os meios e elos são variáveis (Anokhin; Bernstein) (HCF, p. 22). Qualquer elo lesado perturba o sistema, cada um de modo diferente (HCF, p. 78).</p>'
       + '<p class="note">O peso de cada fator muda conforme o conteúdo da tarefa (na escrita por cópia, sob ditado ou espontânea; na leitura em voz alta ou silenciosa) e com a automatização, que decorre da aprendizagem (localização dinâmica).</p>'
-      + '<details class="notas nsys"' + (st.notasSys ? ' open' : '') + '><summary title="Mostrar ou ocultar a nota"><span class="ni">i</span>Notas importantes<span class="nc">1</span></summary><div class="nb"><p class="note"><b>Ativação e programação.</b> A ativação sustenta todos os sistemas; na atenção, entra como etapa própria. A programação, regulação e controle aparece como <b>etapa</b> quando a própria pessoa precisa formar o programa ou verificar o resultado; como <b>fundo</b>, quando o programa é dado pelo material ou pela instrução; e quase desaparece nas tarefas automatizadas. O critério completo, com as fontes, está na seção dos sistemas, abaixo do modelo.</p></div></details>'
+      + '<details class="notas nsys"' + (st.notasSys ? ' open' : '') + '><summary title="Mostrar ou ocultar a nota"><span class="ni">i</span>Notas importantes<span class="nc">2</span></summary><div class="nb"><p class="note"><b>Ativação e programação.</b> A ativação sustenta todos os sistemas; na atenção, entra como etapa própria. A programação, regulação e controle aparece como <b>etapa</b> quando a própria pessoa precisa formar o programa ou verificar o resultado; como <b>fundo</b>, quando o programa é dado pelo material ou pela instrução; e quase desaparece nas tarefas automatizadas. O critério completo, com as fontes, está na seção dos sistemas, abaixo do modelo.</p><p class="note"><b>Campos primários.</b> Como nos exemplos de Luria, os sistemas não desenham os campos primários (17, 41, 3, 4). Mas a tarefa os recruta: pela lei da estrutura hierárquica das zonas corticais, as zonas secundárias trabalham sobre a informação que chega pelas zonas de projeção correspondentes, e as terciárias, sobre o que as secundárias lhes fornecem (FN, p. 55–56). A ficha de cada sistema indica os campos primários que a tarefa recruta, pela sua entrada e pela sua saída. Se a própria zona de projeção constitui um fator é ponto em aberto (veja a ficha dos campos primários).</p></div></details>'
       + '<p class="note">Clique num sistema: o mapa triangula os fatores envolvidos, com raios do sistema a cada fator. Setas pretas: etapas sucessivas. Nó branco: elos simultâneos na mesma etapa (traço contínuo) ou alternativos (tracejado). Seta vermelha: retorno de controle. Fatores “de fundo” atuam durante todo o curso.</p>'
       + '<p class="note">No fim da lista, você pode <b>montar o seu sistema</b> para uma tarefa qualquer.</p>';
     items = Object.keys(SYS).map(s => `<button class="lg" data-s="${s}"><span class="sw" style="background:conic-gradient(${SYS[s].links.map((l, i, A) => `${FAT[l.f].cor} ${i / A.length * 100}% ${(i + 1) / A.length * 100}%`).join(',')})"></span><span>${esc(SYS[s].nome)}<small>${esc(stageTxt(SYS[s]))}${SYS[s].fundo ? ' · fundo: ' + SYS[s].fundo.map(x => esc(FAT[x.f].curto)).join(', ') : ''}</small></span></button>`)
@@ -3131,10 +3181,7 @@ function showMode() {
     items = [`<button class="lg" data-elem="1"><span class="sw" style="background:${ELEM.cor}"></span><span>${esc(ELEM.nome)}<small>17, 41, 3, 4 · déficits elementares; como fator, ponto em aberto</small></span></button>`]
       .concat(FSEC.flatMap((sec, si) => [`<div class="fg"><span class="fgn">${sec.letra || (si ? 'K' : 'L')}</span><div><b>${esc(sec.t)}</b><small>${esc(sec.d)}</small></div></div>`]
         .concat(sec.subs.flatMap(x => [`<p class="fsub">${esc(x.t)}</p>`].concat(x.fs.map(f => fbtn(f, si > 0)), x.nota ? [`<p class="note" style="margin:2px 0 6px 34px">${esc(x.nota)}</p>`] : [])),
-          sec.letra === 'P' ? [`<p class="fsub">Sua proposta</p>`, `<button class="lg" data-prop="1" title="Escolher campos e estruturas no modelo e propor um fator"><span class="sw prop"></span><span>${PROP.nome ? esc(PROP.nome) : 'Propor um fator'}<small>${PROP.areas.length + PROP.deep.length ? esc(propResumo()) : 'escolha os campos e as estruturas no modelo e envie a proposta'}</small></span></button>`] : [])),
-      [`<div class="fg" id="lg-grd"><span class="fgn" style="background:none;color:var(--ink)">◇</span><div><b>Gradientes de Goldberg</b><small>Clique num gradiente, ou numa linha do modelo, para percorrê-lo de polo a polo.</small></div></div>`],
-      
-      Object.keys(GRD).filter(g => !GRD[g].onlyR).map(g => `<button class="lg" data-grd="${g}"><span class="sw" style="background:${GRD[g].cor}"></span><span>${esc(GRD[g].nome)}<small>${esc(GRD[g].esq)} · ${GRD[g].seq.map(n => GN[n].lab).join(' → ')}</small></span></button>`));
+          sec.letra === 'P' ? [`<p class="fsub">Sua proposta</p>`, `<button class="lg" data-prop="1" title="Escolher campos e estruturas no modelo e propor um fator"><span class="sw prop"></span><span>${PROP.nome ? esc(PROP.nome) : 'Propor um fator'}<small>${PROP.areas.length + PROP.deep.length ? esc(propResumo()) : 'escolha os campos e as estruturas no modelo e envie a proposta'}</small></span></button>`] : [])));
   } else {
     h = '<h3>Anatomia</h3><p class="note">Áreas de Brodmann em cores arbitrárias; estruturas profundas em cores anatômicas. Os números marcam o centro de cada área.</p>';
   }
@@ -3184,6 +3231,18 @@ function showFactor(f) {
   <span class="note">Quando o fator cai, todos esses sistemas se desorganizam juntos: é a síndrome (HCF, p. 82–83).</span></dd></dl>
   ${F.deep.length && st.cortex === 'op' ? '<p class="note">Use <b>Córtex: Vidro</b> para ver as estruturas profundas.</p>' : ''}`;
 }
+/* campos primários recrutados pela tarefa (não desenhados): pela entrada e pela saída da tarefa (PRIMS, em data.js);
+   na montagem, estimados pelos fatores de entrada e saída: gnose visual → 17, ouvido fonemático → 41, cinestésico e tátil-espacial → 3, cinético → 4 (e 3) */
+const PRIMA = { V: 17, A: 41, S: 3, M: 4 }, PRIMN = { V: 'visual', A: 'auditivo', S: 'somatossensorial', M: 'motor' };
+function primHtml(S, key) {
+  let P = key && PRIMS[key] ? PRIMS[key] : null, est = false;
+  if (!P) { const fs = new Set(S.links.map(l => l.f)); P = {};
+    if (fs.has('vis')) P.V = 'entrada visual'; if (fs.has('fon')) P.A = 'entrada auditiva';
+    if (fs.has('cin') || fs.has('tat') || fs.has('kin')) P.S = 'aferentação cinestésica'; if (fs.has('kin')) P.M = 'execução motora'; est = true; }
+  const ks = ['V', 'A', 'S', 'M'].filter(k => P[k]); if (!ks.length) return '';
+  const it = k => key && !est ? `<button class="chip" data-b="${PRIMA[k]}" title="${esc(AR[PRIMA[k]] ? AR[PRIMA[k]].n : '')}">${PRIMN[k]} (${PRIMA[k]})</button><span class="note pmot">${esc(P[k])}</span>` : `<span class="chip">${PRIMN[k]} (${PRIMA[k]})</span><span class="note pmot">${esc(P[k])}</span>`;
+  return `<h3 style="margin-top:14px">Campos primários recrutados</h3><p class="note">Não são desenhados, como nos exemplos de Luria, mas a tarefa os recruta: as zonas secundárias trabalham sobre o que chega pelas zonas de projeção (FN, p. 55–56).${est ? ' Na montagem, são estimados pelos fatores de entrada e de saída.' : ' A lista segue a entrada e a saída da tarefa e é uma leitura do mapa.'}</p><div class="prims">${ks.map(k => `<div>${it(k)}</div>`).join('')}</div>`;
+}
 function showSystem(s) {
   if (s === '_mont') return showMont();
   if (st.var && st.var.s !== s) st.var = null;
@@ -3203,6 +3262,7 @@ function showSystem(s) {
   ${S.ciclo ? `<p class="note"><b style="color:#b3122e">↺ Retorno à etapa ${S.ciclo.para + 1}.</b> ${esc(S.ciclo.n)}</p>` : ''}
   ${S.fundo ? `<p class="note"><b>Durante todo o curso:</b> ${S.fundo.map(x => `<b style="color:${FAT[x.f].cor}">${esc(FAT[x.f].curto)}</b> (${esc(x.n)})`).join('; ')}.</p>` : ''}
   ${S.tempo ? `<p class="note">${esc(S.tempo)}</p>` : ''}
+  ${primHtml(S, st.var && st.var.s === s ? s + ':' + st.var.i : s)}
   ${S.cog ? `<h3 style="margin-top:14px">Comparação com a neuropsicologia cognitiva</h3><p class="note">${esc(S.cog)}</p>` : ''}
   <h3 style="margin-top:14px">Os elos</h3>
   <dl class="f">${S.links.map(l => `<dt><button class="chip" data-f="${l.f}"><i style="background:${FAT[l.f].cor}"></i>${esc(FAT[l.f].nome)}</button></dt>
@@ -3228,7 +3288,7 @@ const lvlTxt = l => l === 2.5 ? '2–3' : String(l);
 const gcolHtml = () => `<div class="gcol"><span class="note">Colorir o córtex por</span><div class="seg mini" id="gcol">${[['zonas', 'Zonas de Poliakov'], ['luria', 'Unidades de Luria'], ['fat', 'Fatores']].map(([v, n]) => `<button data-gm="${v}" aria-pressed="${st.mode === v}">${n}</button>`).join('')}</div></div>`;
 function showGrad(id, side) {
   clearSys(); const G = GRD[id]; side = G.onlyL ? 'L' : G.onlyR ? 'R' : (side || (st.hemi === 'R' ? 'R' : 'L'));
-  if (!st.grad) toggleGrad(true);
+  gtabOn();
   if (st.hemi !== 'B' && st.hemi !== side) { st.hemi = side; syncSeg('#hemi', side); applyVis(); setView('lat'); }
   const areas = [...new Set(G.seq.flatMap(n => GN[n].areas))];
   setSel(areas, [], G.seq, id);
@@ -3240,7 +3300,7 @@ function showGrad(id, side) {
   <p class="note">Goldberg: os nomes discretos das áreas são “bandeiras” que aproximam um contínuo. Entre duas estações, o quadro esperado é uma interpolação das duas (p. 268).</p>`;
 }
 function showNode(id, side) {
-  const g = GN[id]; side = side || 'L'; if (!st.grad) toggleGrad(true);
+  const g = GN[id]; side = side || 'L'; clearSys(); gtabOn();
   const nb = new Set([id]); for (const [a, b] of GE[side]) { if (a === id) nb.add(b); if (b === id) nb.add(a); }
   setSel(g.areas, [], [...nb]);
   const zs = [...new Set(g.areas.map(b => AR[b].z))];
@@ -3276,7 +3336,7 @@ function showDiv(k) {
     (k === 'sep' ? '' : `<p class="note">Campos por zona:</p>${ZORD.map(z => { const l = list.filter(b => AR[b].z === z); return l.length ? `<p style="margin:6px 0">${zchip(z)}</p>${bchips(l)}` : ''; }).join('')}
     <p class="note">Fatores sustentados por esta metade:</p><div class="chips">${facs.map(f => `<button class="chip" data-f="${f}"><i style="background:${FAT[f].cor}"></i>${esc(FAT[f].nome)}</button>`).join('')}</div>`);
 }
-function toggleGrad(on) { st.grad = on; $('#bGrad').setAttribute('aria-pressed', on); applyGrad(); }
+function toggleGrad(on) { st.grad = on; applyGrad(); }
 function showArea(b) {
   clearSys();
   const A = AR[b]; setSel([b], (A.t || []).map(k => 'th_' + k));
@@ -3358,7 +3418,7 @@ info.addEventListener('input', e => { if (!st.prop) return; const campo = { prNo
 info.addEventListener('click', e => {
   const t = e.target.closest('button'); if (!t) return; const d = t.dataset;
   if (montClick(t, d, e)) return;
-  if (d.gm) { setMode(d.gm); return; }
+  if (d.gm) { if (st.gtab) setGcol(d.gm); else setMode(d.gm); return; }
   if (d.prop) { showProposal(); return; }
   if (d.var != null && st.sys) { const k = +d.var; st.var = k < 0 ? null : { s: st.sys, i: k }; const sc = info.scrollTop; showSystem(st.sys); info.scrollTop = sc; return; }
   if (d.prx) { propToggle(d.prx === 'a' ? 'areas' : 'deep', d.prx === 'a' ? +d.k : d.k); return; }
@@ -3620,6 +3680,7 @@ function showMont() {
   <div class="chips">${MONT.fundo.map(f => fc(f, `data-mfx="${f}"`, ' ×')).join('')}${addSel('data-mfundo', MONT.fundo, '+ fator de fundo')}</div>
   ${m >= 2 ? `<label class="mlab"><span>Retorno de controle (seta vermelha)</span><select data-mciclo><option value="">sem retorno</option>${Array.from({ length: m - 1 }, (_, i) => `<option value="${i + 1}"${MONT.ciclo === i + 1 ? ' selected' : ''}>da etapa ${m} à etapa ${i + 1}</option>`).join('')}</select></label>` : ''}
   ${sem.length ? `<p class="note">Sem lugar definido: ${sem.map(f => esc(FAT[f].curto)).join(', ')}.</p>` : ''}
+  ${primHtml(montS(), null)}
   <details class="notas mj"${st.mjOpen ? ' open' : ''}><summary><span class="ni">i</span>Justificar os elos<span class="nc">${fs.filter(f => (MONT.just[f] || '').trim()).length}/${fs.length}</span></summary><div class="nb">
   <p class="note">Para cada fator: o papel dele nesta tarefa e a fonte (autor, ano, página). É opcional para estudar e obrigatório para enviar a proposta.</p>
   <form class="sug prop" onsubmit="return false">${fs.map(f => `<label><span><i class="dot" style="background:${FAT[f].cor}"></i> ${esc(FAT[f].nome)}</span><textarea data-mj="${f}" rows="2" maxlength="1500" placeholder="Papel na tarefa; fonte: autor, ano, página">${esc(MONT.just[f] || '')}</textarea></label>`).join('')}</form></div></details>` : ''}
@@ -3641,19 +3702,44 @@ $('#bMontPg').addEventListener('click', () => { if (document.getElementById('loa
 $('#deepIdx').addEventListener('click', e => { const b = e.target.closest('[data-d]'); if (!b) return; if (st.prop) propSair(); showDeep(b.dataset.d); view.scrollIntoView({ behavior: 'smooth', block: 'center' }); });
 
 /* ---------- controles ---------- */
-function syncSeg(sel, v) { for (const b of document.querySelectorAll(sel + ' button')) b.setAttribute('aria-pressed', b.dataset.v === v); }
+function syncSeg(sel, v) { for (const b of document.querySelectorAll(sel + ' button')) b.setAttribute('aria-pressed', b.dataset.v === v); if (sel === '#mode') syncLur(v); }
+/* menu de cima: Zonas (Poliakov) · Luria (unidades, fatores, sistemas) · Anatomia (Brodmann) · Gradientes (Goldberg) */
+const LURN = { luria: 'Unidades', fat: 'Fatores', sys: 'Sistemas' };
+function syncLur(v) {
+  const on = v in LURN, b = $('#bLur');
+  document.querySelectorAll('#lmenu button').forEach(x => x.setAttribute('aria-pressed', x.dataset.v === v));
+  if (b) { b.setAttribute('aria-pressed', on); b.innerHTML = (on ? LURN[v] : 'Modelos') + ' <small>Luria</small> <i>▾</i>'; }
+  if (v !== 'grad' && st.gtab) { st.gtab = false; if (st.grad) toggleGrad(false); }
+}
+/* o menu de Luria sai da barra (cujo backdrop-filter prenderia o position:fixed) e vai para o palco */
+{ const m = $('#lmenu'); if (m) { $('#viewer').appendChild(m); m.addEventListener('click', e => { const b = e.target.closest('button'); if (b) setMode(b.dataset.v); }); } }
+function lurMenu(open) { const m = $('#lmenu'), b = $('#bLur'); if (!m) return; m.hidden = !open; if (open) { const r = b.getBoundingClientRect(), w = m.offsetWidth; m.style.left = Math.max(6, Math.min(r.left + r.width / 2 - w / 2, innerWidth - w - 6)) + 'px'; m.style.top = (r.bottom + 3) + 'px'; } b.setAttribute('aria-expanded', open); }
+/* aba dos gradientes: o córtex é colorido por zonas, unidades ou fatores (st.gcm), com os gradientes ligados */
+function gtabOn() {
+  if (!st.gtab) { st.gtab = true; st.mode = st.gcm || 'zonas';
+    if (st.labsPrev !== null) { st.labs = st.labsPrev; st.labsPrev = null; $('#bLab').setAttribute('aria-pressed', st.labs); }
+    syncSeg('#mode', 'grad'); }
+  if (!st.grad) toggleGrad(true);
+}
 function syncGroups() { for (const c of document.querySelectorAll('#groups input')) c.checked = st.groups.has(c.value); }
 function setMode(v) {
   if (st.prop) propSair();
-  const manter = st.grad && st.gsel.size > 0 && !st.sys && ['zonas', 'luria', 'fat'].includes(v);
+  lurMenu(false);
+  if (v === 'grad') { clearSys(); gtabOn(); recolor(); showMode(); return; }
   st.mode = v; syncSeg('#mode', st.mode);
-  if (st.mode === 'brod') { if (st.labsPrev === null) st.labsPrev = st.labs; st.labs = true; if (st.grad) toggleGrad(false); } else if (st.labsPrev !== null) { st.labs = st.labsPrev; st.labsPrev = null; }
+  if (st.mode === 'brod') { if (st.labsPrev === null) st.labsPrev = st.labs; st.labs = true; } else if (st.labsPrev !== null) { st.labs = st.labsPrev; st.labsPrev = null; }
   $('#bLab').setAttribute('aria-pressed', st.labs);
-  if (manter) { recolor(); document.querySelectorAll('#gcol button').forEach(b => b.setAttribute('aria-pressed', b.dataset.gm === st.mode)); return; }
-  if (st.mode === 'fat' && st.grad) toggleGrad(false); recolor(); showMode();
+  recolor(); showMode();
 }
-$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setMode(b.dataset.v); });
-$('#bGrad').addEventListener('click', () => toggleGrad(!st.grad));
+/* na aba dos gradientes, “Colorir o córtex por” só muda a cor, sem sair da aba nem da seleção */
+function setGcol(v) {
+  st.gcm = v; st.mode = v; recolor();
+  document.querySelectorAll('#gcol button').forEach(b => b.setAttribute('aria-pressed', b.dataset.gm === v));
+}
+$('#mode').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; if (b.id === 'bLur') { lurMenu($('#lmenu').hidden); return; } setMode(b.dataset.v); });
+document.addEventListener('click', e => { if (!e.target.closest('.lwrap') && !e.target.closest('#lmenu')) lurMenu(false); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') lurMenu(false); });
+addEventListener('scroll', () => lurMenu(false), { passive: true }); addEventListener('resize', () => lurMenu(false));
 $('#hemi').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st.medSide = null; st.hemi = b.dataset.v; syncSeg('#hemi', st.hemi); applyVis(); applyGrad(); if (st.sys) showSystem(st.sys); else setView('lat'); if (st.sys && st.hemi !== 'B') setView('lat'); });
 $('#cortex').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; st.cortex = b.dataset.v; syncSeg('#cortex', st.cortex); applyVis(); });
 $('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
@@ -3742,7 +3828,7 @@ for (const id of ['#ktipos', '#kprelim']) $(id).addEventListener('click', e => {
 $('#gstrips').innerHTML = Object.keys(GRD).filter(g => !GRD[g].onlyR).map(g => { const G = GRD[g];
   return `<div class="gstrip" data-grd="${g}" tabindex="0" role="button"><div class="gname"><b style="color:${G.cor}">${esc(G.nome)}</b><br><span class="note">${esc(G.esq)} · ${esc(G.pg)}</span></div>
   <div class="track">${G.seq.map((n, i) => { const N = GN[n]; return `${i ? '<span class="rail"></span>' : ''}<span class="st" style="border-color:${lvlCol(N.lvl)}"><b>${esc(N.lab)}</b><small>${esc(N.curto)}</small></span>`; }).join('')}</div></div>`; }).join('');
-const goG = el => { st.mode = 'fat'; syncSeg('#mode', 'fat'); recolor(); showGrad(el.dataset.grd, 'L'); view.scrollIntoView({ behavior: 'smooth' }); };
+const goG = el => { showGrad(el.dataset.grd, 'L'); recolor(); view.scrollIntoView({ behavior: 'smooth' }); };
 $('#gstrips').addEventListener('click', e => { const el = e.target.closest('[data-grd]'); if (el) goG(el); });
 $('#gstrips').addEventListener('keydown', e => { const el = e.target.closest('[data-grd]'); if (el && e.key === 'Enter') goG(el); });
 
